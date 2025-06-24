@@ -1,1 +1,19 @@
-{}
+{
+  "projects": {
+    "taskify": {
+      "name": "Taskify",
+      "description": "Stawiaj cele, śledź postępy, zwiększ produktywność z Targeto."
+    }
+  },
+  "tags": {
+    "angular": "Angular",
+    "typescript": "TypeScript",
+    "ionic": "Ionic",
+    "capacitor": "Capacitor",
+    "ngxs": "NGxS",
+    "chartJs": "chartJs",
+    "firebase": "Firebase",
+    "eslint": "ESLint",
+    "tailwindcss": "Tailwind CSS"
+  }
+}

@@ -1,0 +1,47 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.project {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-2);
+  color: var(--color-4);
+  min-height: 12rem;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
