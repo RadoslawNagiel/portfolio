@@ -9,24 +9,48 @@
 .project {
   &-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     margin: 2rem 2rem 0rem 2rem;
   }
 
   &-title {
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: "Impact";
   }
 
   &-date {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   &-description {
-    font-size: 1.1rem;
-    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &-buttons {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.images-container {
+  display: flex;
+  gap: 1rem;
+
+  img {
+    height: 300px;
   }
 }

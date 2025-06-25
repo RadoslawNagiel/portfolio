@@ -1,17 +1,24 @@
 import { TAG } from './tags';
 
 export interface ProjectInfo {
-  date: Date;
+  dateFrom: Date;
+  dateTo?: Date;
+  inProgress?: boolean;
   name: string;
   tags: TAG[];
   description: string;
   mainImage: string;
   images: string[];
+  buttons?: {
+    text: string;
+    url: string;
+  }[];
 }
 
 export const PROJECTS: ProjectInfo[] = [
   {
-    date: new Date(),
+    inProgress: true,
+    dateFrom: new Date(2024, 11, 26),
     name: `projects.targeto.name`,
     tags: [
       TAG.angular,
@@ -32,6 +39,7 @@ export const PROJECTS: ProjectInfo[] = [
       `./images/targeto/3.jpg`,
       `./images/targeto/4.jpg`,
       `./images/targeto/5.jpg`,
+      `./images/targeto/6.jpg`,
     ],
   },
 ];

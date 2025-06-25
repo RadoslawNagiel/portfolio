@@ -6,7 +6,10 @@
         {{ project.name | translate }}
       </div>
       <div class="project-date">
-        {{ project.date | date : "yyyy" }}
+        {{ project.dateFrom | date : "MM/yyyy" }}
+        @if(project.dateTo){ - {{ project.dateTo | date : "MM/yyyy" }} }
+        @if(project.inProgress){ - {{ "projects.now" | translate }}
+        }
       </div>
     </div>
     <div>
