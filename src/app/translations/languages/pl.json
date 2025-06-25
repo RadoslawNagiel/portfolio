@@ -1,8 +1,8 @@
 {
   "projects": {
-    "taskify": {
-      "name": "Taskify",
-      "description": "Stawiaj cele, śledź postępy, zwiększ produktywność z Targeto."
+    "targeto": {
+      "name": "Targeto",
+      "description": "Mobilna aplikacja do wyznaczania i realizacji celów<br>Projekt autorski: pomysł, projekt UX/UI, implementacja<br><br>Opis:<br>Targeto to moja autorska aplikacja mobilna stworzona z myślą o osobach, które chcą skutecznie planować, realizować i monitorować swoje cele oraz rozwijać dobre nawyki. Zaprojektowana z naciskiem na minimalizm, przejrzystość i codzienną użyteczność. Aplikacja wspiera użytkownika na każdym etapie realizacji celów – od planowania, przez codzienne działania, aż po regularne podsumowania.<br><br>Funkcje kluczowe:<br>- Tworzenie i zarządzanie celami z podziałem na kategorie (np. nauka, praca, sport) oraz możliwość definiowania własnych obszarów.<br>- Codzienne śledzenie aktywności – użytkownik odznacza wykonane zadania, a aplikacja na bieżąco prezentuje postępy w formie procentowego wypełnienia celu.<br>- Automatyczne powiadomienia push.<br>- Statystyki i analizy postępów – prezentacja danych w prosty i motywujący sposób (zaplanowane cele, procent realizacji, aktywność dzienna).<br>- Intuicyjny i responsywny interfejs użytkownika, zaprojektowany z myślą o szybkim dostępie do najważniejszych funkcji i maksymalnej ergonomii.<br><br>Moja rola:<br>Pełna odpowiedzialność za cały proces tworzenia aplikacji – od koncepcji, przez projekt interfejsu i implementację."
     }
   },
   "tags": {

@@ -5,16 +5,17 @@
       <div class="project-title">
         {{ project.name | translate }}
       </div>
-      <div>
-        {{ project.date | date : "dd/MM/yyyy" }}
+      <div class="project-date">
+        {{ project.date | date : "yyyy" }}
       </div>
     </div>
     <div>
-      <img [src]="project.image" alt="image" />
+      <img [src]="project.mainImage" alt="image" />
     </div>
-    <div>
-      {{ project.description | translate }}
-    </div>
+    <div
+      class="project-description"
+      [innerHTML]="project.description | translate"
+    ></div>
 
     <div class="tags-container">
       @for (tag of project.tags; track $index) { @if(getTagInfo(tag); as

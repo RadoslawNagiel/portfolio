@@ -3,7 +3,7 @@ import { TAG } from './tags';
 export const PROJECTS = [
   {
     date: new Date(),
-    name: `projects.taskify.name`,
+    name: `projects.targeto.name`,
     tags: [
       TAG.angular,
       TAG.typescript,
@@ -15,7 +15,14 @@ export const PROJECTS = [
       TAG.eslint,
       TAG.tailwindcss,
     ],
-    description: `projects.taskify.description`,
-    image: `./images/taskify.png`,
+    description: `projects.targeto.description`,
+    mainImage: `./images/targeto/main.jpg`,
+    images: [
+      `./images/targeto/1.jpg`,
+      `./images/targeto/2.jpg`,
+      `./images/targeto/3.jpg`,
+      `./images/targeto/4.jpg`,
+      `./images/targeto/5.jpg`,
+    ],
   },
 ];
