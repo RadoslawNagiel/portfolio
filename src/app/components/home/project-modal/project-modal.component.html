@@ -1,0 +1,23 @@
+<div class="project-header">
+  <div class="project-title">
+    {{ project.name | translate }}
+  </div>
+  <div class="project-date">
+    {{ project.date | date : "yyyy" }}
+  </div>
+</div>
+
+<mat-dialog-content>
+  <div
+    class="project-description"
+    [innerHTML]="project.description | translate"
+  ></div>
+
+  <app-tags [tags]="project.tags" />
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button matButton mat-flat-button mat-dialog-close>
+    {{ "dialog.close" | translate }}
+  </button>
+</mat-dialog-actions>

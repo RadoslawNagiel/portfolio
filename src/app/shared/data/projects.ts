@@ -1,6 +1,15 @@
 import { TAG } from './tags';
 
-export const PROJECTS = [
+export interface ProjectInfo {
+  date: Date;
+  name: string;
+  tags: TAG[];
+  description: string;
+  mainImage: string;
+  images: string[];
+}
+
+export const PROJECTS: ProjectInfo[] = [
   {
     date: new Date(),
     name: `projects.targeto.name`,

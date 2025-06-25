@@ -1,6 +1,6 @@
 <div class="projects-container">
   @for (project of projects; track $index) {
-  <div class="project">
+  <div class="project" (click)="openDialog(project)">
     <div class="project-header">
       <div class="project-title">
         {{ project.name | translate }}
@@ -17,21 +17,7 @@
       [innerHTML]="project.description | translate"
     ></div>
 
-    <div class="tags-container">
-      @for (tag of project.tags; track $index) { @if(getTagInfo(tag); as
-      tagInfo){
-
-      <span
-        class="tag"
-        [ngStyle]="{
-          background: tagInfo.background,
-          color: tagInfo.color
-        }"
-      >
-        {{ tagInfo.name | translate }}
-      </span>
-      } }
-    </div>
+    <app-tags [tags]="project.tags" />
   </div>
   }
 </div>

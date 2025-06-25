@@ -15,5 +15,8 @@
     "firebase": "Firebase",
     "eslint": "ESLint",
     "tailwindcss": "Tailwind CSS"
+  },
+  "dialog": {
+    "close": "Zamknij"
   }
 }
