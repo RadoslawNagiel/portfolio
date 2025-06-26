@@ -21,17 +21,17 @@ html {
   @include mat.dialog-overrides(
     (
       container-color: var(--color-2),
-      supporting-text-color: var(--color-4),
+      supporting-text-color: var(--text-color),
       container-min-width: "60vw",
     )
   );
 
   @include mat.button-toggle-overrides(
     (
-      background-color: var(--color-1),
+      background-color: #4d4d4d,
       selected-state-background-color: var(--primary-theme),
-      selected-state-text-color: var(--color-1),
-      text-color: var(--color-4),
+      selected-state-text-color: #1a1a1a,
+      text-color: #e6e6e6,
     )
   );
 }

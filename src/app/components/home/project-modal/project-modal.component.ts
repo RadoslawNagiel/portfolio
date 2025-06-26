@@ -8,7 +8,6 @@ import { LightboxModule } from 'ng-gallery/lightbox';
 import { ProjectInfo } from '../../../shared/data/projects';
 import TagsComponent from '../../../shared/dumb-components/tags/tags.component';
 import { getTagInfo } from '../../../shared/functions/tags';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-project-modal',
@@ -19,7 +18,6 @@ import { MatIconModule } from '@angular/material/icon';
     DatePipe,
     TagsComponent,
     LightboxModule,
-    MatIconModule,
   ],
   templateUrl: './project-modal.component.html',
   styleUrl: `project-modal.styles.scss`,
