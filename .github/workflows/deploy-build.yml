@@ -32,20 +32,21 @@ jobs:
           git config user.email "actions@github.com"
 
           git switch --orphan build-temp
+
           echo "Run rm -rf *"
           rm -rf *
           echo "Run rm -rf .[^.]* || true"
           rm -rf .[^.]* || true
 
-          echo "Run ls -al dist/portfolio/browser:"
-          ls -al dist/portfolio/browser
+          echo "Run ls -al ."
+          ls -al .
 
-          echo "Run cp -r dist/portfolio/browser/* ."
-          cp -r dist/portfolio/browser/* .
+          echo "Run cp -r ../dist/portfolio/browser/* ./"
+          cp -r ../dist/portfolio/browser/* ./
 
           ls -la
 
           echo "Run git add ."
-          git add . --force
+          git add .
           git commit -m "Build from main - $(date +'%Y-%m-%d %H:%M:%S')"
           git push --force origin HEAD:build
