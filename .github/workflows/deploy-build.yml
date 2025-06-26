@@ -28,6 +28,9 @@ jobs:
 
       - name: Deploy build to 'build' branch
         run: |
+          echo "Contents of dist/portfolio:"
+          ls -al dist/portfolio
+
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
