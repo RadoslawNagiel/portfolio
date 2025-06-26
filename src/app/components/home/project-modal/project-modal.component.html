@@ -22,9 +22,9 @@
   @if(project.buttons){
   <div class="project-buttons">
     @for(button of project.buttons; track $index){
-    <button matButton mat-flat-button (click)="openUrl(button.url)">
-      {{ button.text | translate }}
-    </button>
+    <a matButton="filled" mat-flat-button [href]="button.url" target="_blank">{{
+      button.text | translate
+    }}</a>
     }
   </div>
   }

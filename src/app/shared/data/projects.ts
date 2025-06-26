@@ -21,7 +21,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2024, 11, 26),
     name: `projects.targeto.name`,
     tags: [
-      TAG.angular,
+      TAG.angular18,
       TAG.typescript,
       TAG.ionic,
       TAG.capacitor,
@@ -40,6 +40,32 @@ export const PROJECTS: ProjectInfo[] = [
       `./images/targeto/4.jpg`,
       `./images/targeto/5.jpg`,
       `./images/targeto/6.jpg`,
+    ],
+  },
+  {
+    dateFrom: new Date(2025, 2, 18),
+    name: `projects.quiz.name`,
+    tags: [TAG.angular19, TAG.typescript, TAG.eslint],
+    description: `projects.quiz.description`,
+    mainImage: `./images/quiz/2.jpg`,
+    images: [
+      `./images/quiz/1.jpg`,
+      `./images/quiz/2.jpg`,
+      `./images/quiz/3.jpg`,
+      `./images/quiz/4.jpg`,
+      `./images/quiz/5.jpg`,
+      `./images/quiz/6.jpg`,
+      `./images/quiz/7.jpg`,
+    ],
+    buttons: [
+      {
+        text: `projects.quiz.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/MAE-quiz`,
+      },
+      {
+        text: `projects.quiz.quizButton`,
+        url: `https://radoslawnagiel.github.io/MAE-quiz/`,
+      },
     ],
   },
 ];

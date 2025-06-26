@@ -9,7 +9,7 @@ export class ThemeService {
   initTheme() {
     const results = localStorage.getItem(`dark-theme`);
     if (results) {
-      this.setMode(true);
+      this.setMode(results === `true`);
     } else {
       this.setDefaultTheme();
     }

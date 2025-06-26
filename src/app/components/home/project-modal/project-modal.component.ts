@@ -36,8 +36,4 @@ export class ProjectModalComponent {
         this.project.images.map((el) => new ImageItem({ src: el, thumb: el }))
       );
   }
-
-  openUrl(url: string) {
-    window.open(url, '_blank');
-  }
 }

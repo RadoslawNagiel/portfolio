@@ -6,18 +6,19 @@
       {{ themeService.isDarkThemeSelected() ? "dark_mode" : "light_mode" }}
     </span>
 
-    <mat-button-toggle-group
-      style="min-width: 80px"
-      [hideSingleSelectionIndicator]="true"
-      [value]="languageService.selectedLanguage()"
-      (valueChange)="languageService.setLanguage($event)"
-    >
-      @for (language of languages; track language.langKey) {
-      <mat-button-toggle [value]="language.langKey">{{
-        language.value
-      }}</mat-button-toggle>
-      }
-    </mat-button-toggle-group>
+    <div style="min-width: 80px">
+      <mat-button-toggle-group
+        [hideSingleSelectionIndicator]="true"
+        [value]="languageService.selectedLanguage()"
+        (valueChange)="languageService.setLanguage($event)"
+      >
+        @for (language of languages; track language.langKey) {
+        <mat-button-toggle [value]="language.langKey">{{
+          language.value
+        }}</mat-button-toggle>
+        }
+      </mat-button-toggle-group>
+    </div>
   </header>
   <main>
     <router-outlet />
