@@ -3,11 +3,11 @@ export const environment = {
   availableLanguages: [
     {
       langKey: `pl`,
-      value: `pl`,
+      value: `PL`,
     },
     {
       langKey: `en`,
-      value: `en`,
+      value: `EN`,
     },
   ],
 };

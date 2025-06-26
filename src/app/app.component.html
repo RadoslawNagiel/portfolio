@@ -1,2 +1,18 @@
-<main></main>
-<router-outlet />
+<div>
+  <header role="banner">
+    <mat-button-toggle-group
+      [hideSingleSelectionIndicator]="true"
+      [value]="languageService.selectedLanguage()"
+      (valueChange)="languageService.setLanguage($event)"
+    >
+      @for (language of languages; track language.langKey) {
+      <mat-button-toggle [value]="language.langKey">{{
+        language.value
+      }}</mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+  </header>
+  <main>
+    <router-outlet />
+  </main>
+</div>

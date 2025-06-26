@@ -1,1 +1,20 @@
-{}
+{
+  "projects": {
+    "now": "currently",
+    "targeto": {
+      "name": "Targeto",
+      "description": "Mobile app for goal setting and achievement.<br>Not yet published — development in progress.<br>Author project: concept, UX/UI design, implementation<br><br>Description:<br>Targeto is my own mobile app designed for people who want to effectively plan, achieve, and track their goals while building better habits. It’s created with a focus on minimalism, clarity, and everyday usability. The app supports the user at every stage of goal realization — from planning and daily actions to regular progress summaries.<br><br>Key features:<br><br>Create and manage goals by category (e.g. learning, work, fitness) with the ability to define custom areas.<br><br>Daily activity tracking — users mark completed tasks, and the app continuously shows progress with percentage-based goal completion.<br><br>Automatic push notifications.<br><br>Progress statistics and analytics — data presented in a simple and motivating way (planned goals, completion percentage, daily activity).<br><br>Intuitive and responsive user interface designed for quick access to key features and maximum usability.<br><br>My role:<br>Full responsibility for the entire app development process — from concept, through UI design, to implementation."
+    }
+  },
+  "tags": {
+    "angular": "Angular",
+    "typescript": "TypeScript",
+    "ionic": "Ionic",
+    "capacitor": "Capacitor",
+    "ngxs": "NGxS",
+    "chartJs": "chartJs",
+    "firebase": "Firebase",
+    "eslint": "ESLint",
+    "tailwindcss": "Tailwind CSS"
+  }
+}

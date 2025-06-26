@@ -25,6 +25,15 @@ html {
       container-min-width: "60vw",
     )
   );
+
+  @include mat.button-toggle-overrides(
+    (
+      background-color: var(--color-1),
+      selected-state-background-color: var(--primary-theme),
+      selected-state-text-color: var(--color-1),
+      text-color: var(--color-4),
+    )
+  );
 }
 
 .mat-mdc-dialog-content {
