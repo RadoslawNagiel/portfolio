@@ -3,8 +3,7 @@ name: Build and push to 'build' branch
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 jobs:
   build:
@@ -25,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --configuration=production
+        run: npm run build
 
       - name: Deploy build to 'build' branch
         run: |
