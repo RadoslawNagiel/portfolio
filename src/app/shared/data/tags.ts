@@ -1,6 +1,7 @@
 export enum TAG {
-  angular19 = 'angular19',
+  angular17 = 'angular17',
   angular18 = 'angular18',
+  angular19 = 'angular19',
   typescript = 'typescript',
   ionic = 'ionic',
   capacitor = 'capacitor',
@@ -12,6 +13,11 @@ export enum TAG {
 }
 
 export const TAGS = {
+  angular17: {
+    name: `Angular 17`,
+    background: `#dd0031`,
+    color: `white`,
+  },
   angular18: {
     name: `Angular 18`,
     background: `#dd0031`,
