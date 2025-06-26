@@ -1,9 +1,9 @@
 name: Build and push to 'build' branch
 
 on:
-  workflow_dispatch:
   push:
-    branches: ["main"]
+    branches:
+      - master
 
 jobs:
   build:
