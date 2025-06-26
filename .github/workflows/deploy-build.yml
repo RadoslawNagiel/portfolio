@@ -37,8 +37,11 @@ jobs:
           echo "Run rm -rf .[^.]* || true"
           rm -rf .[^.]* || true
 
-          echo "Run cp -r dist/portfolio/* ."
-          cp -r dist/portfolio/* .
+          echo "Run ls -al dist/portfolio/browser:"
+          ls -al dist/portfolio/browser
+
+          echo "Run cp -r dist/portfolio/browser/* ."
+          cp -r dist/portfolio/browser/* .
 
           ls -la
 
