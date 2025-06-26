@@ -28,16 +28,19 @@ jobs:
 
       - name: Deploy build to 'build' branch
         run: |
-          echo "Contents of dist/portfolio:"
-          ls -al dist/portfolio
+          echo "Contents of dist/portfolio/browser:"
+          ls -al dist/portfolio/browser
 
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
           git switch --orphan build-temp
           git rm -rf .
-          cp -r dist/portfolio/* .
+
+          rsync -av dist/portfolio/browser/ ./
+
+          ls -la  # podgląd co faktycznie jest w roboczym katalogu
+
           git add .
           git commit -m "Build from main - $(date +'%Y-%m-%d %H:%M:%S')"
-
           git push --force origin HEAD:build
