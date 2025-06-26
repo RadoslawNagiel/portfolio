@@ -8,7 +8,10 @@ export interface ProjectInfo {
   tags: TAG[];
   description: string;
   mainImage: string;
-  images: string[];
+  images: {
+    url: string;
+    thumb: string;
+  }[];
   buttons?: {
     text: string;
     url: string;
@@ -34,12 +37,30 @@ export const PROJECTS: ProjectInfo[] = [
     description: `projects.targeto.description`,
     mainImage: `./images/targeto/main.jpg`,
     images: [
-      `./images/targeto/1.jpg`,
-      `./images/targeto/2.jpg`,
-      `./images/targeto/3.jpg`,
-      `./images/targeto/4.jpg`,
-      `./images/targeto/5.jpg`,
-      `./images/targeto/6.jpg`,
+      {
+        url: `./images/targeto/1.jpg`,
+        thumb: `./images/targeto/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/targeto/2.jpg`,
+        thumb: `./images/targeto/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/targeto/3.jpg`,
+        thumb: `./images/targeto/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/targeto/4.jpg`,
+        thumb: `./images/targeto/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/targeto/5.jpg`,
+        thumb: `./images/targeto/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/targeto/6.jpg`,
+        thumb: `./images/targeto/thumbnails/6.jpg`,
+      },
     ],
   },
   {
@@ -49,13 +70,34 @@ export const PROJECTS: ProjectInfo[] = [
     description: `projects.quiz.description`,
     mainImage: `./images/quiz/2.jpg`,
     images: [
-      `./images/quiz/1.jpg`,
-      `./images/quiz/2.jpg`,
-      `./images/quiz/3.jpg`,
-      `./images/quiz/4.jpg`,
-      `./images/quiz/5.jpg`,
-      `./images/quiz/6.jpg`,
-      `./images/quiz/7.jpg`,
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/quiz/1.jpg`,
+        thumb: `./images/quiz/thumbnails/1.jpg`,
+      },
     ],
     buttons: [
       {
@@ -84,18 +126,54 @@ export const PROJECTS: ProjectInfo[] = [
     description: `projects.wineryV2.description`,
     mainImage: `./images/wineryV2/main.jpg`,
     images: [
-      `./images/wineryV2/1.jpg`,
-      `./images/wineryV2/2.jpg`,
-      `./images/wineryV2/3.jpg`,
-      `./images/wineryV2/4.jpg`,
-      `./images/wineryV2/5.jpg`,
-      `./images/wineryV2/6.jpg`,
-      `./images/wineryV2/7.jpg`,
-      `./images/wineryV2/8.jpg`,
-      `./images/wineryV2/9.jpg`,
-      `./images/wineryV2/10.jpg`,
-      `./images/wineryV2/11.jpg`,
-      `./images/wineryV2/12.jpg`,
+      {
+        url: `./images/wineryV2/1.jpg`,
+        thumb: `./images/wineryV2/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/wineryV2/2.jpg`,
+        thumb: `./images/wineryV2/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/wineryV2/3.jpg`,
+        thumb: `./images/wineryV2/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/wineryV2/4.jpg`,
+        thumb: `./images/wineryV2/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/wineryV2/5.jpg`,
+        thumb: `./images/wineryV2/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/wineryV2/6.jpg`,
+        thumb: `./images/wineryV2/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/wineryV2/7.jpg`,
+        thumb: `./images/wineryV2/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/wineryV2/8.jpg`,
+        thumb: `./images/wineryV2/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/wineryV2/9.jpg`,
+        thumb: `./images/wineryV2/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/wineryV2/10.jpg`,
+        thumb: `./images/wineryV2/thumbnails/10.jpg`,
+      },
+      {
+        url: `./images/wineryV2/11.jpg`,
+        thumb: `./images/wineryV2/thumbnails/11.jpg`,
+      },
+      {
+        url: `./images/wineryV2/12.jpg`,
+        thumb: `./images/wineryV2/thumbnails/12.jpg`,
+      },
     ],
     buttons: [
       {
