@@ -37,8 +37,8 @@ jobs:
           echo "Run rm -rf .[^.]* || true"
           rm -rf .[^.]* || true
 
-          echo "Run rsync -av dist/portfolio/browser/ ./"
-          rsync -av dist/portfolio/browser/ ./
+          echo "Run cp -r dist/portfolio/* ."
+          cp -r dist/portfolio/* .
 
           ls -la
 
