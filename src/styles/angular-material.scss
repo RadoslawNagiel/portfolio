@@ -34,6 +34,22 @@ html {
       text-color: #e6e6e6,
     )
   );
+
+  @media (max-width: 1920px) {
+    @include mat.dialog-overrides(
+      (
+        container-min-width: "80vw",
+      )
+    );
+  }
+
+  @media (max-width: 1440px) {
+    @include mat.dialog-overrides(
+      (
+        container-min-width: "90vw",
+      )
+    );
+  }
 }
 
 .mat-mdc-dialog-container {

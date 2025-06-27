@@ -9,6 +9,36 @@
   --secondary-theme: #fff475;
 
   --primary-font: Oswald, "Arial Narrow Bold", sans-serif;
+
+  --icon-size: 1.5rem;
+
+  --font-size-1: 1rem;
+  --line-height-1: 1.4rem;
+
+  --font-size-2: 1.2rem;
+  --line-height-2: 1.5rem;
+
+  --font-size-3: 2rem;
+
+  --font-size-4: 3rem;
+
+  @media (max-width: 800px) {
+    --icon-size: 1.8rem;
+
+    --font-size-1: 0.8rem;
+    --line-height-1: 1.2rem;
+
+    --font-size-2: 1rem;
+    --line-height-2: 1.4rem;
+
+    --font-size-3: 1.5rem;
+
+    --font-size-4: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    --font-size-4: 1.5rem;
+  }
 }
 
 .ion-palette-dark {
