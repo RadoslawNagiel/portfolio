@@ -17,3 +17,20 @@ lightbox {
 .g-btn-close {
   padding: 0.5rem;
 }
+
+.mdc-button:hover,
+.mat-button-toggle:hover {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+  }
+}

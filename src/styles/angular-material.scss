@@ -36,6 +36,10 @@ html {
   );
 }
 
+.mat-mdc-dialog-container {
+  max-height: 95vh !important;
+}
+
 .mat-mdc-dialog-content {
-  max-height: 90vh !important;
+  max-height: 100% !important;
 }
