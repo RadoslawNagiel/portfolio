@@ -68,35 +68,31 @@ export const PROJECTS: ProjectInfo[] = [
     name: `projects.quiz.name`,
     tags: [TAG.angular19, TAG.typescript, TAG.eslint],
     description: `projects.quiz.description`,
-    mainImage: `./images/quiz/2.jpg`,
+    mainImage: `./images/quiz/main.jpg`,
     images: [
       {
         url: `./images/quiz/1.jpg`,
         thumb: `./images/quiz/thumbnails/1.jpg`,
       },
       {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
+        url: `./images/quiz/2.jpg`,
+        thumb: `./images/quiz/thumbnails/2.jpg`,
       },
       {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
+        url: `./images/quiz/3.jpg`,
+        thumb: `./images/quiz/thumbnails/3.jpg`,
       },
       {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
+        url: `./images/quiz/4.jpg`,
+        thumb: `./images/quiz/thumbnails/4.jpg`,
       },
       {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
+        url: `./images/quiz/5.jpg`,
+        thumb: `./images/quiz/thumbnails/6.jpg`,
       },
       {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
-      },
-      {
-        url: `./images/quiz/1.jpg`,
-        thumb: `./images/quiz/thumbnails/1.jpg`,
+        url: `./images/quiz/7.jpg`,
+        thumb: `./images/quiz/thumbnails/7.jpg`,
       },
     ],
     buttons: [
