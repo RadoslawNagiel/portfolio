@@ -2,7 +2,19 @@
   <header role="banner">
     <div class="header-title">{{ "header.title" | translate }}</div>
 
-    <span class="material-symbols-outlined button" (click)="toggleTheme()">
+    <span
+      class="material-symbols-outlined button"
+      [matBadge]="8"
+      [matTooltip]="'header.tooltips.filter' | translate"
+    >
+      filter_alt
+    </span>
+
+    <span
+      class="material-symbols-outlined button"
+      [matTooltip]="'header.tooltips.theme' | translate"
+      (click)="toggleTheme()"
+    >
       {{ themeService.isDarkThemeSelected() ? "dark_mode" : "light_mode" }}
     </span>
 
@@ -10,6 +22,7 @@
       <mat-button-toggle-group
         [hideSingleSelectionIndicator]="true"
         [value]="languageService.selectedLanguage()"
+        [matTooltip]="'header.tooltips.language' | translate"
         (valueChange)="languageService.setLanguage($event)"
       >
         @for (language of languages; track language.langKey) {

@@ -4,9 +4,11 @@
   <span
     class="tag"
     [ngStyle]="{
-      background: tagInfo.background,
-      color: tagInfo.color
+      background: tagInfo.background ?? 'transparent',
+      color: tagInfo.color,
+      borderColor: tagInfo.border ?? 'transparent'
     }"
+    [matTooltip]="tagInfo.tooltip | translate"
   >
     {{ tagInfo.name | translate }}
   </span>

@@ -4,6 +4,8 @@
   gap: 2rem;
   align-items: stretch;
   justify-content: center;
+
+  padding: 2rem 1rem;
 }
 
 .project {
@@ -23,6 +25,7 @@
     transform: scale(1.01);
     &::after {
       content: "";
+      pointer-events: none;
       position: absolute;
       border-radius: 1.5rem;
       top: 0;

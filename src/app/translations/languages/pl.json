@@ -1,6 +1,28 @@
 {
   "header": {
-    "title": "Portfolio – Radosław Nagiel"
+    "title": "Portfolio – Radosław Nagiel",
+    "tooltips": {
+      "filter": "Filtruj projekty",
+      "theme": "Zmień motyw",
+      "language": "Zmień język"
+    }
+  },
+  "projectType": {
+    "private": "Prywatny",
+    "professional": "Zawodowy",
+    "group": "Grupowy",
+    "webApp": "Aplikacja webowa",
+    "mobileApp": "Aplikacja mobilna",
+    "game": "Gra"
+  },
+  "filters": {
+    "title": "Filtry",
+    "projectType": "Typ projektu",
+    "language": "Język programowania",
+    "framework": "Framework",
+    "api": "API",
+    "library": "Biblioteka",
+    "utility": "Narzędzie"
   },
   "projects": {
     "now": "aktualnie",

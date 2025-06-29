@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<mat-dialog-content style="padding: 1rem 2rem 2rem 2rem">
+<mat-dialog-content>
   @if(project.buttons){
   <div class="project-buttons">
     @for(button of project.buttons; track $index){
@@ -39,6 +39,8 @@
     }
   </div>
 
+  <app-tags [tags]="project.tags" />
+
   <div
     class="project-description"
     [innerHTML]="project.description | translate"
@@ -48,5 +50,5 @@
     {{ "projects.technologies" | translate }}
   </div>
 
-  <app-tags [tags]="project.tags" />
+  <app-tags [tags]="project.technologies" />
 </mat-dialog-content>

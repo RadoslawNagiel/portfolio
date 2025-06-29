@@ -6,6 +6,7 @@ export interface ProjectInfo {
   inProgress?: boolean;
   name: string;
   tags: TAG[];
+  technologies: TAG[];
   description: string;
   mainImage: string;
   images: {
@@ -23,17 +24,18 @@ export const PROJECTS: ProjectInfo[] = [
     inProgress: true,
     dateFrom: new Date(2024, 11, 26),
     name: `projects.targeto.name`,
-    tags: [
+    tags: [TAG.private, TAG.mobileApp],
+    technologies: [
       TAG.typescript,
       TAG.angular18,
       TAG.ionic,
-      TAG.capacitor,
+      TAG.tailwindcss,
       TAG.ngxs,
-      TAG.firebase,
       TAG.chartJs,
       TAG.ngxTranslate,
-      TAG.tailwindcss,
+      TAG.capacitor,
       TAG.eslint,
+      TAG.firebase,
     ],
     description: `projects.targeto.description`,
     mainImage: `./images/targeto/main.jpg`,
@@ -67,7 +69,8 @@ export const PROJECTS: ProjectInfo[] = [
   {
     dateFrom: new Date(2025, 2, 18),
     name: `projects.quiz.name`,
-    tags: [TAG.typescript, TAG.angular19, TAG.ngxTranslate, TAG.eslint],
+    tags: [TAG.private, TAG.webApp],
+    technologies: [TAG.typescript, TAG.angular19, TAG.ngxTranslate, TAG.eslint],
     description: `projects.quiz.description`,
     mainImage: `./images/quiz/main.jpg`,
     images: [
@@ -111,13 +114,14 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2024, 5, 11),
     dateTo: new Date(2025, 1, 17),
     name: `projects.wineryV2.name`,
-    tags: [
+    tags: [TAG.private, TAG.mobileApp],
+    technologies: [
       TAG.typescript,
       TAG.angular17,
       TAG.ionic,
-      TAG.capacitor,
-      TAG.ngxs,
       TAG.tailwindcss,
+      TAG.ngxs,
+      TAG.capacitor,
       TAG.eslint,
     ],
     description: `projects.wineryV2.description`,
@@ -187,24 +191,25 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2023, 6, 16),
     dateTo: new Date(2024, 9, 30),
     name: `projects.safetyHab.name`,
-    tags: [
+    tags: [TAG.professional, TAG.webApp, TAG.mobileApp],
+    technologies: [
       TAG.typescript,
       TAG.angular17,
       TAG.angular16,
       TAG.primeNG,
       TAG.ionic,
-      TAG.capacitor,
+      TAG.tailwindcss,
       TAG.apollo,
       TAG.nestJS,
       TAG.graphQl,
       TAG.prisma,
-      TAG.keycloak,
-      TAG.sentry,
       TAG.echarts,
       TAG.luxon,
       TAG.ngxTranslate,
-      TAG.tailwindcss,
+      TAG.capacitor,
       TAG.eslint,
+      TAG.keycloak,
+      TAG.sentry,
     ],
     description: `projects.safetyHab.description`,
     mainImage: `./images/safetyHab/main.jpg`,

@@ -50,6 +50,20 @@ html {
       )
     );
   }
+
+  @include mat.tooltip-overrides(
+    (
+      container-color: #c7c7c7,
+      supporting-text-color: #1a1a1a,
+    )
+  );
+
+  @include mat.badge-overrides(
+    (
+      background-color: var(--primary-theme),
+      text-color: #1a1a1a,
+    )
+  );
 }
 
 .mat-mdc-dialog-container {
@@ -58,4 +72,8 @@ html {
 
 .mat-mdc-dialog-content {
   max-height: 100% !important;
+}
+
+mat-dialog-content {
+  padding: 1rem 2rem 2rem 2rem;
 }

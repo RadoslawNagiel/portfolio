@@ -15,12 +15,15 @@
     <div>
       <img [src]="project.mainImage" alt="image" />
     </div>
+
+    <app-tags [tags]="project.tags" />
+
     <div
       class="project-description"
       [innerHTML]="project.description | translate"
     ></div>
 
-    <app-tags [tags]="project.tags" />
+    <app-tags [tags]="project.technologies" />
   </div>
   }
 </div>
