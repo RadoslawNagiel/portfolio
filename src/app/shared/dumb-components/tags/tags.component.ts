@@ -1,13 +1,13 @@
 import { Component, input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { getTagInfo } from '../../functions/tags';
-import { NgStyle } from '@angular/common';
+import { NgClass, NgStyle } from '@angular/common';
 import { TAG } from '../../data/tags';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-tags',
-  imports: [TranslateModule, NgStyle, MatTooltipModule],
+  imports: [TranslateModule, NgStyle, MatTooltipModule, NgClass],
   templateUrl: './tags.component.html',
   styleUrl: './tags.styles.scss',
 })

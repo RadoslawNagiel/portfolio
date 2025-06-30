@@ -50,37 +50,37 @@ export const TAGS: Record<
   private: {
     name: `projectType.private`,
     border: `var(--primary-theme)`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
   professional: {
     name: `projectType.professional`,
     border: `#b60aff`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
   group: {
     name: `projectType.group`,
     border: `#0affa5`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
   webApp: {
     name: `projectType.webApp`,
     border: `#5984c1`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
   mobileApp: {
     name: `projectType.mobileApp`,
     border: `#77C159`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
   game: {
     name: `projectType.game`,
     border: `#c15959`,
-    color: `white`,
+    color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
 

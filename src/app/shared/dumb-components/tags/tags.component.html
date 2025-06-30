@@ -3,6 +3,7 @@
 
   <span
     class="tag"
+    [ngClass]="{ 'tag-text-shadow': tagInfo.background }"
     [ngStyle]="{
       background: tagInfo.background ?? 'transparent',
       color: tagInfo.color,
