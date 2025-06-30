@@ -1,17 +1,18 @@
 <div class="tags-container">
-  @for (tag of tags(); track $index) { @if(getTagInfo(tag); as tagInfo){
-
+  @for (tag of filteredTags(); track $index) {
   <span
     class="tag"
-    [ngClass]="{ 'tag-text-shadow': tagInfo.background }"
+    [ngClass]="{ 'tag-text-shadow': tag.background }"
     [ngStyle]="{
-      background: tagInfo.background ?? 'transparent',
-      color: tagInfo.color,
-      borderColor: tagInfo.border ?? 'transparent'
+      background: tag.background ?? 'transparent',
+      color: tag.color,
+      borderColor: tag.border ?? 'transparent'
     }"
-    [matTooltip]="tagInfo.tooltip | translate"
+    [matTooltip]="tag.tooltip | translate"
   >
-    {{ tagInfo.name | translate }}
+    {{ tag.name | translate }}
   </span>
-  } }
+  } @if(extraTagsAmount()){
+  <span class="extra-tag"> +{{ extraTagsAmount() }} </span>
+  }
 </div>

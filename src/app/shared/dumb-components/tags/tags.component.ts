@@ -1,9 +1,8 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { getTagInfo } from '../../functions/tags';
 import { NgClass, NgStyle } from '@angular/common';
-import { TAG } from '../../data/tags';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { Tag, TagType } from '../../data/tags';
 
 @Component({
   selector: 'app-tags',
@@ -12,7 +11,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   styleUrl: './tags.styles.scss',
 })
 export default class TagsComponent {
-  readonly getTagInfo = getTagInfo;
+  tags = input.required<Tag[]>();
+  tagsTypes = input.required<TagType[]>();
+  extraTagsAmount = input<number>();
 
-  tags = input.required<TAG[]>();
+  filteredTags = computed(() => {
+    return this.tags().filter((el) => this.tagsTypes().includes(el.type));
+  });
+
+  extraTags = computed(() => {
+    return this.tags().filter((el) => this.tagsTypes().includes(el.type));
+  });
 }

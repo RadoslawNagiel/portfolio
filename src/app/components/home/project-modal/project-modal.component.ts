@@ -7,7 +7,7 @@ import { Gallery, ImageItem } from 'ng-gallery';
 import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
 import { ProjectInfo } from '../../../shared/data/projects';
 import TagsComponent from '../../../shared/dumb-components/tags/tags.component';
-import { getTagInfo } from '../../../shared/functions/tags';
+import { TagType } from '../../../shared/data/tags';
 
 @Component({
   selector: 'app-project-modal',
@@ -23,7 +23,7 @@ import { getTagInfo } from '../../../shared/functions/tags';
   styleUrl: `project-modal.styles.scss`,
 })
 export class ProjectModalComponent implements OnInit {
-  readonly getTagInfo = getTagInfo;
+  readonly TagType = TagType;
   readonly galleryId = 'gallery-1';
 
   galleryItems = computed(() => {

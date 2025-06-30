@@ -39,7 +39,7 @@
     }
   </div>
 
-  <app-tags [tags]="project.tags" />
+  <app-tags [tags]="project.tags" [tagsTypes]="[TagType.projectType]" />
 
   <div
     class="project-description"
@@ -50,5 +50,14 @@
     {{ "projects.technologies" | translate }}
   </div>
 
-  <app-tags [tags]="project.technologies" />
+  <app-tags
+    [tags]="project.tags"
+    [tagsTypes]="[
+      TagType.language,
+      TagType.framework,
+      TagType.api,
+      TagType.library,
+      TagType.utility
+    ]"
+  />
 </mat-dialog-content>

@@ -1,12 +1,11 @@
-import { TAG } from './tags';
+import { Tag, TAGS } from './tags';
 
 export interface ProjectInfo {
   dateFrom: Date;
   dateTo?: Date;
   inProgress?: boolean;
   name: string;
-  tags: TAG[];
-  technologies: TAG[];
+  tags: Tag[];
   description: string;
   mainImage: string;
   images: {
@@ -24,18 +23,19 @@ export const PROJECTS: ProjectInfo[] = [
     inProgress: true,
     dateFrom: new Date(2024, 11, 26),
     name: `projects.targeto.name`,
-    tags: [TAG.private, TAG.mobileApp],
-    technologies: [
-      TAG.typescript,
-      TAG.angular18,
-      TAG.ionic,
-      TAG.tailwindcss,
-      TAG.ngxs,
-      TAG.chartJs,
-      TAG.ngxTranslate,
-      TAG.capacitor,
-      TAG.eslint,
-      TAG.firebase,
+    tags: [
+      TAGS[`private`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular18`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`ngxs`],
+      TAGS[`chartJs`],
+      TAGS[`ngxTranslate`],
+      TAGS[`capacitor`],
+      TAGS[`eslint`],
+      TAGS[`firebase`],
     ],
     description: `projects.targeto.description`,
     mainImage: `./images/targeto/main.jpg`,
@@ -69,8 +69,14 @@ export const PROJECTS: ProjectInfo[] = [
   {
     dateFrom: new Date(2025, 2, 18),
     name: `projects.quiz.name`,
-    tags: [TAG.private, TAG.webApp],
-    technologies: [TAG.typescript, TAG.angular19, TAG.ngxTranslate, TAG.eslint],
+    tags: [
+      TAGS[`private`],
+      TAGS[`webApp`],
+      TAGS[`typescript`],
+      TAGS[`angular19`],
+      TAGS[`ngxTranslate`],
+      TAGS[`eslint`],
+    ],
     description: `projects.quiz.description`,
     mainImage: `./images/quiz/main.jpg`,
     images: [
@@ -114,15 +120,16 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2024, 5, 11),
     dateTo: new Date(2025, 1, 17),
     name: `projects.wineryV2.name`,
-    tags: [TAG.private, TAG.mobileApp],
-    technologies: [
-      TAG.typescript,
-      TAG.angular17,
-      TAG.ionic,
-      TAG.tailwindcss,
-      TAG.ngxs,
-      TAG.capacitor,
-      TAG.eslint,
+    tags: [
+      TAGS[`private`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular17`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`ngxs`],
+      TAGS[`capacitor`],
+      TAGS[`eslint`],
     ],
     description: `projects.wineryV2.description`,
     mainImage: `./images/wineryV2/main.jpg`,
@@ -191,25 +198,27 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2023, 6, 16),
     dateTo: new Date(2024, 9, 30),
     name: `projects.safetyHab.name`,
-    tags: [TAG.professional, TAG.webApp, TAG.mobileApp],
-    technologies: [
-      TAG.typescript,
-      TAG.angular17,
-      TAG.angular16,
-      TAG.primeNG,
-      TAG.ionic,
-      TAG.tailwindcss,
-      TAG.apollo,
-      TAG.nestJS,
-      TAG.graphQl,
-      TAG.prisma,
-      TAG.echarts,
-      TAG.luxon,
-      TAG.ngxTranslate,
-      TAG.capacitor,
-      TAG.eslint,
-      TAG.keycloak,
-      TAG.sentry,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`webApp`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular17`],
+      TAGS[`angular16`],
+      TAGS[`primeNG`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`apollo`],
+      TAGS[`nestJS`],
+      TAGS[`graphQl`],
+      TAGS[`prisma`],
+      TAGS[`echarts`],
+      TAGS[`luxon`],
+      TAGS[`ngxTranslate`],
+      TAGS[`capacitor`],
+      TAGS[`eslint`],
+      TAGS[`keycloak`],
+      TAGS[`sentry`],
     ],
     description: `projects.safetyHab.description`,
     mainImage: `./images/safetyHab/main.jpg`,

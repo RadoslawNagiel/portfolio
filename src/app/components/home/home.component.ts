@@ -4,8 +4,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectInfo, PROJECTS } from '../../shared/data/projects';
 import TagsComponent from '../../shared/dumb-components/tags/tags.component';
-import { getTagInfo } from '../../shared/functions/tags';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { TagType } from '../../shared/data/tags';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 })
 export default class HomeComponent {
   readonly projects = PROJECTS;
-  readonly getTagInfo = getTagInfo;
+  readonly TagType = TagType;
 
   readonly dialog = inject(MatDialog);
 
@@ -23,5 +23,14 @@ export default class HomeComponent {
     this.dialog.open(ProjectModalComponent, {
       data: selectedProject,
     });
+  }
+
+  getProjectExtraTags(project: ProjectInfo) {
+    return structuredClone(project).tags.filter(
+      (el) =>
+        el.type === TagType.api ||
+        el.type === TagType.library ||
+        el.type === TagType.utility
+    );
   }
 }

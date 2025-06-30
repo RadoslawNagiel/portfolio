@@ -16,14 +16,18 @@
       <img [src]="project.mainImage" alt="image" />
     </div>
 
-    <app-tags [tags]="project.tags" />
+    <app-tags [tags]="project.tags" [tagsTypes]="[TagType.projectType]" />
 
     <div
       class="project-description"
       [innerHTML]="project.description | translate"
     ></div>
 
-    <app-tags [tags]="project.technologies" />
+    <app-tags
+      [tags]="project.tags"
+      [tagsTypes]="[TagType.language, TagType.framework]"
+      [extraTagsAmount]="getProjectExtraTags(project).length"
+    />
   </div>
   }
 </div>
