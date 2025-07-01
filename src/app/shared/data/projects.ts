@@ -224,46 +224,115 @@ export const PROJECTS: ProjectInfo[] = [
     mainImage: `./images/safetyHab/main.jpg`,
     images: [
       {
-        url: `./images/safetyHab/1.jpg`,
-        thumb: `./images/safetyHab/thumbnails/1.jpg`,
+        url: `./images/safetyHab/1.webp`,
+        thumb: `./images/safetyHab/thumbnails/1.webp`,
       },
       {
-        url: `./images/safetyHab/2.jpg`,
-        thumb: `./images/safetyHab/thumbnails/2.jpg`,
+        url: `./images/safetyHab/2.webp`,
+        thumb: `./images/safetyHab/thumbnails/2.webp`,
       },
       {
-        url: `./images/safetyHab/3.jpg`,
-        thumb: `./images/safetyHab/thumbnails/3.jpg`,
+        url: `./images/safetyHab/3.webp`,
+        thumb: `./images/safetyHab/thumbnails/3.webp`,
       },
       {
-        url: `./images/safetyHab/4.jpg`,
-        thumb: `./images/safetyHab/thumbnails/4.jpg`,
+        url: `./images/safetyHab/4.webp`,
+        thumb: `./images/safetyHab/thumbnails/4.webp`,
       },
       {
-        url: `./images/safetyHab/5.jpg`,
-        thumb: `./images/safetyHab/thumbnails/5.jpg`,
+        url: `./images/safetyHab/5.webp`,
+        thumb: `./images/safetyHab/thumbnails/5.webp`,
       },
       {
-        url: `./images/safetyHab/6.jpg`,
-        thumb: `./images/safetyHab/thumbnails/6.jpg`,
+        url: `./images/safetyHab/6.webp`,
+        thumb: `./images/safetyHab/thumbnails/6.webp`,
       },
       {
-        url: `./images/safetyHab/7.jpg`,
-        thumb: `./images/safetyHab/thumbnails/7.jpg`,
+        url: `./images/safetyHab/7.webp`,
+        thumb: `./images/safetyHab/thumbnails/7.webp`,
       },
       {
-        url: `./images/safetyHab/8.jpg`,
-        thumb: `./images/safetyHab/thumbnails/8.jpg`,
+        url: `./images/safetyHab/8.webp`,
+        thumb: `./images/safetyHab/thumbnails/8.webp`,
       },
       {
-        url: `./images/safetyHab/9.jpg`,
-        thumb: `./images/safetyHab/thumbnails/9.jpg`,
+        url: `./images/safetyHab/9.webp`,
+        thumb: `./images/safetyHab/thumbnails/9.webp`,
       },
     ],
     buttons: [
       {
         text: `projects.safetyHab.webPage`,
         url: `https://safetyhab.com/pl`,
+      },
+    ],
+  },
+  {
+    dateFrom: new Date(2021, 1, 10),
+    dateTo: new Date(2024, 6, 11),
+    name: `projects.lureForReal.name`,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`webApp`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular12`],
+      TAGS[`angular14`],
+      TAGS[`angular17`],
+      TAGS[`primeNG`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`apollo`],
+      TAGS[`nestJS`],
+      TAGS[`graphQl`],
+      TAGS[`prisma`],
+      TAGS[`ngxs`],
+      TAGS[`dateFns`],
+      TAGS[`ngxTranslate`],
+      TAGS[`capacitor`],
+      TAGS[`eslint`],
+      TAGS[`firebase`],
+    ],
+    description: `projects.lureForReal.description`,
+    mainImage: `./images/lureForReal/main.jpg`,
+    images: [
+      {
+        url: `./images/lureForReal/1.webp`,
+        thumb: `./images/lureForReal/thumbnails/1.webp`,
+      },
+      {
+        url: `./images/lureForReal/2.webp`,
+        thumb: `./images/lureForReal/thumbnails/2.webp`,
+      },
+      {
+        url: `./images/lureForReal/3.webp`,
+        thumb: `./images/lureForReal/thumbnails/3.webp`,
+      },
+      {
+        url: `./images/lureForReal/4.webp`,
+        thumb: `./images/lureForReal/thumbnails/4.webp`,
+      },
+      {
+        url: `./images/lureForReal/5.webp`,
+        thumb: `./images/lureForReal/thumbnails/5.webp`,
+      },
+      {
+        url: `./images/lureForReal/6.webp`,
+        thumb: `./images/lureForReal/thumbnails/6.webp`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.lureForReal.androidButton`,
+        url: `https://play.google.com/store/apps/details?id=com.lure4real.lure4real`,
+      },
+      {
+        text: `projects.lureForReal.iosButton`,
+        url: `https://apps.apple.com/pl/app/lure-for-real/id1618006854`,
+      },
+      {
+        text: `projects.lureForReal.webPage`,
+        url: `https://lure4real.com/`,
       },
     ],
   },

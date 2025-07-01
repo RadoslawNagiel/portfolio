@@ -90,6 +90,27 @@ export const TAGS: Tags = {
     tooltip: `filters.language`,
   },
 
+  angular12: {
+    type: TagType.framework,
+    name: `Angular 12`,
+    background: `#dd0031`,
+    color: `white`,
+    tooltip: `filters.framework`,
+  },
+  angular14: {
+    type: TagType.framework,
+    name: `Angular 14`,
+    background: `#dd0031`,
+    color: `white`,
+    tooltip: `filters.framework`,
+  },
+  angular15: {
+    type: TagType.framework,
+    name: `Angular 15`,
+    background: `#dd0031`,
+    color: `white`,
+    tooltip: `filters.framework`,
+  },
   angular16: {
     type: TagType.framework,
     name: `Angular 16`,
@@ -195,6 +216,13 @@ export const TAGS: Tags = {
     type: TagType.library,
     name: `Luxon`,
     background: `#B792FF`,
+    color: `white`,
+    tooltip: `filters.library`,
+  },
+  dateFns: {
+    type: TagType.library,
+    name: `date-fns`,
+    background: `#770C56`,
     color: `white`,
     tooltip: `filters.library`,
   },
