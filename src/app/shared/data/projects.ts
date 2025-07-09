@@ -336,4 +336,70 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
   },
+  {
+    dateFrom: new Date(2022, 12, 9),
+    dateTo: new Date(2023, 10, 10),
+    name: `projects.zdrowiej.name`,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular15`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`graphQl`],
+      TAGS[`ngxs`],
+      TAGS[`chartJs`],
+      TAGS[`echarts`],
+      TAGS[`dateFns`],
+      TAGS[`bluetoothLe`],
+      TAGS[`bluetoothSerial`],
+      TAGS[`capacitor`],
+      TAGS[`eslint`],
+      TAGS[`firebase`],
+      TAGS[`sentry`],
+    ],
+    description: `projects.zdrowiej.description`,
+    mainImage: `./images/zdrowiej/main.jpg`,
+    images: [
+      {
+        url: `./images/zdrowiej/1.webp`,
+        thumb: `./images/zdrowiej/thumbnails/1.webp`,
+      },
+      {
+        url: `./images/zdrowiej/2.webp`,
+        thumb: `./images/zdrowiej/thumbnails/2.webp`,
+      },
+      {
+        url: `./images/zdrowiej/3.webp`,
+        thumb: `./images/zdrowiej/thumbnails/3.webp`,
+      },
+      {
+        url: `./images/zdrowiej/4.webp`,
+        thumb: `./images/zdrowiej/thumbnails/4.webp`,
+      },
+      {
+        url: `./images/zdrowiej/5.webp`,
+        thumb: `./images/zdrowiej/thumbnails/5.webp`,
+      },
+      {
+        url: `./images/zdrowiej/6.webp`,
+        thumb: `./images/zdrowiej/thumbnails/6.webp`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.zdrowiej.androidButton`,
+        url: `https://play.google.com/store/apps/details?id=com.genexo.zdrowiej`,
+      },
+      {
+        text: `projects.zdrowiej.iosButton`,
+        url: `https://apps.apple.com/pl/app/zdrowiej/id1573385835`,
+      },
+      {
+        text: `projects.zdrowiej.webPage`,
+        url: `https://genexodladiabetyka.pl/aplikacje-i-programy/zdrowiej/`,
+      },
+    ],
+  },
 ];

@@ -233,6 +233,20 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.library`,
   },
+  bluetoothLe: {
+    type: TagType.library,
+    name: `bluetooth-le`,
+    background: `#0A3D91`,
+    color: `white`,
+    tooltip: `filters.library`,
+  },
+  bluetoothSerial: {
+    type: TagType.library,
+    name: `bluetooth-serial`,
+    background: `#0A3D91`,
+    color: `white`,
+    tooltip: `filters.library`,
+  },
 
   capacitor: {
     type: TagType.utility,
