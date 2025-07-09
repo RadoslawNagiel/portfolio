@@ -8,7 +8,8 @@ import { ThemeService } from './shared/services/theme.service';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-// import { FiltersModalComponent } from './shared/smart-components/filters-modal/filters-modal.component';
+import { FiltersModalComponent } from './shared/smart-components/filters-modal/filters-modal.component';
+import { FiltersService } from './shared/services/filters.service';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 export class AppComponent implements OnInit {
   readonly languageService = inject(LanguageService);
   readonly themeService = inject(ThemeService);
+  readonly filtersService = inject(FiltersService);
+
   readonly languages = environment.availableLanguages;
 
   readonly dialog = inject(MatDialog);
@@ -38,7 +41,7 @@ export class AppComponent implements OnInit {
     this.themeService.setMode(!this.themeService.isDarkThemeSelected());
   }
 
-  //   openFilters() {
-  //     this.dialog.open(FiltersModalComponent);
-  //   }
+  openFilters() {
+    this.dialog.open(FiltersModalComponent);
+  }
 }

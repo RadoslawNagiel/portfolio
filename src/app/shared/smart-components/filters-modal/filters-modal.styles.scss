@@ -1,0 +1,17 @@
+.filters {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2rem 2rem 0rem 2rem;
+  }
+  &-title {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+  }
+}
+
+app-tags {
+  display: block;
+  padding-bottom: 1rem;
+}

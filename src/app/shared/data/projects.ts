@@ -21,7 +21,7 @@ export interface ProjectInfo {
 export const PROJECTS: ProjectInfo[] = [
   {
     inProgress: true,
-    dateFrom: new Date(2024, 11, 26),
+    dateFrom: new Date(2024, 10, 26),
     name: `projects.targeto.name`,
     tags: [
       TAGS[`private`],
@@ -67,7 +67,7 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2025, 2, 18),
+    dateFrom: new Date(2025, 1, 18),
     name: `projects.quiz.name`,
     tags: [
       TAGS[`private`],
@@ -117,8 +117,8 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2024, 5, 11),
-    dateTo: new Date(2025, 1, 17),
+    dateFrom: new Date(2024, 4, 11),
+    dateTo: new Date(2025, 0, 17),
     name: `projects.wineryV2.name`,
     tags: [
       TAGS[`private`],
@@ -195,8 +195,8 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2023, 6, 16),
-    dateTo: new Date(2024, 9, 30),
+    dateFrom: new Date(2023, 5, 16),
+    dateTo: new Date(2024, 8, 30),
     name: `projects.safetyHab.name`,
     tags: [
       TAGS[`professional`],
@@ -268,8 +268,8 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2021, 1, 10),
-    dateTo: new Date(2024, 6, 11),
+    dateFrom: new Date(2021, 0, 10),
+    dateTo: new Date(2024, 5, 11),
     name: `projects.lureForReal.name`,
     tags: [
       TAGS[`professional`],
@@ -337,8 +337,8 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2022, 12, 9),
-    dateTo: new Date(2023, 10, 10),
+    dateFrom: new Date(2022, 11, 7),
+    dateTo: new Date(2023, 9, 10),
     name: `projects.zdrowiej.name`,
     tags: [
       TAGS[`professional`],

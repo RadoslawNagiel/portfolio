@@ -2,13 +2,18 @@
   @for (tag of filteredTags(); track $index) {
   <span
     class="tag"
-    [ngClass]="{ 'tag-text-shadow': tag.background }"
+    [ngClass]="{
+      'tag-text-shadow': tag.background,
+      'cursor-pointer': selectable(),
+      'not-selected': selectedTags().length && !isSelected(tag.name)
+    }"
     [ngStyle]="{
       background: tag.background ?? 'transparent',
       color: tag.color,
       borderColor: tag.border ?? 'transparent'
     }"
     [matTooltip]="tag.tooltip | translate"
+    (click)="tagClicked(tag)"
   >
     {{ tag.name | translate }}
   </span>

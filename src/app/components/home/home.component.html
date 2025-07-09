@@ -1,5 +1,5 @@
 <div class="projects-container">
-  @for (project of projects; track $index) {
+  @for (project of filtersService.filteredProjects(); track $index) {
   <div class="project" (click)="openDialog(project)">
     <div class="project-header">
       <div class="project-title">
@@ -29,8 +29,15 @@
       [extraTagsAmount]="getProjectExtraTags(project).length"
     />
   </div>
+  } @empty {
+  <div class="bottom-info">
+    {{ "noProjectsInfo" | translate }}
+  </div>
   }
 </div>
+
+@if(filtersService.filteredProjects().length){
 <div class="bottom-info">
   {{ "bottomInfo" | translate }}
 </div>
+}

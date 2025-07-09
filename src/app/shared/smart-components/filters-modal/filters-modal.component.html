@@ -1,0 +1,83 @@
+<div class="filters-header">
+  <div class="filters-title">{{ "filters.title" | translate }}</div>
+
+  <div>
+    <span mat-dialog-close class="material-symbols-outlined button">
+      close
+    </span>
+  </div>
+</div>
+
+<mat-dialog-content>
+  <app-filter-label
+    label="filters.projectType"
+    [filters]="filtersService.projectTypeFilter()"
+    (clear)="filtersService.projectTypeFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.projectType]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.projectTypeFilter"
+  />
+
+  <app-filter-label
+    label="filters.language"
+    [filters]="filtersService.languageFilter()"
+    (clear)="filtersService.languageFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.language]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.languageFilter"
+  />
+
+  <app-filter-label
+    label="filters.framework"
+    [filters]="filtersService.frameworkFilter()"
+    (clear)="filtersService.frameworkFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.framework]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.frameworkFilter"
+  />
+
+  <app-filter-label
+    label="filters.api"
+    [filters]="filtersService.apiFilter()"
+    (clear)="filtersService.apiFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.api]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.apiFilter"
+  />
+
+  <app-filter-label
+    label="filters.library"
+    [filters]="filtersService.libraryFilter()"
+    (clear)="filtersService.libraryFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.library]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.libraryFilter"
+  />
+
+  <app-filter-label
+    label="filters.utility"
+    [filters]="filtersService.utilityFilter()"
+    (clear)="filtersService.utilityFilter.set([])"
+  />
+  <app-tags
+    [tags]="allTags"
+    [tagsTypes]="[TagType.utility]"
+    [selectable]="true"
+    [(selectedTags)]="filtersService.utilityFilter"
+  />
+</mat-dialog-content>

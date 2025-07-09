@@ -3,9 +3,10 @@ import { Component, inject } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectInfo, PROJECTS } from '../../shared/data/projects';
-import TagsComponent from '../../shared/dumb-components/tags/tags.component';
-import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { TagType } from '../../shared/data/tags';
+import TagsComponent from '../../shared/dumb-components/tags/tags.component';
+import { FiltersService } from '../../shared/services/filters.service';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ export default class HomeComponent {
   readonly TagType = TagType;
 
   readonly dialog = inject(MatDialog);
+  readonly filtersService = inject(FiltersService);
 
   openDialog(selectedProject: ProjectInfo) {
     this.dialog.open(ProjectModalComponent, {
