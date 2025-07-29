@@ -5,7 +5,15 @@
   align-items: stretch;
   justify-content: center;
 
-  padding: 2rem 1rem;
+  padding: 2rem 10rem;
+
+  @media (max-width: 1920px) {
+    padding: 2rem 5rem;
+  }
+
+  @media (max-width: 1440px) {
+    padding: 2rem 1rem;
+  }
 }
 
 .project {

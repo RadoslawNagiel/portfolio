@@ -344,6 +344,94 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
+    dateFrom: new Date(2022, 5, 24),
+    dateTo: new Date(2024, 1, 12),
+    name: `projects.warlockIdle.name`,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`group`],
+      TAGS[`mobileApp`],
+      TAGS[`game`],
+      TAGS[`typescript`],
+      TAGS[`angular14`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`apollo`],
+      TAGS[`nestJS`],
+      TAGS[`graphQl`],
+      TAGS[`prisma`],
+      TAGS[`ngxs`],
+      TAGS[`dateFns`],
+      TAGS[`ngxTranslate`],
+      TAGS[`capacitor`],
+      TAGS[`scss`],
+      TAGS[`eslint`],
+      TAGS[`firebase`],
+    ],
+    description: `projects.warlockIdle.description`,
+    mainImage: `./images/warlockIdle/main.jpg`,
+    images: [
+      {
+        url: `./images/warlockIdle/1.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/2.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/3.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/4.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/5.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/6.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/7.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/8.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/9.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/10.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/10.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/11.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/11.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/12.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/12.jpg`,
+      },
+      {
+        url: `./images/warlockIdle/13.jpg`,
+        thumb: `./images/warlockIdle/thumbnails/13.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.warlockIdle.androidButton`,
+        url: `https://play.google.com/store/apps/details?id=pl.radrat.warlock_idle`,
+      },
+    ],
+  },
+  {
     dateFrom: new Date(2022, 11, 7),
     dateTo: new Date(2023, 9, 10),
     name: `projects.zdrowiej.name`,
