@@ -34,6 +34,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`chartJs`],
       TAGS[`ngxTranslate`],
       TAGS[`capacitor`],
+      TAGS[`scss`],
       TAGS[`eslint`],
       TAGS[`firebase`],
     ],
@@ -75,6 +76,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`typescript`],
       TAGS[`angular19`],
       TAGS[`ngxTranslate`],
+      TAGS[`scss`],
       TAGS[`eslint`],
     ],
     description: `projects.quiz.description`,
@@ -129,6 +131,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`tailwindcss`],
       TAGS[`ngxs`],
       TAGS[`capacitor`],
+      TAGS[`scss`],
       TAGS[`eslint`],
     ],
     description: `projects.wineryV2.description`,
@@ -200,6 +203,7 @@ export const PROJECTS: ProjectInfo[] = [
     name: `projects.safetyHab.name`,
     tags: [
       TAGS[`professional`],
+      TAGS[`group`],
       TAGS[`webApp`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
@@ -216,6 +220,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`luxon`],
       TAGS[`ngxTranslate`],
       TAGS[`capacitor`],
+      TAGS[`scss`],
       TAGS[`eslint`],
       TAGS[`keycloak`],
       TAGS[`sentry`],
@@ -273,6 +278,7 @@ export const PROJECTS: ProjectInfo[] = [
     name: `projects.lureForReal.name`,
     tags: [
       TAGS[`professional`],
+      TAGS[`group`],
       TAGS[`webApp`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
@@ -290,6 +296,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`dateFns`],
       TAGS[`ngxTranslate`],
       TAGS[`capacitor`],
+      TAGS[`scss`],
       TAGS[`eslint`],
       TAGS[`firebase`],
     ],
@@ -342,6 +349,7 @@ export const PROJECTS: ProjectInfo[] = [
     name: `projects.zdrowiej.name`,
     tags: [
       TAGS[`professional`],
+      TAGS[`group`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
       TAGS[`angular15`],
@@ -355,6 +363,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`bluetoothLe`],
       TAGS[`bluetoothSerial`],
       TAGS[`capacitor`],
+      TAGS[`scss`],
       TAGS[`eslint`],
       TAGS[`firebase`],
       TAGS[`sentry`],
@@ -399,6 +408,72 @@ export const PROJECTS: ProjectInfo[] = [
       {
         text: `projects.zdrowiej.webPage`,
         url: `https://genexodladiabetyka.pl/aplikacje-i-programy/zdrowiej/`,
+      },
+    ],
+  },
+  {
+    dateFrom: new Date(2021, 10, 13),
+    dateTo: new Date(2022, 1, 26),
+    name: `projects.winery.name`,
+    tags: [
+      TAGS[`private`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular12`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`capacitor`],
+      TAGS[`scss`],
+      TAGS[`eslint`],
+    ],
+    description: `projects.winery.description`,
+    mainImage: `./images/winery/main.jpg`,
+    images: [
+      {
+        url: `./images/winery/1.jpg`,
+        thumb: `./images/winery/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/winery/2.jpg`,
+        thumb: `./images/winery/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/winery/3.jpg`,
+        thumb: `./images/winery/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/winery/4.jpg`,
+        thumb: `./images/winery/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/winery/5.jpg`,
+        thumb: `./images/winery/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/winery/6.jpg`,
+        thumb: `./images/winery/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/winery/7.jpg`,
+        thumb: `./images/winery/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/winery/8.jpg`,
+        thumb: `./images/winery/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/winery/9.jpg`,
+        thumb: `./images/winery/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/winery/10.jpg`,
+        thumb: `./images/winery/thumbnails/10.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.winery.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/winery`,
       },
     ],
   },

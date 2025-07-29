@@ -255,6 +255,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.utility`,
   },
+  scss: {
+    type: TagType.utility,
+    name: `SCSS`,
+    background: `#CF649B`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
   eslint: {
     type: TagType.utility,
     name: `ESLint`,
