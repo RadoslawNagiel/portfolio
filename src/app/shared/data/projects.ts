@@ -432,6 +432,55 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
+    dateFrom: new Date(2023, 0, 5),
+    dateTo: new Date(2024, 0, 19),
+    name: `projects.rh.name`,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`group`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular15`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`graphQl`],
+      TAGS[`bluetoothLe`],
+      TAGS[`bluetoothSerial`],
+      TAGS[`capacitor`],
+      TAGS[`scss`],
+      TAGS[`eslint`],
+    ],
+    description: `projects.rh.description`,
+    mainImage: `./images/rh/main.jpg`,
+    images: [
+      {
+        url: `./images/rh/1.webp`,
+        thumb: `./images/rh/thumbnails/1.webp`,
+      },
+      {
+        url: `./images/rh/2.webp`,
+        thumb: `./images/rh/thumbnails/2.webp`,
+      },
+      {
+        url: `./images/rh/3.webp`,
+        thumb: `./images/rh/thumbnails/3.webp`,
+      },
+      {
+        url: `./images/rh/4.webp`,
+        thumb: `./images/rh/thumbnails/4.webp`,
+      },
+      {
+        url: `./images/rh/5.webp`,
+        thumb: `./images/rh/thumbnails/5.webp`,
+      },
+      {
+        url: `./images/rh/6.webp`,
+        thumb: `./images/rh/thumbnails/6.webp`,
+      },
+    ],
+    buttons: [],
+  },
+  {
     dateFrom: new Date(2022, 11, 7),
     dateTo: new Date(2023, 9, 10),
     name: `projects.zdrowiej.name`,
@@ -518,6 +567,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`bluetoothSerial`],
       TAGS[`capacitor`],
       TAGS[`scss`],
+      TAGS[`eslint`],
       TAGS[`sentry`],
     ],
     description: `projects.dkar.description`,
