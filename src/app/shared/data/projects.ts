@@ -500,6 +500,53 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
+    dateFrom: new Date(2023, 1, 21),
+    dateTo: new Date(2023, 7, 19),
+    name: `projects.dkar.name`,
+    tags: [
+      TAGS[`professional`],
+      TAGS[`group`],
+      TAGS[`mobileApp`],
+      TAGS[`typescript`],
+      TAGS[`angular15`],
+      TAGS[`ionic`],
+      TAGS[`tailwindcss`],
+      TAGS[`graphQl`],
+      TAGS[`luxon`],
+      TAGS[`ngxTranslate`],
+      TAGS[`bluetoothLe`],
+      TAGS[`bluetoothSerial`],
+      TAGS[`capacitor`],
+      TAGS[`scss`],
+      TAGS[`sentry`],
+    ],
+    description: `projects.dkar.description`,
+    mainImage: `./images/dkar/main.jpg`,
+    images: [
+      {
+        url: `./images/dkar/1.webp`,
+        thumb: `./images/dkar/thumbnails/1.webp`,
+      },
+      {
+        url: `./images/dkar/2.webp`,
+        thumb: `./images/dkar/thumbnails/2.webp`,
+      },
+      {
+        url: `./images/dkar/3.webp`,
+        thumb: `./images/dkar/thumbnails/3.webp`,
+      },
+      {
+        url: `./images/dkar/4.webp`,
+        thumb: `./images/dkar/thumbnails/4.webp`,
+      },
+      {
+        url: `./images/dkar/5.webp`,
+        thumb: `./images/dkar/thumbnails/5.webp`,
+      },
+    ],
+    buttons: [],
+  },
+  {
     dateFrom: new Date(2021, 10, 13),
     dateTo: new Date(2022, 1, 26),
     name: `projects.winery.name`,
