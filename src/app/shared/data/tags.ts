@@ -35,7 +35,7 @@ export const TAGS: Tags = {
   group: {
     type: TagType.projectType,
     name: `projectType.group`,
-    border: `#0affa5`,
+    border: `#8f6629`,
     color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },
@@ -287,6 +287,13 @@ export const TAGS: Tags = {
     type: TagType.utility,
     name: `Sentry`,
     background: `#864F90`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
+  unity: {
+    type: TagType.utility,
+    name: `Unity`,
+    background: `#808080`,
     color: `white`,
     tooltip: `filters.utility`,
   },

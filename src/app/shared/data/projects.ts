@@ -662,4 +662,62 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
   },
+  {
+    dateFrom: new Date(2021, 9, 3),
+    dateTo: new Date(2021, 9, 5),
+    name: `projects.akameis.name`,
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    description: `projects.akameis.description`,
+    mainImage: `./images/akameis/main.jpg`,
+    images: [
+      {
+        url: `./images/akameis/1.jpg`,
+        thumb: `./images/akameis/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/akameis/2.jpg`,
+        thumb: `./images/akameis/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/akameis/3.jpg`,
+        thumb: `./images/akameis/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/akameis/4.jpg`,
+        thumb: `./images/akameis/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/akameis/5.jpg`,
+        thumb: `./images/akameis/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/akameis/6.jpg`,
+        thumb: `./images/akameis/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/akameis/7.jpg`,
+        thumb: `./images/akameis/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/akameis/8.jpg`,
+        thumb: `./images/akameis/thumbnails/8.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.akameis.projectButton`,
+        url: `https://ldjam.com/events/ludum-dare/49/akameis`,
+      },
+      {
+        text: `projects.akameis.gameButton`,
+        url: `https://kawabart.itch.io/akameis`,
+      },
+    ],
+  },
 ];
