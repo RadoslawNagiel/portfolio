@@ -9,6 +9,7 @@ export interface ProjectInfo {
   description: string;
   mainImage: string;
   images: {
+    type?: `youtube`;
     url: string;
     thumb: string;
   }[];
@@ -664,7 +665,7 @@ export const PROJECTS: ProjectInfo[] = [
   },
   {
     dateFrom: new Date(2021, 9, 3),
-    dateTo: new Date(2021, 9, 5),
+    dateTo: new Date(2021, 10, 5),
     name: `projects.akameis.name`,
     tags: [
       TAGS[`private`],
@@ -719,5 +720,45 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://kawabart.itch.io/akameis`,
       },
     ],
+  },
+  {
+    dateFrom: new Date(2021, 9, 3),
+    dateTo: new Date(2021, 10, 5),
+    name: `projects.simulation.name`,
+    tags: [TAGS[`private`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
+    description: `projects.simulation.description`,
+    mainImage: `./images/simulation/main.jpg`,
+    images: [
+      {
+        type: `youtube`,
+        url: `YN8HpL22V7Y`,
+        thumb: `./images/simulation/thumbnails/video.jpg`,
+      },
+      {
+        url: `./images/simulation/1.jpg`,
+        thumb: `./images/simulation/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/simulation/2.jpg`,
+        thumb: `./images/simulation/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/simulation/3.jpg`,
+        thumb: `./images/simulation/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/simulation/4.jpg`,
+        thumb: `./images/simulation/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/simulation/5.jpg`,
+        thumb: `./images/simulation/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/simulation/6.jpg`,
+        thumb: `./images/simulation/thumbnails/6.jpg`,
+      },
+    ],
+    buttons: [],
   },
 ];

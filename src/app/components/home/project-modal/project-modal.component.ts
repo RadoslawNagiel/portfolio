@@ -3,7 +3,7 @@ import { Component, computed, Inject, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
-import { Gallery, ImageItem } from 'ng-gallery';
+import { Gallery, GalleryItemTypes, ImageItem, YoutubeItem } from 'ng-gallery';
 import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
 import { ProjectInfo } from '../../../shared/data/projects';
 import TagsComponent from '../../../shared/dumb-components/tags/tags.component';
@@ -27,9 +27,16 @@ export class ProjectModalComponent implements OnInit {
   readonly galleryId = 'gallery-1';
 
   galleryItems = computed(() => {
-    return this.project.images.map(
-      (el) => new ImageItem({ src: el.url, thumb: el.thumb })
-    );
+    return this.project.images.map((el) => {
+      const element = {
+        src: el.url,
+        thumb: el.thumb,
+      };
+      if (el.type === `youtube`) {
+        return new YoutubeItem(element);
+      }
+      return new ImageItem(element);
+    });
   });
 
   constructor(
