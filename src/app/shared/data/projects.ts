@@ -665,7 +665,7 @@ export const PROJECTS: ProjectInfo[] = [
   },
   {
     dateFrom: new Date(2021, 9, 3),
-    dateTo: new Date(2021, 10, 5),
+    // dateTo: new Date(2021, 10, 5),
     name: `projects.akameis.name`,
     tags: [
       TAGS[`private`],
@@ -722,8 +722,8 @@ export const PROJECTS: ProjectInfo[] = [
     ],
   },
   {
-    dateFrom: new Date(2021, 9, 3),
-    dateTo: new Date(2021, 10, 5),
+    dateFrom: new Date(2021, 2, 25),
+    // dateTo: new Date(2021, 2, 26),
     name: `projects.simulation.name`,
     tags: [TAGS[`private`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     description: `projects.simulation.description`,
@@ -759,6 +759,11 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/simulation/thumbnails/6.jpg`,
       },
     ],
-    buttons: [],
+    buttons: [
+      {
+        text: `projects.simulation.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/Symulacja`,
+      },
+    ],
   },
 ];
