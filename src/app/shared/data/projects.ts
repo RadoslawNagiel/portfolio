@@ -17,6 +17,7 @@ export interface ProjectInfo {
     text: string;
     url: string;
   }[];
+  color: string;
 }
 
 export const PROJECTS: ProjectInfo[] = [
@@ -67,6 +68,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/targeto/thumbnails/6.jpg`,
       },
     ],
+    color: `#5EB3B6`,
   },
   {
     dateFrom: new Date(2025, 1, 18),
@@ -118,6 +120,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://radoslawnagiel.github.io/MAE-quiz/`,
       },
     ],
+    color: `#6B2854`,
   },
   {
     dateFrom: new Date(2024, 4, 11),
@@ -197,6 +200,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://play.google.com/store/apps/details?id=com.bekarn.winery`,
       },
     ],
+    color: `#7A1616`,
   },
   {
     dateFrom: new Date(2023, 5, 16),
@@ -272,6 +276,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://safetyhab.com/pl`,
       },
     ],
+    color: `#EFBD46`,
   },
   {
     dateFrom: new Date(2021, 0, 10),
@@ -343,6 +348,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://lure4real.com/`,
       },
     ],
+    color: `#000A4C`,
   },
   {
     dateFrom: new Date(2022, 5, 24),
@@ -431,6 +437,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://play.google.com/store/apps/details?id=pl.radrat.warlock_idle`,
       },
     ],
+    color: `#301411`,
   },
   {
     dateFrom: new Date(2023, 0, 5),
@@ -479,6 +486,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/rh/thumbnails/6.webp`,
       },
     ],
+    color: `#3B7EFC`,
   },
   {
     dateFrom: new Date(2022, 11, 7),
@@ -547,6 +555,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://genexodladiabetyka.pl/aplikacje-i-programy/zdrowiej/`,
       },
     ],
+    color: `#08A0AF`,
   },
   {
     dateFrom: new Date(2023, 1, 21),
@@ -594,6 +603,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/dkar/thumbnails/5.webp`,
       },
     ],
+    color: `#3B7EFC`,
   },
   {
     dateFrom: new Date(2021, 10, 13),
@@ -660,6 +670,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://github.com/RadoslawNagiel/winery`,
       },
     ],
+    color: `#7A1616`,
   },
   {
     dateFrom: new Date(2021, 9, 3),
@@ -718,6 +729,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://kawabart.itch.io/akameis`,
       },
     ],
+    color: `#6E508A`,
   },
   {
     dateFrom: new Date(2021, 2, 25),
@@ -763,6 +775,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://github.com/RadoslawNagiel/Symulacja`,
       },
     ],
+    color: `#E5D7B0`,
   },
   {
     dateFrom: new Date(2019, 11, 1),
@@ -817,5 +830,6 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/lamp/thumbnails/6.jpg`,
       },
     ],
+    color: `#FF0000`,
   },
 ];

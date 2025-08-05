@@ -1,0 +1,12 @@
+<div class="timeline">
+  @for (date of monthsArray(); track $index) {
+  <div
+    class="timeline-date selected"
+    [ngClass]="{ selected: date.getFullYear() === selectedYear() }"
+  >
+    @if (date.getMonth() === 0) {
+    {{ date | date : "yyyy" }}
+    }
+  </div>
+  }
+</div>

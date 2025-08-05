@@ -1,6 +1,14 @@
-<div class="projects-container">
+<app-timeline
+  [ngStyle]="{ 'top.px': projectContainer.offsetTop + 8 }"
+  class="timeline"
+  [selectedYear]="selectedYear()"
+  [min]="minDate()"
+  [projects]="filtersService.filteredProjects()"
+/>
+
+<div #projectContainer class="projects-container">
   @for (project of filtersService.filteredProjects(); track $index) {
-  <div class="project" (click)="openDialog(project)">
+  <div #projectElement class="project" (click)="openDialog(project)">
     <div class="project-header">
       <div class="project-title">
         {{ project.name | translate }}
