@@ -89,6 +89,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.language`,
   },
+  arduino: {
+    type: TagType.language,
+    name: `Arduino`,
+    background: `#00979C`,
+    color: `white`,
+    tooltip: `filters.language`,
+  },
 
   angular12: {
     type: TagType.framework,

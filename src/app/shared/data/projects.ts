@@ -479,7 +479,6 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/rh/thumbnails/6.webp`,
       },
     ],
-    buttons: [],
   },
   {
     dateFrom: new Date(2022, 11, 7),
@@ -595,7 +594,6 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/dkar/thumbnails/5.webp`,
       },
     ],
-    buttons: [],
   },
   {
     dateFrom: new Date(2021, 10, 13),
@@ -763,6 +761,60 @@ export const PROJECTS: ProjectInfo[] = [
       {
         text: `projects.simulation.gitHubButton`,
         url: `https://github.com/RadoslawNagiel/Symulacja`,
+      },
+    ],
+  },
+  {
+    dateFrom: new Date(2019, 11, 1),
+    dateTo: new Date(2020, 3, 1),
+    name: `projects.lamp.name`,
+    tags: [TAGS[`private`], TAGS[`arduino`], TAGS[`cPlus`]],
+    description: `projects.lamp.description`,
+    mainImage: `./images/lamp/main.jpg`,
+    images: [
+      {
+        type: `youtube`,
+        url: `gkK5NovJHSE`,
+        thumb: `./images/lamp/thumbnails/video1.jpg`,
+      },
+      {
+        type: `youtube`,
+        url: `J5rgi0PkX6c`,
+        thumb: `./images/lamp/thumbnails/video2.jpg`,
+      },
+      {
+        type: `youtube`,
+        url: `akLKidme3Ug`,
+        thumb: `./images/lamp/thumbnails/video3.jpg`,
+      },
+      {
+        type: `youtube`,
+        url: `9yQyKkOA7x4`,
+        thumb: `./images/lamp/thumbnails/video4.jpg`,
+      },
+      {
+        url: `./images/lamp/1.jpg`,
+        thumb: `./images/lamp/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/lamp/2.jpg`,
+        thumb: `./images/lamp/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/lamp/3.jpg`,
+        thumb: `./images/lamp/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/lamp/4.jpg`,
+        thumb: `./images/lamp/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/lamp/5.jpg`,
+        thumb: `./images/lamp/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/lamp/6.jpg`,
+        thumb: `./images/lamp/thumbnails/6.jpg`,
       },
     ],
   },
