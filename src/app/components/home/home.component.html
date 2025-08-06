@@ -1,9 +1,11 @@
 <app-timeline
-  [ngStyle]="{ 'top.px': projectContainer.offsetTop + 8 }"
+  [ngStyle]="{ 'top.px': projectContainer.offsetTop }"
   class="timeline"
   [selectedYear]="selectedYear()"
   [min]="minDate()"
   [projects]="filtersService.filteredProjects()"
+  (projectClicked)="openDialog($event)"
+  (yearSelected)="scrollToYear($event)"
 />
 
 <div #projectContainer class="projects-container">

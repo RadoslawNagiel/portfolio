@@ -16,6 +16,7 @@ import TagsComponent from '../../shared/dumb-components/tags/tags.component';
 import { FiltersService } from '../../shared/services/filters.service';
 import { TimelineComponent } from '../../shared/smart-components/timeline/timeline.component';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'app-home',
@@ -63,8 +64,31 @@ export default class HomeComponent {
 
   minDate = computed(() => {
     const projects = this.filtersService.filteredProjects();
-    return projects[projects.length - 1].dateFrom;
+    return DateTime.fromJSDate(projects[projects.length - 1].dateFrom)
+      .startOf(`month`)
+      .minus({ month: 1 })
+      .toJSDate();
   });
+
+  scrollToYear(year: number) {
+    const index = this.projects.findIndex((el) => {
+      let projectYear = el.dateTo?.getFullYear();
+      if (!projectYear) {
+        if (el.inProgress) {
+          projectYear = new Date().getFullYear();
+        } else {
+          projectYear = el.dateFrom.getFullYear();
+        }
+      }
+      return projectYear <= year;
+    });
+    if (index !== -1) {
+      this.projectElements()[index].nativeElement.scrollIntoView({
+        behavior: `smooth`,
+        block: `end`,
+      });
+    }
+  }
 
   openDialog(selectedProject: ProjectInfo) {
     this.dialog.open(ProjectModalComponent, {

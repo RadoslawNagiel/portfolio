@@ -1,24 +1,78 @@
 .timeline {
   height: 100%;
 
-  width: 3rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--color-1);
+  box-shadow: 0 0 20px var(--color-1);
+
+  &-container {
+    display: flex;
+    height: 100%;
+  }
 
   &-date {
     padding-left: 0.5rem;
     height: 100%;
 
-    border-left: 2px solid var(--color-3);
+    border-left: 3px solid var(--color-3);
     opacity: 0.5;
 
     transition: all 200ms ease-in-out;
 
+    cursor: pointer;
+
     &.selected {
       opacity: 1 !important;
-      border-left: 2px solid var(--primary-theme) !important;
+      border-left: 3px solid var(--primary-theme) !important;
+    }
+
+    position: relative;
+    width: 2rem;
+    div {
+      position: absolute;
+      top: 0;
+      left: 0.3rem;
+    }
+  }
+
+  &-grid {
+    padding: 0px 2px;
+    display: flex;
+    height: 100%;
+
+    max-width: 0px;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
+    &-block {
+      position: relative;
+      width: 10px;
+      height: 100%;
+
+      &-border {
+        border-bottom: 1px var(--color-2) solid;
+      }
+    }
+
+    &-project {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border: 1px var(--text-color) solid;
+      border-radius: 2px;
+      margin: 0px 1px;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    .timeline-grid {
+      max-width: 200px;
+      opacity: 1;
     }
   }
 }

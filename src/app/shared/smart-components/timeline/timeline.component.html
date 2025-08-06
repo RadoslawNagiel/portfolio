@@ -1,12 +1,41 @@
 <div class="timeline">
-  @for (date of monthsArray(); track $index) {
-  <div
-    class="timeline-date selected"
-    [ngClass]="{ selected: date.getFullYear() === selectedYear() }"
-  >
-    @if (date.getMonth() === 0) {
-    {{ date | date : "yyyy" }}
-    }
+  @for (montData of monthsArray(); track $index) {
+  <div class="timeline-container">
+    <div class="timeline-grid">
+      @for (project of montData.projects; track $index) {
+      <div
+        class="timeline-grid-block"
+        [ngClass]="{ 'timeline-grid-block-border': !project }"
+        [ngStyle]="{
+          'border-width.px': montData.date.getMonth() === 0 ? 3 : 1
+        }"
+      >
+        @if(project && project.months; as months){
+        <div
+          class="timeline-grid-project"
+          [matTooltip]="project.name | translate"
+          [matTooltipPosition]="'right'"
+          [ngStyle]="{
+            'background-color': project.color,
+            'height.%': months * 100
+          }"
+          (click)="projectClick(project.name)"
+        ></div>
+        }
+      </div>
+      }
+    </div>
+    <div
+      class="timeline-date selected"
+      [ngClass]="{ selected: montData.date.getFullYear() === selectedYear() }"
+      (click)="yearSelected.emit(montData.date.getFullYear())"
+    >
+      @if (montData.date.getMonth() === 0) {
+      <div>
+        {{ montData.date | date : "yyyy" }}
+      </div>
+      }
+    </div>
   </div>
   }
 </div>

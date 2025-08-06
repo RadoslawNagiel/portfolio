@@ -775,7 +775,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://github.com/RadoslawNagiel/Symulacja`,
       },
     ],
-    color: `#E5D7B0`,
+    color: `#b0a176`,
   },
   {
     dateFrom: new Date(2019, 11, 1),

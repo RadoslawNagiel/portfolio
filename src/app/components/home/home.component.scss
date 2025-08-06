@@ -115,8 +115,9 @@ app-tags {
 .timeline {
   display: block;
   position: fixed;
-  bottom: 0.5rem;
-  left: 0.5rem;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
 
   @media (max-width: 800px) {
     display: none !important;
