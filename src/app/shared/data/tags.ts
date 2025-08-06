@@ -262,6 +262,20 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.utility`,
   },
+  dotNet: {
+    type: TagType.utility,
+    name: `.NET`,
+    background: `#512BD4`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
+  xamarin: {
+    type: TagType.utility,
+    name: `Xamarin`,
+    background: `#3498DB`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
   scss: {
     type: TagType.utility,
     name: `SCSS`,

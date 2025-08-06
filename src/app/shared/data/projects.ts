@@ -778,6 +778,62 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#b0a176`,
   },
   {
+    dateFrom: new Date(2020, 2, 23),
+    dateTo: new Date(2020, 5, 15),
+    name: `projects.inventory.name`,
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`mobileApp`],
+      TAGS[`cSharp`],
+      TAGS[`dotNet`],
+      TAGS[`xamarin`],
+    ],
+    description: `projects.inventory.description`,
+    mainImage: `./images/inventory/main.jpg`,
+    images: [
+      {
+        url: `./images/inventory/1.jpg`,
+        thumb: `./images/inventory/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/inventory/2.jpg`,
+        thumb: `./images/inventory/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/inventory/3.jpg`,
+        thumb: `./images/inventory/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/inventory/4.jpg`,
+        thumb: `./images/inventory/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/inventory/5.jpg`,
+        thumb: `./images/inventory/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/inventory/6.jpg`,
+        thumb: `./images/inventory/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/inventory/7.jpg`,
+        thumb: `./images/inventory/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/inventory/8.jpg`,
+        thumb: `./images/inventory/thumbnails/8.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.inventory.gitHubButton`,
+        url: `https://github.com/MikolajczukKamil/inwentaryzacja`,
+      },
+    ],
+    color: `#8EE3BA`,
+  },
+  {
     dateFrom: new Date(2019, 11, 1),
     dateTo: new Date(2020, 3, 1),
     name: `projects.lamp.name`,
