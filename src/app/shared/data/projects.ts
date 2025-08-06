@@ -732,6 +732,55 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#6E508A`,
   },
   {
+    dateFrom: new Date(2021, 2, 21),
+    dateTo: new Date(2021, 5, 21),
+    name: `projects.organizer.name`,
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`webApp`],
+      TAGS[`cSharp`],
+      TAGS[`dotNet`],
+    ],
+    description: `projects.organizer.description`,
+    mainImage: `./images/organizer/main.jpg`,
+    images: [
+      {
+        url: `./images/organizer/1.jpg`,
+        thumb: `./images/organizer/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/organizer/2.jpg`,
+        thumb: `./images/organizer/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/organizer/3.jpg`,
+        thumb: `./images/organizer/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/organizer/4.jpg`,
+        thumb: `./images/organizer/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/organizer/5.jpg`,
+        thumb: `./images/organizer/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/organizer/6.jpg`,
+        thumb: `./images/organizer/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/organizer/7.jpg`,
+        thumb: `./images/organizer/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/organizer/8.jpg`,
+        thumb: `./images/organizer/thumbnails/8.jpg`,
+      },
+    ],
+    color: `#8D3D99`,
+  },
+  {
     dateFrom: new Date(2021, 2, 25),
     // dateTo: new Date(2021, 2, 26),
     name: `projects.simulation.name`,
