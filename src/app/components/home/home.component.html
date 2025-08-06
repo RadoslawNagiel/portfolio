@@ -1,3 +1,4 @@
+@if(filtersService.filteredProjects().length){
 <app-timeline
   [ngStyle]="{ 'top.px': projectContainer.offsetTop }"
   class="timeline"
@@ -7,6 +8,7 @@
   (projectClicked)="openDialog($event)"
   (yearSelected)="scrollToYear($event)"
 />
+}
 
 <div #projectContainer class="projects-container">
   @for (project of filtersService.filteredProjects(); track $index) {

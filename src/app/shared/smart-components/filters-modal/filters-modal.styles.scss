@@ -4,6 +4,12 @@
     justify-content: space-between;
 
     margin: 2rem 2rem 0rem 2rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
   &-title {
     font-size: var(--font-size-3);

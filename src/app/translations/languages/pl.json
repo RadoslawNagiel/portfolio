@@ -24,7 +24,9 @@
     "framework": "Framework",
     "api": "API",
     "library": "Biblioteka",
-    "utility": "Narzędzie"
+    "utility": "Narzędzie",
+    "clearAllTooltip": "Wyczyść wszystkie filtry",
+    "clearTooltip": "Wyczyść filtr"
   },
   "projects": {
     "now": "aktualnie",

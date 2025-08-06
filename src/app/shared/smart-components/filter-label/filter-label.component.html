@@ -3,7 +3,11 @@
     {{ label() | translate }}
   </span>
   @if(filters().length){
-  <span class="material-symbols-outlined button" (click)="clear.emit()">
+  <span
+    class="material-symbols-outlined button"
+    [matTooltip]="'filters.clearTooltip' | translate"
+    (click)="clear.emit()"
+  >
     filter_alt_off
   </span>
   }

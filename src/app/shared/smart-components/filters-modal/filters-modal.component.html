@@ -1,5 +1,16 @@
 <div class="filters-header">
-  <div class="filters-title">{{ "filters.title" | translate }}</div>
+  <div>
+    <span class="filters-title">{{ "filters.title" | translate }}</span>
+    @if(filtersService.selectedFiltersAmount()){
+    <span
+      class="material-symbols-outlined button"
+      [matTooltip]="'filters.clearAllTooltip' | translate"
+      (click)="filtersService.clearAllFilters()"
+    >
+      filter_alt_off
+    </span>
+    }
+  </div>
 
   <div>
     <span mat-dialog-close class="material-symbols-outlined button">

@@ -6,6 +6,7 @@ import TagsComponent from '../../dumb-components/tags/tags.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FiltersService } from '../../services/filters.service';
 import { FilterLabelComponent } from '../filter-label/filter-label.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-filters-modal',
@@ -15,6 +16,7 @@ import { FilterLabelComponent } from '../filter-label/filter-label.component';
     TagsComponent,
     MatButtonModule,
     FilterLabelComponent,
+    MatTooltipModule,
   ],
   templateUrl: './filters-modal.component.html',
   styleUrl: `./filters-modal.styles.scss`,

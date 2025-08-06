@@ -64,6 +64,9 @@ export default class HomeComponent {
 
   minDate = computed(() => {
     const projects = this.filtersService.filteredProjects();
+    if (projects.length === 0) {
+      return new Date();
+    }
     return DateTime.fromJSDate(projects[projects.length - 1].dateFrom)
       .startOf(`month`)
       .minus({ month: 1 })

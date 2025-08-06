@@ -53,4 +53,13 @@ export class FiltersService {
   getOneIfNotEmpty(tags: Tag[]) {
     return tags.length ? 1 : 0;
   }
+
+  clearAllFilters() {
+    this.projectTypeFilter.set([]);
+    this.languageFilter.set([]);
+    this.frameworkFilter.set([]);
+    this.apiFilter.set([]);
+    this.libraryFilter.set([]);
+    this.utilityFilter.set([]);
+  }
 }
