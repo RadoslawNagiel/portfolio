@@ -10,6 +10,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FiltersModalComponent } from './shared/smart-components/filters-modal/filters-modal.component';
 import { FiltersService } from './shared/services/filters.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { FiltersService } from './shared/services/filters.service';
     MatBadgeModule,
     MatDialogModule,
   ],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
