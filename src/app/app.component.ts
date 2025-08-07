@@ -1,16 +1,15 @@
 import { Component, inject, OnInit } from '@angular/core';
+import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { environment } from './environments/environment';
+import { FiltersService } from './shared/services/filters.service';
 import { LanguageService } from './shared/services/language.service';
 import { ThemeService } from './shared/services/theme.service';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FiltersModalComponent } from './shared/smart-components/filters-modal/filters-modal.component';
-import { FiltersService } from './shared/services/filters.service';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +21,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatBadgeModule,
     MatDialogModule,
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

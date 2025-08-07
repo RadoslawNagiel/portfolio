@@ -90,7 +90,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.routerSubscription = new Subscription();
     this.routerSubscription.add(
-      this.activatedRoute.params.subscribe((res) => {
+      this.activatedRoute.queryParams.subscribe((res) => {
         const id = res[`project`];
         if (id) {
           const selectedProject = this.projects.find(
@@ -134,7 +134,11 @@ export default class HomeComponent implements OnInit, OnDestroy {
   }
 
   openProject(projectId: string) {
-    this.router.navigate([projectId]);
+    this.router.navigate([], {
+      queryParams: {
+        project: projectId,
+      },
+    });
   }
 
   getProjectExtraTags(project: ProjectInfo) {
