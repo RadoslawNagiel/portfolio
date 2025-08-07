@@ -77,7 +77,9 @@ export default class HomeComponent implements OnInit, OnDestroy {
   }
 
   minDate = computed(() => {
-    const projects = this.filtersService.filteredProjects();
+    const projects = structuredClone(
+      this.filtersService.filteredProjects()
+    ).sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime());
     if (projects.length === 0) {
       return new Date();
     }

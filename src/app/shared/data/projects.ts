@@ -921,4 +921,57 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#FF0000`,
   },
+  {
+    id: `craneSimulator`,
+    dateFrom: new Date(2020, 1, 1),
+    // dateFrom: new Date(2020, 0, 31),
+    // dateTo: new Date(2020, 1, 2),
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`arduino`],
+      TAGS[`cPlus`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/craneSimulator/main.jpg`,
+    images: [
+      {
+        url: `./images/craneSimulator/1.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/2.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/3.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/4.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/5.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/6.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/craneSimulator/7.jpg`,
+        thumb: `./images/craneSimulator/thumbnails/7.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.craneSimulator.gameButton`,
+        url: `https://bartdrown.itch.io/crane-simulator-polyjam`,
+      },
+    ],
+    color: `#F75121`,
+  },
 ];
