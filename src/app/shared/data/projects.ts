@@ -1,12 +1,11 @@
 import { Tag, TAGS } from './tags';
 
 export interface ProjectInfo {
+  id: string;
   dateFrom: Date;
   dateTo?: Date;
   inProgress?: boolean;
-  name: string;
   tags: Tag[];
-  description: string;
   mainImage: string;
   images: {
     type?: `youtube`;
@@ -22,9 +21,9 @@ export interface ProjectInfo {
 
 export const PROJECTS: ProjectInfo[] = [
   {
+    id: `targeto`,
     inProgress: true,
     dateFrom: new Date(2024, 10, 26),
-    name: `projects.targeto.name`,
     tags: [
       TAGS[`private`],
       TAGS[`mobileApp`],
@@ -40,7 +39,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`eslint`],
       TAGS[`firebase`],
     ],
-    description: `projects.targeto.description`,
     mainImage: `./images/targeto/main.jpg`,
     images: [
       {
@@ -71,8 +69,8 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#5EB3B6`,
   },
   {
+    id: `quiz`,
     dateFrom: new Date(2025, 1, 18),
-    name: `projects.quiz.name`,
     tags: [
       TAGS[`private`],
       TAGS[`webApp`],
@@ -82,7 +80,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`scss`],
       TAGS[`eslint`],
     ],
-    description: `projects.quiz.description`,
     mainImage: `./images/quiz/main.jpg`,
     images: [
       {
@@ -123,9 +120,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#6B2854`,
   },
   {
+    id: `wineryV2`,
     dateFrom: new Date(2024, 4, 11),
     dateTo: new Date(2025, 0, 17),
-    name: `projects.wineryV2.name`,
     tags: [
       TAGS[`private`],
       TAGS[`mobileApp`],
@@ -138,7 +135,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`scss`],
       TAGS[`eslint`],
     ],
-    description: `projects.wineryV2.description`,
     mainImage: `./images/wineryV2/main.jpg`,
     images: [
       {
@@ -203,9 +199,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#7A1616`,
   },
   {
+    id: `safetyHab`,
     dateFrom: new Date(2023, 5, 16),
     dateTo: new Date(2024, 8, 30),
-    name: `projects.safetyHab.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -230,7 +226,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`keycloak`],
       TAGS[`sentry`],
     ],
-    description: `projects.safetyHab.description`,
     mainImage: `./images/safetyHab/main.jpg`,
     images: [
       {
@@ -279,9 +274,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#EFBD46`,
   },
   {
+    id: `lureForReal`,
     dateFrom: new Date(2021, 0, 10),
     dateTo: new Date(2024, 5, 11),
-    name: `projects.lureForReal.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -306,7 +301,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`eslint`],
       TAGS[`firebase`],
     ],
-    description: `projects.lureForReal.description`,
     mainImage: `./images/lureForReal/main.jpg`,
     images: [
       {
@@ -351,9 +345,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#000A4C`,
   },
   {
+    id: `warlockIdle`,
     dateFrom: new Date(2022, 5, 24),
     dateTo: new Date(2024, 1, 12),
-    name: `projects.warlockIdle.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -375,7 +369,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`eslint`],
       TAGS[`firebase`],
     ],
-    description: `projects.warlockIdle.description`,
     mainImage: `./images/warlockIdle/main.jpg`,
     images: [
       {
@@ -440,9 +433,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#301411`,
   },
   {
+    id: `rh`,
     dateFrom: new Date(2023, 0, 5),
     dateTo: new Date(2024, 0, 19),
-    name: `projects.rh.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -458,7 +451,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`scss`],
       TAGS[`eslint`],
     ],
-    description: `projects.rh.description`,
     mainImage: `./images/rh/main.jpg`,
     images: [
       {
@@ -489,9 +481,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#3B7EFC`,
   },
   {
+    id: `zdrowiej`,
     dateFrom: new Date(2022, 11, 7),
     dateTo: new Date(2023, 9, 10),
-    name: `projects.zdrowiej.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -513,7 +505,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`firebase`],
       TAGS[`sentry`],
     ],
-    description: `projects.zdrowiej.description`,
     mainImage: `./images/zdrowiej/main.jpg`,
     images: [
       {
@@ -558,9 +549,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#08A0AF`,
   },
   {
+    id: `dkar`,
     dateFrom: new Date(2023, 1, 21),
     dateTo: new Date(2023, 7, 19),
-    name: `projects.dkar.name`,
     tags: [
       TAGS[`professional`],
       TAGS[`group`],
@@ -579,7 +570,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`eslint`],
       TAGS[`sentry`],
     ],
-    description: `projects.dkar.description`,
     mainImage: `./images/dkar/main.jpg`,
     images: [
       {
@@ -606,9 +596,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#3B7EFC`,
   },
   {
+    id: `winery`,
     dateFrom: new Date(2021, 10, 13),
     dateTo: new Date(2022, 1, 26),
-    name: `projects.winery.name`,
     tags: [
       TAGS[`private`],
       TAGS[`mobileApp`],
@@ -620,7 +610,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`scss`],
       TAGS[`eslint`],
     ],
-    description: `projects.winery.description`,
     mainImage: `./images/winery/main.jpg`,
     images: [
       {
@@ -673,9 +662,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#7A1616`,
   },
   {
+    id: `akameis`,
     dateFrom: new Date(2021, 9, 3),
     // dateTo: new Date(2021, 10, 5),
-    name: `projects.akameis.name`,
     tags: [
       TAGS[`private`],
       TAGS[`group`],
@@ -683,7 +672,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`cSharp`],
       TAGS[`unity`],
     ],
-    description: `projects.akameis.description`,
     mainImage: `./images/akameis/main.jpg`,
     images: [
       {
@@ -732,9 +720,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#6E508A`,
   },
   {
+    id: `organizer`,
     dateFrom: new Date(2021, 2, 21),
     dateTo: new Date(2021, 5, 21),
-    name: `projects.organizer.name`,
     tags: [
       TAGS[`private`],
       TAGS[`group`],
@@ -742,7 +730,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`cSharp`],
       TAGS[`dotNet`],
     ],
-    description: `projects.organizer.description`,
     mainImage: `./images/organizer/main.jpg`,
     images: [
       {
@@ -781,11 +768,10 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#8D3D99`,
   },
   {
+    id: `simulation`,
     dateFrom: new Date(2021, 2, 25),
     // dateTo: new Date(2021, 2, 26),
-    name: `projects.simulation.name`,
     tags: [TAGS[`private`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
-    description: `projects.simulation.description`,
     mainImage: `./images/simulation/main.jpg`,
     images: [
       {
@@ -827,9 +813,9 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#b0a176`,
   },
   {
+    id: `inventory`,
     dateFrom: new Date(2020, 2, 23),
     dateTo: new Date(2020, 5, 15),
-    name: `projects.inventory.name`,
     tags: [
       TAGS[`private`],
       TAGS[`group`],
@@ -838,7 +824,6 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`dotNet`],
       TAGS[`xamarin`],
     ],
-    description: `projects.inventory.description`,
     mainImage: `./images/inventory/main.jpg`,
     images: [
       {
@@ -883,11 +868,10 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#8EE3BA`,
   },
   {
+    id: `lamp`,
     dateFrom: new Date(2019, 11, 1),
     dateTo: new Date(2020, 3, 1),
-    name: `projects.lamp.name`,
     tags: [TAGS[`private`], TAGS[`arduino`], TAGS[`cPlus`]],
-    description: `projects.lamp.description`,
     mainImage: `./images/lamp/main.jpg`,
     images: [
       {

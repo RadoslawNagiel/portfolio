@@ -12,7 +12,7 @@ export interface MontBlock {
   date: Date;
   projects: (
     | {
-        name: string;
+        id: string;
         color: string;
         months?: number;
       }
@@ -42,7 +42,7 @@ export class TimelineComponent {
 
   projects = input<ProjectInfo[]>([]);
 
-  projectClicked = output<ProjectInfo>();
+  projectClicked = output<string>();
   yearSelected = output<number>();
 
   monthsArray = computed(() => {
@@ -103,7 +103,7 @@ export class TimelineComponent {
         if (i >= elementsFirstIndex && i < elementsFirstIndex + months) {
           elements[i].projects[index] = {
             color: el.color,
-            name: el.name,
+            id: el.id,
             months: i === elementsFirstIndex ? months : undefined,
           };
         } else {
@@ -118,14 +118,5 @@ export class TimelineComponent {
 
   getNArray(amount: number) {
     return Array.from(Array(amount).keys());
-  }
-
-  projectClick(name: string) {
-    const project = structuredClone(
-      this.projects().find((el) => el.name === name)
-    );
-    if (project) {
-      this.projectClicked.emit(project);
-    }
   }
 }

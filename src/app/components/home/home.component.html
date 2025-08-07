@@ -5,17 +5,17 @@
   [selectedYear]="selectedYear()"
   [min]="minDate()"
   [projects]="filtersService.filteredProjects()"
-  (projectClicked)="openDialog($event)"
+  (projectClicked)="openProject($event)"
   (yearSelected)="scrollToYear($event)"
 />
 }
 
 <div #projectContainer class="projects-container">
   @for (project of filtersService.filteredProjects(); track $index) {
-  <div #projectElement class="project" (click)="openDialog(project)">
+  <div #projectElement class="project" (click)="openProject(project.id)">
     <div class="project-header">
       <div class="project-title">
-        {{ project.name | translate }}
+        {{ "projects." + project.id + ".name" | translate }}
       </div>
       <div class="project-date">
         {{ project.dateFrom | date : "MM/yyyy" }}
@@ -32,7 +32,7 @@
 
     <div
       class="project-description"
-      [innerHTML]="project.description | translate"
+      [innerHTML]="'projects.' + project.id + '.description' | translate"
     ></div>
 
     <app-tags

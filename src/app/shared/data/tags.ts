@@ -68,13 +68,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.language`,
   },
-  javaScript: {
-    type: TagType.language,
-    name: `JavaScript`,
-    background: `#F7DF1E`,
-    color: `black`,
-    tooltip: `filters.language`,
-  },
+  //   javaScript: {
+  //     type: TagType.language,
+  //     name: `JavaScript`,
+  //     background: `#F7DF1E`,
+  //     color: `black`,
+  //     tooltip: `filters.language`,
+  //   },
   cSharp: {
     type: TagType.language,
     name: `C#`,

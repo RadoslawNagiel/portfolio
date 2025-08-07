@@ -32,7 +32,7 @@
             ],
             "styles": ["src/styles.scss", "src/styles/index.scss"],
             "scripts": [],
-            "baseHref": "/portfolio/"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {

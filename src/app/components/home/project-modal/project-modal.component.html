@@ -1,7 +1,7 @@
 <div class="project-header">
   <div>
     <div class="project-title">
-      {{ project.name | translate }}
+      {{ "projects." + project.id + ".name" | translate }}
     </div>
     <div class="project-date">
       {{ project.dateFrom | date : "MM/yyyy" }}
@@ -43,7 +43,7 @@
 
   <div
     class="project-description"
-    [innerHTML]="project.description | translate"
+    [innerHTML]="'projects.' + project.id + '.description' | translate"
   ></div>
 
   <div class="technologies">

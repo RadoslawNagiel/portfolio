@@ -13,13 +13,13 @@
         @if(project && project.months; as months){
         <div
           class="timeline-grid-project"
-          [matTooltip]="project.name | translate"
+          [matTooltip]="'projects.' + project.id + '.name' | translate"
           [matTooltipPosition]="'right'"
           [ngStyle]="{
             'background-color': project.color,
             'height.%': months * 100
           }"
-          (click)="projectClick(project.name)"
+          (click)="projectClicked.emit(project.id)"
         ></div>
         }
       </div>

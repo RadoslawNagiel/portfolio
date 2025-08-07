@@ -3,7 +3,7 @@ import { Component, computed, Inject, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
-import { Gallery, GalleryItemTypes, ImageItem, YoutubeItem } from 'ng-gallery';
+import { Gallery, ImageItem, YoutubeItem } from 'ng-gallery';
 import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
 import { ProjectInfo } from '../../../shared/data/projects';
 import TagsComponent from '../../../shared/dumb-components/tags/tags.component';
