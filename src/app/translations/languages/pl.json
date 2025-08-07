@@ -13,6 +13,7 @@
     "private": "Prywatny",
     "professional": "Zawodowy",
     "group": "Grupowy",
+    "individual": "Indywidualny",
     "webApp": "Aplikacja webowa",
     "mobileApp": "Aplikacja mobilna",
     "game": "Gra"
@@ -86,7 +87,7 @@
     },
     "akameis": {
       "name": "Akameis",
-      "projectButton": "Strona projektu",
+      "gameJamButton": "Strona Game Jamu",
       "gameButton": "Gra",
       "description": "<b>Gra platformowa stworzona w ramach game jamu Ludum Dare 49</b><br>Projekt prywatny – zespół 5 osób<br><br><b>Opis:</b><br>Akameis to turowa gra platformowa, w której gracz przemierza kolejne piętra tajemniczej wieży, pokonując przeciwników i wykorzystując różne umiejętności, aby dotrzeć na szczyt. Rozgrywka łączy elementy eksploracji, walki oraz budowania, a jej unikalnym wyróżnikiem jest mechanika wymuszonych tur – każdy ruch należy wykonać w ograniczonym czasie. Styl graficzny oparty na wektorowych ilustracjach nadaje grze charakterystyczny, minimalistyczny wygląd.<br><br><b>Funkcje kluczowe:</b><br>- Przechodzenie kolejnych poziomów reprezentujących piętra wieży<br>- Niszczenie obiektów za pomocą młota<br>- Stawianie bomb niszczących wszystko w zasięgu<br>- Strzelanie do przeciwników z łuku<br>- Budowanie drewnianych platform<br>- Trzy typy przeciwników o różnych zachowaniach<br>- System tur z ograniczonym czasem na wykonanie ruchu<br><br><b>Moja rola:</b><br>- Programowanie i implementacja kluczowych mechanik rozgrywki<br>- Wdrażanie logiki obsługującej interakcję gracza z obiektami i przeciwnikami<br>- Tworzenie elementów odpowiadających za niszczenie, budowanie i atakowanie wrogów"
     },
@@ -97,6 +98,13 @@
     "simulation": {
       "name": "Symulacja skrzyżowania",
       "description": "<b>Symulacja ruchu drogowego na skrzyżowaniach</b><br>Projekt prywatny<br><br><b>Opis:</b><br>Symulacja ruchu drogowego stworzona w Unity jako projekt akademicki w ramach przedmiotu <i>Symulacja</i>. Obejmuje trzy typy skrzyżowań: kolizyjne ze światłami, bezkolizyjne ze światłami oraz rondo turbinowe. Użytkownik może uruchamiać i pauzować symulację, sterować kamerą (trzy widoki dla każdego skrzyżowania), a także regulować prędkość upływu czasu w skali od 1× do 10×.<br><br>Symulacja prezentuje aktualną oraz średnią przepustowość pojazdów (w samochodach na minutę). Pojazdy reagują na sygnalizację świetlną, poruszają się zgodnie z wyznaczonymi trasami (jazda prosto, w lewo, w prawo) i uwzględniają pojazdy znajdujące się na kursie kolizyjnym, co pozwala odzwierciedlić realistyczne zachowania w ruchu drogowym.<br><br><b>Funkcje kluczowe:</b><br>- Trzy rodzaje skrzyżowań: kolizyjne, bezkolizyjne, rondo turbinowe<br>- Uruchamianie i zatrzymywanie symulacji<br>- Trzy widoki kamery dla każdego skrzyżowania<br>- Regulacja prędkości czasu (1×–10×)<br>- Pomiar i prezentacja przepustowości ruchu w czasie rzeczywistym<br>- Realistyczne zachowania pojazdów w reakcji na światła i ruch innych aut<br><br><b>Moja rola:</b><br>- Pełna realizacja projektu – od koncepcji po implementację",
+      "gitHubButton": "GitHub"
+    },
+    "spaceTaxi": {
+      "name": "Space Taxi",
+      "description": "<b>Gra zręcznościowa z mechaniką ścigania własnych cieni</b><br>Projekt prywatny<br><br><b>Opis:</b><br>Gra stworzona w ramach game jamu Ludum Dare 47, w ciągu 48 godzin. Gracz wciela się w kosmitę, którego celem jest jak najszybsze dotarcie do taksówki. Po każdej udanej rundzie gra się resetuje – ale tym razem gracz musi konkurować ze swoim cieniem, który dokładnie powtarza jego wcześniejsze ruchy. W każdej kolejnej rundzie pojawia się nowy cień, co sprawia, że gra staje się coraz trudniejsza i bardziej dynamiczna.<br><br>Aby zwiększyć swoje szanse, gracz może rozmieszczać przeszkody na trasie, blokując drogę swoim wcześniejszym wcieleniom i tym samym zyskując przewagę.<br><br><b>Funkcje kluczowe:</b><br>- Unikalna mechanika cieni odwzorowujących ruchy gracza z poprzednich rund<br>- Stopniowe zwiększanie poziomu trudności poprzez dodawanie kolejnych cieni<br>- Możliwość strategicznego rozmieszczania przeszkód<br>- Dynamiczna rozgrywka i rosnące tempo<br>- Styl graficzny dopasowany do estetyki jamowej gry indie<br><br><b>Moja rola:</b><br>- Pełna odpowiedzialność za projekt – od pomysłu, przez implementację, po publikację gry",
+      "gameButton": "Gra",
+      "gameJamButton": "Strona Game Jamu",
       "gitHubButton": "GitHub"
     },
     "inventory": {

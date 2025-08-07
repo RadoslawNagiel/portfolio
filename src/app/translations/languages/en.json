@@ -13,6 +13,7 @@
     "private": "Private",
     "professional": "Professional",
     "group": "Group",
+    "individual": "Individual",
     "webApp": "Web app",
     "mobileApp": "Mobile app",
     "game": "Game"
@@ -86,7 +87,7 @@
     },
     "akameis": {
       "name": "Akameis",
-      "projectButton": "Project website",
+      "gameJamButton": "Game Jam website",
       "gameButton": "Game",
       "description": "<b>Platform game created during Ludum Dare 49 game jam</b><br>Private project – team of 5 people  <br><br><b>Description:</b><br>Akameis is a turn-based platformer in which the player ascends through successive floors of a mysterious tower, defeating enemies and using various abilities to reach the top. The gameplay combines elements of exploration, combat, and building, with its unique feature being the forced-turn mechanic – each move must be made within a limited time. The vector-based art style gives the game a distinctive, minimalist look.  <br><br><b>Key Features:</b><br>- Progression through levels representing different floors of the tower  <br>- Destroying objects using a hammer  <br>- Placing bombs that destroy everything within range  <br>- Shooting enemies with a bow  <br>- Building wooden platforms  <br>- Three types of enemies with different behaviors  <br>- Turn-based system with a time limit for each move  <br><br><b>My Role:</b><br>- Programming and implementing core gameplay mechanics  <br>- Developing logic for player interactions with objects and enemies  <br>- Creating elements for destroying, building, and attacking enemies  "
     },
@@ -97,6 +98,13 @@
     "simulation": {
       "name": "Intersection simulation",
       "description": "<b>Traffic Simulation at Intersections</b><br>Private project<br><br><b>Description:</b><br>A traffic simulation created in Unity as an academic project for the <i>Simulation</i> course. It includes three types of intersections: signalized intersections with potential conflicts, signalized conflict-free intersections, and a turbo roundabout. The user can start and pause the simulation, control the camera (three different views for each intersection), and adjust the time speed from 1× to 10×.<br><br>The simulation displays both the current and average traffic throughput (in vehicles per minute). Vehicles respond to traffic lights, follow predefined routes (straight, left turn, right turn), and react to other vehicles on a collision course, accurately reflecting realistic traffic behavior.<br><br><b>Key features:</b><br>- Three types of intersections: signalized with conflicts, signalized conflict-free, turbo roundabout<br>- Start and stop simulation controls<br>- Three camera views for each intersection<br>- Adjustable simulation speed (1×–10×)<br>- Real-time measurement and display of traffic throughput<br>- Realistic vehicle behavior in response to lights and other traffic<br><br><b>My role:</b><br>- Full project execution – from concept to implementation",
+      "gitHubButton": "GitHub"
+    },
+    "spaceTaxi": {
+      "name": "Space Taxi",
+      "description": "<b>Arcade game with shadow-chasing mechanics</b><br>Private project<br><br><b>Description:</b><br>The game was developed during the Ludum Dare 47 game jam within 48 hours. The player takes on the role of an alien whose goal is to reach a taxi as quickly as possible. After each successful round, the game resets – but this time, the player competes against their own shadow, which perfectly replicates their previous movements. With each round, a new shadow appears, making the game increasingly challenging and dynamic.<br><br>To increase the chance of success, the player can place obstacles along the path to block their previous selves and gain an advantage.<br><br><b>Key features:</b><br>- Unique mechanic of shadows that replicate the player’s movements from previous rounds<br>- Gradually increasing difficulty by adding more shadows each round<br>- Strategic obstacle placement to hinder past selves<br>- Fast-paced and dynamic gameplay<br>- Visual style inspired by indie game jam aesthetics<br><br><b>My role:</b><br>- Full responsibility for the project – from concept and development to publishing the game",
+      "gameButton": "Game",
+      "gameJamButton": "Game Jam website",
       "gitHubButton": "GitHub"
     },
     "inventory": {

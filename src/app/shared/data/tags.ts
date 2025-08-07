@@ -35,7 +35,14 @@ export const TAGS: Tags = {
   group: {
     type: TagType.projectType,
     name: `projectType.group`,
-    border: `#8f6629`,
+    border: `#785623`,
+    color: `var(--text-color)`,
+    tooltip: `filters.projectType`,
+  },
+  individual: {
+    type: TagType.projectType,
+    name: `projectType.individual`,
+    border: `#ff731c`,
     color: `var(--text-color)`,
     tooltip: `filters.projectType`,
   },

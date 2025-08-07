@@ -26,6 +26,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2024, 10, 26),
     tags: [
       TAGS[`private`],
+      TAGS[`individual`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
       TAGS[`angular18`],
@@ -73,6 +74,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2025, 1, 18),
     tags: [
       TAGS[`private`],
+      TAGS[`individual`],
       TAGS[`webApp`],
       TAGS[`typescript`],
       TAGS[`angular19`],
@@ -125,6 +127,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateTo: new Date(2025, 0, 17),
     tags: [
       TAGS[`private`],
+      TAGS[`individual`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
       TAGS[`angular17`],
@@ -601,6 +604,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateTo: new Date(2022, 1, 26),
     tags: [
       TAGS[`private`],
+      TAGS[`individual`],
       TAGS[`mobileApp`],
       TAGS[`typescript`],
       TAGS[`angular12`],
@@ -709,7 +713,7 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     buttons: [
       {
-        text: `projects.akameis.projectButton`,
+        text: `projects.akameis.gameJamButton`,
         url: `https://ldjam.com/events/ludum-dare/49/akameis`,
       },
       {
@@ -771,7 +775,13 @@ export const PROJECTS: ProjectInfo[] = [
     id: `simulation`,
     dateFrom: new Date(2021, 2, 25),
     // dateTo: new Date(2021, 2, 26),
-    tags: [TAGS[`private`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
     mainImage: `./images/simulation/main.jpg`,
     images: [
       {
@@ -811,6 +821,64 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
     color: `#b0a176`,
+  },
+  {
+    id: `spaceTaxi`,
+    dateFrom: new Date(2020, 9, 4),
+    // dateTo: new Date(2020, 9, 5),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/spaceTaxi/main.jpg`,
+    images: [
+      {
+        url: `./images/spaceTaxi/1.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/2.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/3.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/4.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/5.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/6.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/spaceTaxi/7.jpg`,
+        thumb: `./images/spaceTaxi/thumbnails/7.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.spaceTaxi.gameButton`,
+        url: `https://radzios.itch.io/space-taxt`,
+      },
+      {
+        text: `projects.spaceTaxi.gameJamButton`,
+        url: `https://ldjam.com/events/ludum-dare/47/space-taxi`,
+      },
+      {
+        text: `projects.spaceTaxi.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/LD47`,
+      },
+    ],
+    color: `#E419E5`,
   },
   {
     id: `inventory`,
@@ -871,7 +939,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `lamp`,
     dateFrom: new Date(2019, 11, 1),
     dateTo: new Date(2020, 3, 1),
-    tags: [TAGS[`private`], TAGS[`arduino`], TAGS[`cPlus`]],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`], TAGS[`cPlus`]],
     mainImage: `./images/lamp/main.jpg`,
     images: [
       {

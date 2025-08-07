@@ -4,7 +4,8 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "thumbnails": "magick mogrify -path thumbnails -resize x200 -format jpg -quality 85 *.jpg"
+    "thumbnails": "magick mogrify -path thumbnails -resize x200 -format jpg -quality 85 *.jpg",
+    "pngToJpg": "magick mogrify -format jpg *.png"
   },
   "private": true,
   "dependencies": {
