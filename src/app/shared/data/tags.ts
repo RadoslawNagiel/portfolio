@@ -218,6 +218,20 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.api`,
   },
+  mySQL: {
+    type: TagType.api,
+    name: `MySQL`,
+    background: `#136494`,
+    color: `white`,
+    tooltip: `filters.api`,
+  },
+  xampp: {
+    type: TagType.api,
+    name: `XAMPP`,
+    background: `#FB7923`,
+    color: `white`,
+    tooltip: `filters.api`,
+  },
 
   ngxs: {
     type: TagType.library,
@@ -336,6 +350,13 @@ export const TAGS: Tags = {
     type: TagType.utility,
     name: `Unity`,
     background: `#808080`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
+  blender: {
+    type: TagType.utility,
+    name: `Blender`,
+    background: `#E97601`,
     color: `white`,
     tooltip: `filters.utility`,
   },

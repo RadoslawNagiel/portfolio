@@ -826,7 +826,12 @@ export const PROJECTS: ProjectInfo[] = [
     id: `printer`,
     dateFrom: new Date(2020, 1, 27),
     dateTo: new Date(2020, 9, 26),
-    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`]],
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`arduino`],
+      TAGS[`blender`],
+    ],
     mainImage: `./images/printer/main.jpg`,
     images: [
       {
@@ -929,7 +934,14 @@ export const PROJECTS: ProjectInfo[] = [
   {
     id: `guessPhrase`,
     dateFrom: new Date(2020, 5, 27),
-    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`php`], TAGS[`sql`]],
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`php`],
+      TAGS[`sql`],
+      TAGS[`mySQL`],
+      TAGS[`xampp`],
+    ],
     mainImage: `./images/guessPhrase/main.jpg`,
     images: [
       {
@@ -1113,6 +1125,90 @@ export const PROJECTS: ProjectInfo[] = [
       {
         text: `projects.craneSimulator.gameButton`,
         url: `https://bartdrown.itch.io/crane-simulator-polyjam`,
+      },
+    ],
+    color: `#F75121`,
+  },
+  {
+    id: `thief`,
+    dateFrom: new Date(2018, 2, 29),
+    dateTo: new Date(2019, 7, 19),
+    tags: [
+      TAGS[`private`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+      TAGS[`blender`],
+    ],
+    mainImage: `./images/thief/main.jpg`,
+    images: [
+      {
+        url: `./images/thief/1.jpg`,
+        thumb: `./images/thief/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/thief/2.jpg`,
+        thumb: `./images/thief/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/thief/3.jpg`,
+        thumb: `./images/thief/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/thief/4.jpg`,
+        thumb: `./images/thief/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/thief/5.jpg`,
+        thumb: `./images/thief/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/thief/6.jpg`,
+        thumb: `./images/thief/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/thief/7.jpg`,
+        thumb: `./images/thief/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/thief/8.jpg`,
+        thumb: `./images/thief/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/thief/9.jpg`,
+        thumb: `./images/thief/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/thief/10.jpg`,
+        thumb: `./images/thief/thumbnails/10.jpg`,
+      },
+      {
+        url: `./images/thief/11.jpg`,
+        thumb: `./images/thief/thumbnails/11.jpg`,
+      },
+      {
+        url: `./images/thief/12.jpg`,
+        thumb: `./images/thief/thumbnails/12.jpg`,
+      },
+      {
+        url: `./images/thief/13.jpg`,
+        thumb: `./images/thief/thumbnails/13.jpg`,
+      },
+      {
+        url: `./images/thief/14.jpg`,
+        thumb: `./images/thief/thumbnails/14.jpg`,
+      },
+      {
+        url: `./images/thief/15.jpg`,
+        thumb: `./images/thief/thumbnails/15.jpg`,
+      },
+      {
+        url: `./images/thief/16.jpg`,
+        thumb: `./images/thief/thumbnails/16.jpg`,
+      },
+      {
+        url: `./images/thief/17.jpg`,
+        thumb: `./images/thief/thumbnails/17.jpg`,
       },
     ],
     color: `#F75121`,
