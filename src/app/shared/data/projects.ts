@@ -1211,7 +1211,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/thief/thumbnails/17.jpg`,
       },
     ],
-    color: `#F75121`,
+    color: `#6C2221`,
   },
   {
     id: `dothing`,
@@ -1312,5 +1312,59 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
     color: `#76428a`,
+  },
+  {
+    id: `sftk`,
+    dateFrom: new Date(2018, 11, 2),
+    // dateTo: new Date(2018, 11, 3),
+    tags: [
+      TAGS[`private`],
+      TAGS[`mobileApp`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/sftk/main.jpg`,
+    images: [
+      {
+        url: `./images/sftk/1.gif`,
+        thumb: `./images/sftk/thumbnails/1.gif`,
+      },
+      {
+        url: `./images/sftk/2.jpg`,
+        thumb: `./images/sftk/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/sftk/3.jpg`,
+        thumb: `./images/sftk/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/sftk/4.jpg`,
+        thumb: `./images/sftk/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/sftk/5.jpg`,
+        thumb: `./images/sftk/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/sftk/6.jpg`,
+        thumb: `./images/sftk/thumbnails/6.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.sftk.gameJamButton`,
+        url: `https://ldjam.com/events/ludum-dare/43/sacrifice-for-the-king`,
+      },
+      {
+        text: `projects.sftk.gameButton`,
+        url: `https://radzios.itch.io/sacrifice-for-the-king`,
+      },
+      {
+        text: `projects.sftk.gitLabButton`,
+        url: `https://gitlab.com/xGraupx/sacrifice-for-the-king`,
+      },
+    ],
+    color: `#E0E529`,
   },
 ];
