@@ -16,7 +16,7 @@
     padding-left: 0.5rem;
     height: 100%;
 
-    border-left: 2px solid var(--color-3);
+    border-left: 3px solid var(--color-3);
     opacity: 0.5;
 
     transition: all 200ms ease-in-out;
@@ -61,9 +61,6 @@
       top: 0;
       left: 0;
       right: 0;
-      //   box-shadow: 0px 0px 6px var(--text-color);
-      //   border: 1px var(--text-color) solid;
-      //   border-radius: 2px;
       margin: 0px 1px;
       z-index: 10;
       cursor: pointer;

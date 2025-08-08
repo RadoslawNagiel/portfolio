@@ -82,6 +82,20 @@ export const TAGS: Tags = {
   //     color: `black`,
   //     tooltip: `filters.language`,
   //   },
+  php: {
+    type: TagType.language,
+    name: `PHP`,
+    background: `#777BB3`,
+    color: `white`,
+    tooltip: `filters.language`,
+  },
+  sql: {
+    type: TagType.language,
+    name: `SQL`,
+    background: `#DF6C20`,
+    color: `white`,
+    tooltip: `filters.language`,
+  },
   cSharp: {
     type: TagType.language,
     name: `C#`,

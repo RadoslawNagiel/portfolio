@@ -881,6 +881,35 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#E419E5`,
   },
   {
+    id: `guessPhrase`,
+    dateFrom: new Date(2020, 5, 27),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`php`], TAGS[`sql`]],
+    mainImage: `./images/guessPhrase/main.jpg`,
+    images: [
+      {
+        url: `./images/guessPhrase/1.jpg`,
+        thumb: `./images/guessPhrase/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/guessPhrase/2.jpg`,
+        thumb: `./images/guessPhrase/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/guessPhrase/3.jpg`,
+        thumb: `./images/guessPhrase/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/guessPhrase/4.jpg`,
+        thumb: `./images/guessPhrase/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/guessPhrase/5.jpg`,
+        thumb: `./images/guessPhrase/thumbnails/5.jpg`,
+      },
+    ],
+    color: `#52629D`,
+  },
+  {
     id: `inventory`,
     dateFrom: new Date(2020, 2, 23),
     dateTo: new Date(2020, 5, 15),
