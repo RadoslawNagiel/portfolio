@@ -16,7 +16,7 @@
     padding-left: 0.5rem;
     height: 100%;
 
-    border-left: 3px solid var(--color-3);
+    border-left: 2px solid var(--color-3);
     opacity: 0.5;
 
     transition: all 200ms ease-in-out;
@@ -38,21 +38,21 @@
   }
 
   &-grid {
+    background-color: transparent;
     padding: 0px 2px;
     display: flex;
     height: 100%;
 
     max-width: 0px;
-    opacity: 0;
     transition: all 200ms ease-in-out;
 
     &-block {
       position: relative;
-      width: 10px;
+      width: 12px;
       height: 100%;
 
       &-border {
-        border-bottom: 1px var(--color-2) solid;
+        border-bottom: 1px var(--color-3) solid;
       }
     }
 
@@ -61,8 +61,9 @@
       top: 0;
       left: 0;
       right: 0;
-      border: 1px var(--text-color) solid;
-      border-radius: 2px;
+      //   box-shadow: 0px 0px 6px var(--text-color);
+      //   border: 1px var(--text-color) solid;
+      //   border-radius: 2px;
       margin: 0px 1px;
       z-index: 10;
       cursor: pointer;
@@ -71,6 +72,8 @@
 
   &:hover {
     .timeline-grid {
+      padding-left: 8px;
+      background-color: var(--color-2);
       max-width: 200px;
       opacity: 1;
     }
