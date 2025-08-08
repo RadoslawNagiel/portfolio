@@ -1117,4 +1117,42 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#F75121`,
   },
+  {
+    id: `dothing`,
+    dateFrom: new Date(2019, 9, 5),
+    // dateTo: new Date(2019, 9, 7),
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/dothing/main.jpg`,
+    images: [
+      {
+        url: `./images/dothing/1.jpg`,
+        thumb: `./images/dothing/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/dothing/2.jpg`,
+        thumb: `./images/dothing/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/dothing/3.jpg`,
+        thumb: `./images/dothing/thumbnails/3.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.dothing.gameButton`,
+        url: `https://radzios.itch.io/dothing`,
+      },
+      {
+        text: `projects.dothing.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/LD45`,
+      },
+    ],
+    color: `#E17473`,
+  },
 ];
