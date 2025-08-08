@@ -823,6 +823,52 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#b0a176`,
   },
   {
+    id: `printer`,
+    dateFrom: new Date(2020, 1, 27),
+    dateTo: new Date(2020, 9, 26),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`]],
+    mainImage: `./images/printer/main.jpg`,
+    images: [
+      {
+        url: `./images/printer/1.jpg`,
+        thumb: `./images/printer/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/printer/2.jpg`,
+        thumb: `./images/printer/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/printer/3.jpg`,
+        thumb: `./images/printer/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/printer/4.jpg`,
+        thumb: `./images/printer/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/printer/5.jpg`,
+        thumb: `./images/printer/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/printer/6.jpg`,
+        thumb: `./images/printer/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/printer/7.jpg`,
+        thumb: `./images/printer/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/printer/8.jpg`,
+        thumb: `./images/printer/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/printer/9.jpg`,
+        thumb: `./images/printer/thumbnails/9.jpg`,
+      },
+    ],
+    color: `#a3a3a3`,
+  },
+  {
     id: `spaceTaxi`,
     dateFrom: new Date(2020, 9, 4),
     // dateTo: new Date(2020, 9, 5),
