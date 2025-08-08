@@ -1142,6 +1142,10 @@ export const PROJECTS: ProjectInfo[] = [
         url: `./images/dothing/3.jpg`,
         thumb: `./images/dothing/thumbnails/3.jpg`,
       },
+      {
+        url: `./images/dothing/4.jpg`,
+        thumb: `./images/dothing/thumbnails/4.jpg`,
+      },
     ],
     buttons: [
       {
