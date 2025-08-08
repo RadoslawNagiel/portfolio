@@ -1157,6 +1157,64 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://github.com/RadoslawNagiel/LD45`,
       },
     ],
-    color: `#E17473`,
+    color: `#E17776`,
+  },
+  {
+    id: `demonSnail`,
+    dateFrom: new Date(2019, 0, 25),
+    // dateTo: new Date(2019, 0, 27),
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/demonSnail/main.jpg`,
+    images: [
+      {
+        url: `./images/demonSnail/1.jpg`,
+        thumb: `./images/demonSnail/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/demonSnail/2.jpg`,
+        thumb: `./images/demonSnail/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/demonSnail/3.jpg`,
+        thumb: `./images/demonSnail/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/demonSnail/4.jpg`,
+        thumb: `./images/demonSnail/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/demonSnail/5.jpg`,
+        thumb: `./images/demonSnail/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/demonSnail/6.jpg`,
+        thumb: `./images/demonSnail/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/demonSnail/7.jpg`,
+        thumb: `./images/demonSnail/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/demonSnail/8.jpg`,
+        thumb: `./images/demonSnail/thumbnails/8.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.demonSnail.gameButton`,
+        url: `https://kawabart.itch.io/demon-snail-revenge`,
+      },
+      {
+        text: `projects.demonSnail.gitHubButton`,
+        url: `https://github.com/kawabart/Demon-Snail-Revenge`,
+      },
+    ],
+    color: `#76428a`,
   },
 ];
