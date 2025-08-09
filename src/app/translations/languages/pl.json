@@ -151,6 +151,10 @@
       "gameButton": "Gra",
       "gameJamButton": "Strona Game Jamu",
       "gitLabButton": "GitLab"
+    },
+    "wsfGameJam4": {
+      "name": "Gra \"Don't Listen To Your Son\"",
+      "description": "<b>Humorystyczny prototyp gry logicznej</b><br>Projekt prywatny – zespół 4 osób<br><br><b>Opis:</b><br>Gra <i>Don't Listen To Your Son</i> powstała w ramach Warsaw Film School Game Jam IV w ciągu 72 godzin. Rozgrywka opiera się na nietypowej zasadzie – celem gracza jest <b>nie wykonywać poleceń</b> postaci podążającej za nim przez całą grę. Zagadki zaczynają się od prostych, np. spojrzenia w lewo zamiast w prawo, a kończą na bardziej złożonych, wymagających odkrycia ukrytych interakcji z otoczeniem, takich jak złapanie wskazówki zegara i cofnięcie czasu.<br><br><b>Funkcje kluczowe:</b><br>- Oryginalna mechanika polegająca na ignorowaniu poleceń<br>- Zróżnicowane zagadki – od prostych reakcji po skomplikowane interakcje środowiskowe<br>- Możliwość poruszania się pieszo oraz jazdy autem<br>- Mechanika rzucania przedmiotów<br>- Poziomy zaprojektowane pod kreatywne łamanie zasad gry<br><br><b>Moja rola:</b><br>- Współtworzenie koncepcji i zasad rozgrywki<br>- Implementacja mechaniki ruchu postaci i jazdy autem<br>- Dodanie mechaniki rzucania przedmiotów<br>- Projektowanie i tworzenie poziomów"
     }
   }
 }

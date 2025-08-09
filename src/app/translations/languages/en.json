@@ -151,6 +151,10 @@
       "gameButton": "Game",
       "gameJamButton": "Game Jam website",
       "gitLabButton": "GitLab"
+    },
+    "wsfGameJam4": {
+      "name": "\"Don't Listen To Your Son\" game",
+      "description": "<b>Humorous Puzzle Game Prototype</b><br>Private project – team of 4<br><br><b>Description:</b><br><i>Don't Listen To Your Son</i> was created during the Warsaw Film School Game Jam IV within 72 hours. The gameplay revolves around an unusual rule – the player's goal is to <b>not follow the instructions</b> of a character who follows them throughout the game. Puzzles range from simple tasks, such as looking left instead of right, to more complex challenges involving hidden environmental interactions, like grabbing a clock hand and turning back time.<br><br><b>Key features:</b><br>- Original mechanic based on ignoring given instructions<br>- Varied puzzles – from simple reactions to complex environmental interactions<br>- Ability to move on foot or drive a car<br>- Object throwing mechanic<br>- Levels designed for creative rule-breaking<br><br><b>My role:</b><br>- Co-creating the concept and gameplay mechanics<br>- Implementing character movement and driving mechanics<br>- Adding the object throwing mechanic<br>- Designing and building game levels<br>"
     }
   }
 }

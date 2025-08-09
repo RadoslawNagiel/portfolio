@@ -1367,4 +1367,48 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#E0E529`,
   },
+  {
+    id: `wsfGameJam4`,
+    dateFrom: new Date(2018, 10, 9),
+    // dateTo: new Date(2018, 10, 11),
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/wsfGameJam4/main.jpg`,
+    images: [
+      {
+        url: `./images/wsfGameJam4/1.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/2.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/3.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/4.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/5.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/6.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/wsfGameJam4/7.jpg`,
+        thumb: `./images/wsfGameJam4/thumbnails/7.jpg`,
+      },
+    ],
+    color: `#A13741`,
+  },
 ];
