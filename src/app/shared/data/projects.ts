@@ -887,6 +887,10 @@ export const PROJECTS: ProjectInfo[] = [
     mainImage: `./images/spaceTaxi/main.jpg`,
     images: [
       {
+        url: `./images/spaceTaxi/1.gif`,
+        thumb: `./images/spaceTaxi/thumbnails/1.gif`,
+      },
+      {
         url: `./images/spaceTaxi/1.jpg`,
         thumb: `./images/spaceTaxi/thumbnails/1.jpg`,
       },
@@ -1269,6 +1273,10 @@ export const PROJECTS: ProjectInfo[] = [
     mainImage: `./images/demonSnail/main.jpg`,
     images: [
       {
+        url: `./images/demonSnail/1.gif`,
+        thumb: `./images/demonSnail/thumbnails/1.gif`,
+      },
+      {
         url: `./images/demonSnail/1.jpg`,
         thumb: `./images/demonSnail/thumbnails/1.jpg`,
       },
@@ -1426,6 +1434,10 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     mainImage: `./images/ciosy/main.jpg`,
     images: [
+      {
+        url: `./images/ciosy/1.gif`,
+        thumb: `./images/ciosy/thumbnails/1.gif`,
+      },
       {
         url: `./images/ciosy/1.jpg`,
         thumb: `./images/ciosy/thumbnails/1.jpg`,
