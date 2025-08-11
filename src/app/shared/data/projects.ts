@@ -1479,4 +1479,37 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#6CAB40`,
   },
+  {
+    id: `simpleGame`,
+    dateFrom: new Date(2017, 3, 22),
+    // dateTo: new Date(2017, 4, 1),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`mobileApp`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/simpleGame/main.jpg`,
+    images: [
+      {
+        url: `./images/simpleGame/1.gif`,
+        thumb: `./images/simpleGame/thumbnails/1.gif`,
+      },
+      {
+        url: `./images/simpleGame/2.jpg`,
+        thumb: `./images/simpleGame/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/simpleGame/3.jpg`,
+        thumb: `./images/simpleGame/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/simpleGame/4.jpg`,
+        thumb: `./images/simpleGame/thumbnails/4.jpg`,
+      },
+    ],
+    color: `#448895`,
+  },
 ];
