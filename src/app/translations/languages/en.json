@@ -1,6 +1,5 @@
 {
   "noProjectsInfo": "No projects meeting the selected criteria",
-  "bottomInfo": "The site is under construction and there are still many projects waiting to be added",
   "header": {
     "title": "Portfolio – Radosław Nagiel",
     "tooltips": {
@@ -172,6 +171,10 @@
     "arkanoid": {
       "name": "Arkanoid Game",
       "description": "<b>Simple Arkanoid-Style Game</b><br>Private project<br><br><b>Description:</b><br>A game inspired by the classic Arkanoid, where the goal is to break all blocks on the board using a ball bounced off a paddle controlled by the player. Lives are limited, and a life is lost whenever the ball falls out of the play area.<br><br>During gameplay, destroying a block may release a bonus or penalty. To activate it, the player must catch it with the paddle. The game includes a wide range of power-ups and debuffs:<br>- Increase or decrease paddle size<br>- Add or lose a ball<br>- Speed up or slow down the paddle<br>- Temporary piercing ball that destroys blocks without bouncing<br>- Temporary weakened ball that can’t break blocks<br>- Speed up or slow down the ball<br>- Temporary floor that automatically bounces the ball<br>- Random bonus<br><br><b>Key Features:</b><br>- Classic Arkanoid-style gameplay mechanics<br>- Limited life system<br>- Variety of bonuses and penalties for dynamic gameplay<br>- Real-time paddle control and ball interaction<br><br><b>My role:</b><br>- Full project execution – from concept to implementation"
+    },
+    "stocks": {
+      "name": "Stocks Game",
+      "description": "<b>Console Stock Trading Game</b><br>Individual project<br><br><b>Description:</b><br>A console-based game focused on buying and selling stocks, controlled via numeric input from the keyboard. It features an interactive menu, a save/load game state system, and two difficulty levels – medium and hard.<br><br>The player can invest in one of three available stocks, each with different price ranges. Stock prices change daily, either rising or falling, and these fluctuations are displayed on screen. The game also includes a casino, where players can try their luck at a slot machine or roulette, with the possibility of multiplying their funds or losing everything.<br><br>The main objective is to strategically manage finances to maximize wealth.<br><br><b>Key Features:</b><br>- Buying and selling stocks with dynamic pricing<br>- Save and load game state functionality<br>- Two difficulty levels: medium and hard<br>- Daily stock price changes displayed on screen<br>- Casino with slot machine and roulette<br>- Strategic capital management mechanics<br><br><b>My role:</b><br>- Full project execution – from concept to implementation"
     }
   }
 }

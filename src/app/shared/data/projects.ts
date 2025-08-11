@@ -278,7 +278,7 @@ export const PROJECTS: ProjectInfo[] = [
   },
   {
     id: `lureForReal`,
-    dateFrom: new Date(2021, 0, 10),
+    dateFrom: new Date(2022, 0, 10),
     dateTo: new Date(2024, 5, 11),
     tags: [
       TAGS[`professional`],
@@ -1595,5 +1595,51 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
     color: `#11DD3C`,
+  },
+  {
+    id: `stocks`,
+    dateFrom: new Date(2014, 8, 6),
+    dateTo: new Date(2016, 2, 7),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cPlus`]],
+    mainImage: `./images/stocks/main.jpg`,
+    images: [
+      {
+        url: `./images/stocks/1.jpg`,
+        thumb: `./images/stocks/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/stocks/2.jpg`,
+        thumb: `./images/stocks/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/stocks/3.jpg`,
+        thumb: `./images/stocks/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/stocks/4.jpg`,
+        thumb: `./images/stocks/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/stocks/5.jpg`,
+        thumb: `./images/stocks/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/stocks/6.jpg`,
+        thumb: `./images/stocks/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/stocks/7.jpg`,
+        thumb: `./images/stocks/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/stocks/8.jpg`,
+        thumb: `./images/stocks/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/stocks/9.jpg`,
+        thumb: `./images/stocks/thumbnails/9.jpg`,
+      },
+    ],
+    color: `#555555`,
   },
 ];

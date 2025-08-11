@@ -1,6 +1,5 @@
 {
   "noProjectsInfo": "Brak projektów spełniających wybrane kryteria",
-  "bottomInfo": "Strona jest w budowie i jeszcze wiele projektów czeka na dodanie",
   "header": {
     "title": "Portfolio – Radosław Nagiel",
     "tooltips": {
@@ -172,6 +171,10 @@
     "arkanoid": {
       "name": "Gra Arkanoid",
       "description": "<b>Prosta gra typu arkanoid</b><br>Projekt prywatny<br><br><b>Opis:</b><br>Gra inspirowana klasycznym arkanoidem, w której celem jest zniszczenie wszystkich klocków na planszy za pomocą piłki odbijanej od paletki sterowanej przez gracza. Liczba żyć jest ograniczona – tracimy je, gdy piłka wypadnie poza ekran.<br><br>Podczas rozgrywki, po zniszczeniu klocka, może wylecieć bonus lub utrudnienie. Aby je aktywować, należy je złapać paletką. Gra oferuje szeroką gamę efektów specjalnych:<br>- Zwiększenie lub zmniejszenie paletki<br>- Dodanie lub utrata piłki<br>- Przyspieszenie lub spowolnienie paletki<br>- Czasowa piłka przebijająca, niszcząca klocki bez odbijania się<br>- Czasowa piłka osłabiona, nieskuteczna przeciw klockom<br>- Przyspieszenie lub spowolnienie piłki<br>- Chwilowa podłoga automatycznie odbijająca piłkę<br>- Losowy bonus<br><br><b>Funkcje kluczowe:</b><br>- Klasyczna mechanika gry typu arkanoid<br>- System ograniczonej liczby żyć<br>- Różnorodne bonusy i utrudnienia zwiększające dynamikę rozgrywki<br>- Sterowanie paletką i interakcja z piłką w czasie rzeczywistym<br><br><b>Moja rola:</b><br>- Pełna realizacja projektu – od pomysłu, poprzez implementację"
+    },
+    "stocks": {
+      "name": "Gra Akcje",
+      "description": "<b>Gra konsolowa o handlu akcjami</b><br>Projekt indywidualny<br><br><b>Opis:</b><br>Gra konsolowa oparta na mechanice kupna i sprzedaży akcji, sterowana za pomocą wprowadzania cyfr na klawiaturze. Zawiera interaktywne menu, system zapisu i wczytywania stanu gry oraz dwa poziomy trudności – średni i trudny.<br><br>Gracz może inwestować w jedną z trzech dostępnych akcji o zróżnicowanych cenach. Każdego dnia ceny akcji rosną lub spadają, a zmiany są prezentowane na ekranie. Dodatkową atrakcją jest kasyno, w którym można spróbować szczęścia w automacie lub ruletce – z szansą na pomnożenie kapitału lub utratę wszystkiego.<br><br>Celem gry jest strategiczne zarządzanie środkami i maksymalne powiększenie majątku.<br><br><b>Funkcje kluczowe:</b><br>- Kupno i sprzedaż akcji o zmiennych cenach<br>- System zapisu i wczytywania stanu gry<br>- Dwa poziomy trudności: średni i trudny<br>- Codzienne zmiany kursów akcji prezentowane na ekranie<br>- Kasyno z automatem i ruletką<br>- Mechanika strategicznego zarządzania kapitałem<br><br><b>Moja rola:</b><br>- Pełna realizacja projektu – od pomysłu, poprzez implementację"
     }
   }
 }
