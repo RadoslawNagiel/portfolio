@@ -1426,6 +1426,7 @@ export const PROJECTS: ProjectInfo[] = [
     tags: [
       TAGS[`private`],
       TAGS[`individual`],
+      TAGS[`game`],
       TAGS[`javaScript`],
       TAGS[`php`],
       TAGS[`sql`],
