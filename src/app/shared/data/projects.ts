@@ -1524,4 +1524,44 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#448895`,
   },
+  {
+    id: `arkanoid`,
+    dateFrom: new Date(2015, 8, 25),
+    dateTo: new Date(2016, 3, 2),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`game`],
+      TAGS[`cPlus`],
+      TAGS[`cPlusBuilder`],
+    ],
+    mainImage: `./images/arkanoid/main.jpg`,
+    images: [
+      {
+        url: `./images/arkanoid/1.gif`,
+        thumb: `./images/arkanoid/thumbnails/1.gif`,
+      },
+      {
+        url: `./images/arkanoid/1.jpg`,
+        thumb: `./images/arkanoid/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/arkanoid/2.jpg`,
+        thumb: `./images/arkanoid/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/arkanoid/3.jpg`,
+        thumb: `./images/arkanoid/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/arkanoid/4.jpg`,
+        thumb: `./images/arkanoid/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/arkanoid/5.jpg`,
+        thumb: `./images/arkanoid/thumbnails/5.jpg`,
+      },
+    ],
+    color: `#11DD3C`,
+  },
 ];

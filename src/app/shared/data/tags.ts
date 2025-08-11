@@ -346,6 +346,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.utility`,
   },
+  cPlusBuilder: {
+    type: TagType.utility,
+    name: `C++ Builder`,
+    background: `#0000FF`,
+    color: `white`,
+    tooltip: `filters.utility`,
+  },
   unity: {
     type: TagType.utility,
     name: `Unity`,
