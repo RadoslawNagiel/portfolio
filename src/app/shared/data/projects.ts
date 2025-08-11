@@ -1712,6 +1712,20 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#E5D389`,
   },
   {
+    id: `football`,
+    dateFrom: new Date(2013, 5, 20),
+    // dateTo: new Date(2013, 6, 1),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`html`], TAGS[`css`]],
+    mainImage: `./images/football/main.jpg`,
+    images: [
+      {
+        url: `./images/football/1.jpg`,
+        thumb: `./images/football/thumbnails/1.jpg`,
+      },
+    ],
+    color: `#008001`,
+  },
+  {
     id: `volleyball`,
     dateFrom: new Date(2013, 2, 15),
     dateTo: new Date(2013, 3, 23),
