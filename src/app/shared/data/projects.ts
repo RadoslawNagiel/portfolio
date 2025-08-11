@@ -1711,4 +1711,26 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#E5D389`,
   },
+  {
+    id: `volleyball`,
+    dateFrom: new Date(2013, 2, 15),
+    dateTo: new Date(2013, 3, 23),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`html`], TAGS[`css`]],
+    mainImage: `./images/volleyball/main.jpg`,
+    images: [
+      {
+        url: `./images/volleyball/1.jpg`,
+        thumb: `./images/volleyball/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/volleyball/2.jpg`,
+        thumb: `./images/volleyball/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/volleyball/3.jpg`,
+        thumb: `./images/volleyball/thumbnails/3.jpg`,
+      },
+    ],
+    color: `#FFF112`,
+  },
 ];

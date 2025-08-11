@@ -179,6 +179,10 @@
     "farmaSama": {
       "name": "Sam's Farm game",
       "description": "<b>Simple Point-and-Click Game</b><br>School project<br><br><b>Description:</b><br>A point-and-click game in which the player navigates between static screens by clicking on specific areas of the image. The story takes place on Sam’s farm, where the player can visit various locations such as a field, a barn, and a greenhouse. In addition, the game has an update history.<br><br>The project was created as part of a middle school IT class assignment.<br><br><b>Key Features:</b><br>- Point-and-click mechanics for exploring static screens<br>- Locations: field, barn, greenhouse<br>- Update history<br>- Simple and intuitive controls<br><br><b>My role:</b><br>- Full project execution – from concept to implementation"
+    },
+    "volleyball": {
+      "name": "Volleyball Page",
+      "description": "<b>School Volleyball Team Website</b><br>School project<br><br><b>Description:</b><br>A website created as part of a middle school IT class assignment. It presents information about the school’s male and female volleyball teams, including team rosters, the latest news, photo galleries, and videos from sporting events.<br><br>The website also contains links to the school’s official website, Facebook fan page, and YouTube channel.<br><br><b>Key Features:</b><br>- Information about male and female team rosters<br>- Latest news related to the team<br>- Photo galleries and videos from events<br>- Links to related websites and social media<br><br><b>My Role:</b><br>- Full project execution – from concept to implementation and deployment"
     }
   }
 }
