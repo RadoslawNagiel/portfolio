@@ -117,6 +117,20 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.language`,
   },
+  html: {
+    type: TagType.language,
+    name: `HTML`,
+    background: `#E44D26`,
+    color: `white`,
+    tooltip: `filters.language`,
+  },
+  css: {
+    type: TagType.language,
+    name: `CSS`,
+    background: `#264DE4`,
+    color: `white`,
+    tooltip: `filters.language`,
+  },
 
   angular12: {
     type: TagType.framework,
