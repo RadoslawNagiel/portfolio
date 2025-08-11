@@ -1130,6 +1130,48 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#F75121`,
   },
   {
+    id: `dothing`,
+    dateFrom: new Date(2019, 9, 5),
+    // dateTo: new Date(2019, 9, 7),
+    tags: [
+      TAGS[`private`],
+      TAGS[`group`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/dothing/main.jpg`,
+    images: [
+      {
+        url: `./images/dothing/1.jpg`,
+        thumb: `./images/dothing/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/dothing/2.jpg`,
+        thumb: `./images/dothing/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/dothing/3.jpg`,
+        thumb: `./images/dothing/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/dothing/4.jpg`,
+        thumb: `./images/dothing/thumbnails/4.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.dothing.gameButton`,
+        url: `https://radzios.itch.io/dothing`,
+      },
+      {
+        text: `projects.dothing.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/LD45`,
+      },
+    ],
+    color: `#E17776`,
+  },
+  {
     id: `thief`,
     dateFrom: new Date(2018, 2, 29),
     dateTo: new Date(2019, 7, 19),
@@ -1212,48 +1254,6 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
     color: `#6C2221`,
-  },
-  {
-    id: `dothing`,
-    dateFrom: new Date(2019, 9, 5),
-    // dateTo: new Date(2019, 9, 7),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
-    mainImage: `./images/dothing/main.jpg`,
-    images: [
-      {
-        url: `./images/dothing/1.jpg`,
-        thumb: `./images/dothing/thumbnails/1.jpg`,
-      },
-      {
-        url: `./images/dothing/2.jpg`,
-        thumb: `./images/dothing/thumbnails/2.jpg`,
-      },
-      {
-        url: `./images/dothing/3.jpg`,
-        thumb: `./images/dothing/thumbnails/3.jpg`,
-      },
-      {
-        url: `./images/dothing/4.jpg`,
-        thumb: `./images/dothing/thumbnails/4.jpg`,
-      },
-    ],
-    buttons: [
-      {
-        text: `projects.dothing.gameButton`,
-        url: `https://radzios.itch.io/dothing`,
-      },
-      {
-        text: `projects.dothing.gitHubButton`,
-        url: `https://github.com/RadoslawNagiel/LD45`,
-      },
-    ],
-    color: `#E17776`,
   },
   {
     id: `demonSnail`,
@@ -1410,5 +1410,73 @@ export const PROJECTS: ProjectInfo[] = [
       },
     ],
     color: `#A13741`,
+  },
+  {
+    id: `ciosy`,
+    dateFrom: new Date(2017, 8, 25),
+    dateTo: new Date(2017, 11, 8),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`javaScript`],
+      TAGS[`php`],
+      TAGS[`sql`],
+      TAGS[`mySQL`],
+      TAGS[`xampp`],
+    ],
+    mainImage: `./images/ciosy/main.jpg`,
+    images: [
+      {
+        url: `./images/ciosy/1.jpg`,
+        thumb: `./images/ciosy/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/ciosy/2.jpg`,
+        thumb: `./images/ciosy/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/ciosy/3.jpg`,
+        thumb: `./images/ciosy/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/ciosy/4.jpg`,
+        thumb: `./images/ciosy/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/ciosy/5.jpg`,
+        thumb: `./images/ciosy/thumbnails/5.jpg`,
+      },
+      {
+        url: `./images/ciosy/6.jpg`,
+        thumb: `./images/ciosy/thumbnails/6.jpg`,
+      },
+      {
+        url: `./images/ciosy/7.jpg`,
+        thumb: `./images/ciosy/thumbnails/7.jpg`,
+      },
+      {
+        url: `./images/ciosy/8.jpg`,
+        thumb: `./images/ciosy/thumbnails/8.jpg`,
+      },
+      {
+        url: `./images/ciosy/9.jpg`,
+        thumb: `./images/ciosy/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/ciosy/10.jpg`,
+        thumb: `./images/ciosy/thumbnails/10.jpg`,
+      },
+      {
+        url: `./images/ciosy/11.jpg`,
+        thumb: `./images/ciosy/thumbnails/11.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.ciosy.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/Ciosy`,
+      },
+    ],
+    color: `#6CAB40`,
   },
 ];
