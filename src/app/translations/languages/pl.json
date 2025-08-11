@@ -187,6 +187,10 @@
     "volleyball": {
       "name": "Siatkarska Strona",
       "description": "<b>Strona internetowa szkolnej drużyny siatkarskiej</b><br>Projekt szkolny<br><br><b>Opis:</b><br>Strona internetowa stworzona w ramach zaliczenia przedmiotu „Informatyka” w gimnazjum. Prezentuje informacje o męskiej i żeńskiej szkolnej drużynie siatkarskiej, w tym składy zespołów, najnowsze aktualności, galerie zdjęć oraz filmy z wydarzeń sportowych.<br><br>Na stronie umieszczono również odnośniki do oficjalnej strony szkoły, fanpage’a na Facebooku oraz kanału na YouTube.<br><br><b>Funkcje kluczowe:</b><br>- Informacje o składach drużyn męskiej i żeńskiej<br>- Najnowsze wiadomości związane z drużyną<br>- Galerie zdjęć i filmy z wydarzeń sportowych<br>- Odnośniki do powiązanych stron i mediów społecznościowych<br><br><b>Moja rola:</b><br>- Pełna realizacja projektu – od pomysłu, poprzez implementację, po wdrożenie"
+    },
+    "maze": {
+      "name": "Gra Labirynt",
+      "description": "<b>Prosta gra labirynt</b><br>Projekt prywatny<br><br><b>Opis:</b><br>Bardzo prosta gra stworzona w HTML, w której gracz steruje kulką, starając się dotrzeć do mety, pokonując labirynt. Ruch odbywa się w czterech kierunkach świata poprzez kliknięcie odpowiedniego kierunku myszką. Początkowa pozycja kulki jest losowo wybierana przy każdej rozgrywce. Gra zawiera ekran startowy oraz ekran końcowy wyświetlany po ukończeniu labiryntu.<br><br><b>Funkcje kluczowe:</b><br>- Sterowanie za pomocą kliknięć myszki w czterech kierunkach<br>- Losowe pozycjonowanie startowe kulki<br>- Ekran startowy i końcowy<br><br><b>Moja rola:</b><br>- Pełna realizacja projektu – od pomysłu, poprzez implementację"
     }
   }
 }

@@ -1747,4 +1747,33 @@ export const PROJECTS: ProjectInfo[] = [
     ],
     color: `#FFF112`,
   },
+  {
+    id: `maze`,
+    dateFrom: new Date(2013, 2, 28),
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`html`], TAGS[`css`]],
+    mainImage: `./images/maze/main.jpg`,
+    images: [
+      {
+        url: `./images/maze/1.jpg`,
+        thumb: `./images/maze/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/maze/2.jpg`,
+        thumb: `./images/maze/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/maze/3.jpg`,
+        thumb: `./images/maze/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/maze/4.jpg`,
+        thumb: `./images/maze/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/maze/5.jpg`,
+        thumb: `./images/maze/thumbnails/5.jpg`,
+      },
+    ],
+    color: `#FE0000`,
+  },
 ];

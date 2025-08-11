@@ -187,6 +187,10 @@
     "volleyball": {
       "name": "Volleyball Page",
       "description": "<b>School Volleyball Team Website</b><br>School project<br><br><b>Description:</b><br>A website created as part of a middle school IT class assignment. It presents information about the school’s male and female volleyball teams, including team rosters, the latest news, photo galleries, and videos from sporting events.<br><br>The website also contains links to the school’s official website, Facebook fan page, and YouTube channel.<br><br><b>Key Features:</b><br>- Information about male and female team rosters<br>- Latest news related to the team<br>- Photo galleries and videos from events<br>- Links to related websites and social media<br><br><b>My Role:</b><br>- Full project execution – from concept to implementation and deployment"
+    },
+    "maze": {
+      "name": "Maze game",
+      "description": "<b>Simple Maze Game</b><br>Private project<br><br><b>Description:</b><br>A very simple HTML-based game where the player controls a ball, navigating through a maze to reach the finish line. Movement is possible in four cardinal directions by clicking the corresponding direction with the mouse. The starting position of the ball is randomly assigned at the beginning of each game. The game features a start screen and an end screen displayed upon completing the maze.<br><br><b>Key Features:</b><br>- Mouse-click control in four directions<br>- Randomized starting position of the ball<br>- Start and end screens<br><br><b>My Role:</b><br>- Full project execution – from concept to implementation"
     }
   }
 }
