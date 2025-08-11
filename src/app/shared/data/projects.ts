@@ -1525,6 +1525,38 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#448895`,
   },
   {
+    id: `blockGame`,
+    dateFrom: new Date(2016, 4, 4),
+    dateTo: new Date(2016, 4, 23),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`game`],
+      TAGS[`cPlus`],
+      TAGS[`cPlusBuilder`],
+    ],
+    mainImage: `./images/blockGame/main.jpg`,
+    images: [
+      {
+        url: `./images/blockGame/1.gif`,
+        thumb: `./images/blockGame/thumbnails/1.gif`,
+      },
+      {
+        url: `./images/blockGame/1.jpg`,
+        thumb: `./images/blockGame/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/blockGame/2.jpg`,
+        thumb: `./images/blockGame/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/blockGame/3.jpg`,
+        thumb: `./images/blockGame/thumbnails/3.jpg`,
+      },
+    ],
+    color: `#814723`,
+  },
+  {
     id: `arkanoid`,
     dateFrom: new Date(2015, 8, 25),
     dateTo: new Date(2016, 3, 2),
