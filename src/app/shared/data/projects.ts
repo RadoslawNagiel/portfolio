@@ -907,8 +907,9 @@ export const PROJECTS: ProjectInfo[] = [
     mainImage: `./images/spaceTaxi/main.jpg`,
     images: [
       {
-        url: `./images/spaceTaxi/1.gif`,
-        thumb: `./images/spaceTaxi/thumbnails/1.gif`,
+        type: `youtube`,
+        url: `U20gMhQrHco`,
+        thumb: `./images/spaceTaxi/thumbnails/video.jpg`,
       },
       {
         url: `./images/spaceTaxi/1.jpg`,
