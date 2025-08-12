@@ -850,6 +850,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`game`],
       TAGS[`cSharp`],
       TAGS[`unity`],
+      TAGS[`blender`],
     ],
     mainImage: `./images/simulation/main.jpg`,
     images: [
@@ -1102,7 +1103,13 @@ export const PROJECTS: ProjectInfo[] = [
     id: `lamp`,
     dateFrom: new Date(2019, 11, 1),
     dateTo: new Date(2020, 3, 1),
-    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`], TAGS[`cPlus`]],
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`arduino`],
+      TAGS[`cPlus`],
+      TAGS[`blender`],
+    ],
     mainImage: `./images/lamp/main.jpg`,
     images: [
       {
@@ -1656,6 +1663,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`game`],
       TAGS[`cSharp`],
       TAGS[`unity`],
+      TAGS[`blender`],
     ],
     mainImage: `./images/simpleGame/main.jpg`,
     images: [

@@ -3,6 +3,7 @@
   [ngStyle]="{ 'top.px': projectContainer.offsetTop }"
   class="timeline"
   [selectedYear]="selectedYear()"
+  [max]="maxDate()"
   [min]="minDate()"
   [projects]="filtersService.filteredProjects()"
   (projectClicked)="openProject($event)"

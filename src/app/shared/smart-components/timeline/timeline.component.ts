@@ -52,7 +52,7 @@ export class TimelineComponent {
           DateTime.fromJSDate(this.min()),
           `months`
         ).months
-      ) + 1
+      )
     ).map((el, index) => {
       return {
         date: DateTime.fromJSDate(this.max())
