@@ -189,6 +189,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.framework`,
   },
+  angularMaterial: {
+    type: TagType.framework,
+    name: `Angular Material`,
+    background: `#FB8C00`,
+    color: `white`,
+    tooltip: `filters.framework`,
+  },
   ionic: {
     type: TagType.framework,
     name: `Ionic`,

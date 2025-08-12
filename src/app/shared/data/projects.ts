@@ -72,6 +72,55 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#5EB3B6`,
   },
   {
+    id: `portfolio`,
+    dateFrom: new Date(2025, 5, 24),
+    dateTo: new Date(2025, 7, 12),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`webApp`],
+      TAGS[`typescript`],
+      TAGS[`html`],
+      TAGS[`css`],
+      TAGS[`angular19`],
+      TAGS[`angularMaterial`],
+      TAGS[`luxon`],
+      TAGS[`ngxTranslate`],
+      TAGS[`scss`],
+      TAGS[`eslint`],
+    ],
+    mainImage: `./images/portfolio/main.jpg`,
+    images: [
+      {
+        url: `./images/portfolio/1.jpg`,
+        thumb: `./images/portfolio/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/portfolio/2.jpg`,
+        thumb: `./images/portfolio/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/portfolio/3.jpg`,
+        thumb: `./images/portfolio/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/portfolio/4.jpg`,
+        thumb: `./images/portfolio/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/portfolio/5.jpg`,
+        thumb: `./images/portfolio/thumbnails/5.jpg`,
+      },
+    ],
+    buttons: [
+      {
+        text: `projects.portfolio.gitHubButton`,
+        url: `https://github.com/RadoslawNagiel/portfolio`,
+      },
+    ],
+    color: `#F9CF09`,
+  },
+  {
     id: `quiz`,
     dateFrom: new Date(2025, 1, 18),
     tags: [
