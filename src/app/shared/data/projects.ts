@@ -732,7 +732,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://github.com/RadoslawNagiel/winery`,
       },
     ],
-    color: `#7A1616`,
+    color: `#C72523`,
   },
   {
     id: `akameis`,
@@ -1252,7 +1252,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/thiefMobile/thumbnails/5.jpg`,
       },
     ],
-    color: `#6C2221`,
+    color: `#2C61FF`,
   },
   {
     id: `dothing`,
