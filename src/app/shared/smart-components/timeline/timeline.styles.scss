@@ -53,6 +53,10 @@
 
       &-border {
         border-bottom: 1px var(--color-3) solid;
+        opacity: 0.5;
+        &-year {
+          opacity: 1;
+        }
       }
     }
 
@@ -70,7 +74,6 @@
   &:hover {
     .timeline-grid {
       padding-left: 8px;
-      background-color: var(--color-2);
       max-width: 200px;
       opacity: 1;
     }

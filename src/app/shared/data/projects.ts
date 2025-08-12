@@ -445,7 +445,7 @@ export const PROJECTS: ProjectInfo[] = [
         url: `https://play.google.com/store/apps/details?id=pl.radrat.warlock_idle`,
       },
     ],
-    color: `#301411`,
+    color: `#BE9D75`,
   },
   {
     id: `rh`,
@@ -1824,7 +1824,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/volleyball/thumbnails/3.jpg`,
       },
     ],
-    color: `#FFF112`,
+    color: `#AFA60C`,
   },
   {
     id: `maze`,

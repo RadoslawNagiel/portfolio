@@ -5,9 +5,10 @@
       @for (project of montData.projects; track $index) {
       <div
         class="timeline-grid-block"
-        [ngClass]="{ 'timeline-grid-block-border': !project }"
-        [ngStyle]="{
-          'border-width.px': montData.date.getMonth() === 0 ? 3 : 1
+        [ngClass]="{
+          'timeline-grid-block-border': !project,
+          'timeline-grid-block-border-year':
+            !project && montData.date.getMonth() === 0
         }"
       >
         @if(project && project.months; as months){
