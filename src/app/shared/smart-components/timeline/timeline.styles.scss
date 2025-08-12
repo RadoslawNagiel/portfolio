@@ -32,8 +32,10 @@
     width: 2rem;
     div {
       position: absolute;
-      top: 0;
-      left: 0.3rem;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px var(--color-3) solid;
+      padding-left: 0.3rem;
     }
   }
 

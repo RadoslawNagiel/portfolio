@@ -84,8 +84,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
       return new Date();
     }
     return DateTime.fromJSDate(projects[projects.length - 1].dateFrom)
-      .startOf(`month`)
-      .minus({ month: 1 })
+      .startOf(`year`)
       .toJSDate();
   });
 
