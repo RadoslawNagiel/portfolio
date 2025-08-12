@@ -1887,7 +1887,7 @@ export const PROJECTS: ProjectInfo[] = [
   {
     id: `maze`,
     dateFrom: new Date(2013, 2, 28),
-    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`html`], TAGS[`css`]],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`html`]],
     mainImage: `./images/maze/main.jpg`,
     images: [
       {
