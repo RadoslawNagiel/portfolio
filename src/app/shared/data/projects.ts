@@ -1517,6 +1517,43 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#6CAB40`,
   },
   {
+    id: `ball`,
+    dateFrom: new Date(2017, 5, 27),
+    dateTo: new Date(2017, 6, 24),
+    tags: [
+      TAGS[`private`],
+      TAGS[`individual`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+    ],
+    mainImage: `./images/ball/main.jpg`,
+    images: [
+      {
+        type: `youtube`,
+        url: `HGfoOiZFY5A`,
+        thumb: `./images/ball/thumbnails/video.jpg`,
+      },
+      {
+        url: `./images/ball/1.jpg`,
+        thumb: `./images/ball/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/ball/2.jpg`,
+        thumb: `./images/ball/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/ball/3.jpg`,
+        thumb: `./images/ball/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/ball/4.jpg`,
+        thumb: `./images/ball/thumbnails/4.jpg`,
+      },
+    ],
+    color: `#84CA82`,
+  },
+  {
     id: `simpleGame`,
     dateFrom: new Date(2017, 3, 22),
     // dateTo: new Date(2017, 4, 1),
