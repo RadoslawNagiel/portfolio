@@ -1156,6 +1156,48 @@ export const PROJECTS: ProjectInfo[] = [
     color: `#F75121`,
   },
   {
+    id: `thiefMobile`,
+    dateFrom: new Date(2019, 7, 27),
+    dateTo: new Date(2019, 8, 11),
+    tags: [
+      TAGS[`private`],
+      TAGS[`mobileApp`],
+      TAGS[`game`],
+      TAGS[`cSharp`],
+      TAGS[`unity`],
+      TAGS[`blender`],
+    ],
+    mainImage: `./images/thiefMobile/main.jpg`,
+    images: [
+      {
+        type: `youtube`,
+        url: `6jQmd1TIQ-w`,
+        thumb: `./images/thiefMobile/thumbnails/video.jpg`,
+      },
+      {
+        url: `./images/thiefMobile/1.jpg`,
+        thumb: `./images/thiefMobile/thumbnails/1.jpg`,
+      },
+      {
+        url: `./images/thiefMobile/2.jpg`,
+        thumb: `./images/thiefMobile/thumbnails/2.jpg`,
+      },
+      {
+        url: `./images/thiefMobile/3.jpg`,
+        thumb: `./images/thiefMobile/thumbnails/3.jpg`,
+      },
+      {
+        url: `./images/thiefMobile/4.jpg`,
+        thumb: `./images/thiefMobile/thumbnails/4.jpg`,
+      },
+      {
+        url: `./images/thiefMobile/5.jpg`,
+        thumb: `./images/thiefMobile/thumbnails/5.jpg`,
+      },
+    ],
+    color: `#6C2221`,
+  },
+  {
     id: `dothing`,
     dateFrom: new Date(2019, 9, 5),
     // dateTo: new Date(2019, 9, 7),
@@ -1551,7 +1593,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/ball/thumbnails/4.jpg`,
       },
     ],
-    color: `#84CA82`,
+    color: `#829ECC`,
   },
   {
     id: `simpleGame`,
@@ -1746,7 +1788,7 @@ export const PROJECTS: ProjectInfo[] = [
         thumb: `./images/farmaSama/thumbnails/7.jpg`,
       },
     ],
-    color: `#E5D389`,
+    color: `#998062`,
   },
   {
     id: `football`,
