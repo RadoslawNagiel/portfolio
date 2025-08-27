@@ -1,6 +1,8 @@
 import { computed, Injectable, signal } from '@angular/core';
-import { ProjectInfo, PROJECTS } from '../data/projects';
+import { PROJECTS } from '../data/projects';
 import { Tag } from '../data/tags';
+import { filterProjectsByTag } from '../functions/filter-projectsts-by-tag';
+import { returnOneIfNotEmpty } from '../functions/return-one-if-not-empty';
 
 @Injectable({
   providedIn: 'root',
@@ -15,44 +17,25 @@ export class FiltersService {
 
   filteredProjects = computed(() => {
     let projects = structuredClone(PROJECTS);
-    projects = this.filterProjectsByTag(this.projectTypeFilter(), projects);
-    projects = this.filterProjectsByTag(this.languageFilter(), projects);
-    projects = this.filterProjectsByTag(this.frameworkFilter(), projects);
-    projects = this.filterProjectsByTag(this.apiFilter(), projects);
-    projects = this.filterProjectsByTag(this.libraryFilter(), projects);
-    projects = this.filterProjectsByTag(this.utilityFilter(), projects);
+    projects = filterProjectsByTag(this.projectTypeFilter(), projects);
+    projects = filterProjectsByTag(this.languageFilter(), projects);
+    projects = filterProjectsByTag(this.frameworkFilter(), projects);
+    projects = filterProjectsByTag(this.apiFilter(), projects);
+    projects = filterProjectsByTag(this.libraryFilter(), projects);
+    projects = filterProjectsByTag(this.utilityFilter(), projects);
     return projects;
   });
 
   selectedFiltersAmount = computed(() => {
     return (
-      this.getOneIfNotEmpty(this.projectTypeFilter()) +
-      this.getOneIfNotEmpty(this.languageFilter()) +
-      this.getOneIfNotEmpty(this.frameworkFilter()) +
-      this.getOneIfNotEmpty(this.apiFilter()) +
-      this.getOneIfNotEmpty(this.libraryFilter()) +
-      this.getOneIfNotEmpty(this.utilityFilter())
+      returnOneIfNotEmpty(this.projectTypeFilter()) +
+      returnOneIfNotEmpty(this.languageFilter()) +
+      returnOneIfNotEmpty(this.frameworkFilter()) +
+      returnOneIfNotEmpty(this.apiFilter()) +
+      returnOneIfNotEmpty(this.libraryFilter()) +
+      returnOneIfNotEmpty(this.utilityFilter())
     );
   });
-
-  filterProjectsByTag(filterTags: Tag[], projects: ProjectInfo[]) {
-    if (filterTags.length) {
-      return projects.filter((el) => {
-        const tagsName = el.tags
-          .filter((tag) => tag.type === filterTags[0].type)
-          .map((tag) => tag.name);
-        if (filterTags.find((filter) => tagsName.includes(filter.name))) {
-          return true;
-        }
-        return false;
-      });
-    }
-    return projects;
-  }
-
-  getOneIfNotEmpty(tags: Tag[]) {
-    return tags.length ? 1 : 0;
-  }
 
   clearAllFilters() {
     this.projectTypeFilter.set([]);
