@@ -6,6 +6,10 @@ import { Injectable, signal } from '@angular/core';
 export class ThemeService {
   isDarkThemeSelected = signal(false);
 
+  constructor() {
+    this.initTheme();
+  }
+
   initTheme() {
     const results = localStorage.getItem(`dark-theme`);
     if (results) {
@@ -24,6 +28,5 @@ export class ThemeService {
   setDefaultTheme() {
     const darkTheme = window.matchMedia(`(prefers-color-scheme: dark)`).matches;
     this.setMode(darkTheme);
-    return darkTheme;
   }
 }

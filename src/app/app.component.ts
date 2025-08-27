@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -24,7 +24,7 @@ import { FiltersModalComponent } from './shared/smart-components/filters-modal/f
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   readonly languageService = inject(LanguageService);
   readonly themeService = inject(ThemeService);
   readonly filtersService = inject(FiltersService);
@@ -32,10 +32,6 @@ export class AppComponent implements OnInit {
   readonly languages = environment.availableLanguages;
 
   readonly dialog = inject(MatDialog);
-
-  ngOnInit() {
-    this.themeService.initTheme();
-  }
 
   toggleTheme() {
     this.themeService.setMode(!this.themeService.isDarkThemeSelected());
