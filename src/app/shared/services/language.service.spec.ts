@@ -44,6 +44,6 @@ describe(`LanguageService`, () => {
 
     lang = `pl`;
     service.setLanguage(lang);
-    expect(service.selectedLanguage()).not.toBe(lang);
+    expect(service.selectedLanguage()).toBe(lang);
   });
 });
