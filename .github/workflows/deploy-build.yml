@@ -1,4 +1,4 @@
-name: Build and push to 'build' branch
+name: Test, build and push to 'build' branch
 
 on:
   push:
@@ -21,7 +21,10 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless
 
       - name: Build Angular app
         run: npm run build
