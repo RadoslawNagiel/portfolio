@@ -14,13 +14,13 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectInfo, PROJECTS } from '../../shared/data/projects';
 import { TagType } from '../../shared/data/tags';
-import TagsComponent from '../../shared/dumb-components/tags/tags.component';
 import { FiltersService } from '../../shared/services/filters.service';
 import { TimelineComponent } from '../../shared/smart-components/timeline/timeline.component';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { DateTime } from 'luxon';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom, Subscription } from 'rxjs';
+import TagsComponent from '../../shared/smart-components/tags/tags.component';
 
 @Component({
   selector: 'app-home',

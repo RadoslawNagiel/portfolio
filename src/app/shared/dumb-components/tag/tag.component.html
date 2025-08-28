@@ -1,0 +1,17 @@
+<div
+  class="tag"
+  [ngClass]="{
+    'tag-text-shadow': tag().background,
+    'cursor-pointer': selectable(),
+    'not-selected': !isSelected()
+  }"
+  [ngStyle]="{
+    background: tag().background ?? 'transparent',
+    color: tag().color,
+    borderColor: tag().border ?? 'transparent'
+  }"
+  [matTooltip]="tag().tooltip | translate"
+  (click)="clicked.emit()"
+>
+  {{ tag().name | translate }}
+</div>

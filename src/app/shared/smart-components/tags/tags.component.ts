@@ -1,12 +1,10 @@
 import { Component, computed, input, model } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
-import { NgClass, NgStyle } from '@angular/common';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { Tag, TagType } from '../../data/tags';
+import TagComponent from '../../dumb-components/tag/tag.component';
 
 @Component({
   selector: 'app-tags',
-  imports: [TranslateModule, NgStyle, MatTooltipModule, NgClass],
+  imports: [TagComponent],
   templateUrl: './tags.component.html',
   styleUrl: './tags.styles.scss',
 })
@@ -27,7 +25,7 @@ export default class TagsComponent {
   });
 
   isSelected(name: string) {
-    return this.selectedTags().find((el) => el.name === name);
+    return Boolean(this.selectedTags().find((el) => el.name === name));
   }
 
   tagClicked(tag: Tag) {

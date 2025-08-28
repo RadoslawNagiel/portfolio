@@ -6,8 +6,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Gallery, ImageItem, YoutubeItem } from 'ng-gallery';
 import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
 import { ProjectInfo } from '../../../shared/data/projects';
-import TagsComponent from '../../../shared/dumb-components/tags/tags.component';
 import { TagType } from '../../../shared/data/tags';
+import TagsComponent from '../../../shared/smart-components/tags/tags.component';
 
 @Component({
   selector: 'app-project-modal',

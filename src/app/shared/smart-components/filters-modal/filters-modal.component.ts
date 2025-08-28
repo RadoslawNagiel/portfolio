@@ -2,11 +2,11 @@ import { Component, inject } from '@angular/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
 import { TAGS, TagType } from '../../data/tags';
-import TagsComponent from '../../dumb-components/tags/tags.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FiltersService } from '../../services/filters.service';
 import { FilterLabelComponent } from '../filter-label/filter-label.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import TagsComponent from '../tags/tags.component';
 
 @Component({
   selector: 'app-filters-modal',

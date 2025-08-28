@@ -1,0 +1,12 @@
+<div class="tags-container">
+  @for (tag of filteredTags(); track $index) {
+  <app-tag
+    [tag]="tag"
+    [selectable]="selectable()"
+    [isSelected]="!selectedTags().length || isSelected(tag.name)"
+    (clicked)="tagClicked(tag)"
+  />
+  } @if(extraTagsAmount()){
+  <span class="extra-tag"> +{{ extraTagsAmount() }} </span>
+  }
+</div>
