@@ -75,7 +75,7 @@ export const PROJECTS: ProjectInfo[] = [
   {
     id: `portfolio`,
     dateFrom: new Date(2025, 5, 24),
-    dateTo: new Date(2025, 7, 12),
+    dateTo: new Date(2025, 7, 28),
     tags: [
       TAGS[`private`],
       TAGS[`individual`],
@@ -84,6 +84,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`html`],
       TAGS[`css`],
       TAGS[`angular19`],
+      TAGS[`angular20`],
       TAGS[`angularMaterial`],
       TAGS[`luxon`],
       TAGS[`ngxTranslate`],
