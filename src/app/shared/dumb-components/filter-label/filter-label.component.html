@@ -1,9 +1,10 @@
-<div class="filter-label">
-  <span>
+<div class="filter-container">
+  <span class="filter-label">
     {{ label() | translate }}
   </span>
-  @if(filters().length){
+  @if(displayClearIcon()){
   <span
+    id="clear-icon"
     class="material-symbols-outlined button"
     [matTooltip]="'filters.clearTooltip' | translate"
     (click)="clear.emit()"

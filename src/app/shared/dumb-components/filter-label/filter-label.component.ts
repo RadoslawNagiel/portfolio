@@ -1,7 +1,6 @@
 import { Component, input, output } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
-import { Tag } from '../../data/tags';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-filter-label',
@@ -11,6 +10,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 })
 export class FilterLabelComponent {
   label = input.required<string>();
-  filters = input<Tag[]>([]);
+  displayClearIcon = input(false);
   clear = output();
 }

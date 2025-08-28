@@ -20,7 +20,6 @@ describe(`TagComponent`, () => {
 
     fixture = TestBed.createComponent(TagComponent);
     fixture.componentRef.setInput(`tag`, testProjectTypeTag);
-
     component = fixture.componentInstance;
 
     tagElement = fixture.debugElement.query(By.css(`.tag`)).nativeElement;
@@ -28,7 +27,7 @@ describe(`TagComponent`, () => {
     fixture.detectChanges();
   });
 
-  it(`should create`, () => {
+  it(`should be created`, () => {
     expect(component).toBeDefined();
   });
 

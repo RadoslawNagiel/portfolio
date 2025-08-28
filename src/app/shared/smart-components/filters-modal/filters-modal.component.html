@@ -22,7 +22,7 @@
 <mat-dialog-content>
   <app-filter-label
     label="filters.projectType"
-    [filters]="filtersService.projectTypeFilter()"
+    [displayClearIcon]="!!filtersService.projectTypeFilter().length"
     (clear)="filtersService.projectTypeFilter.set([])"
   />
   <app-tags
@@ -34,7 +34,7 @@
 
   <app-filter-label
     label="filters.language"
-    [filters]="filtersService.languageFilter()"
+    [displayClearIcon]="!!filtersService.languageFilter().length"
     (clear)="filtersService.languageFilter.set([])"
   />
   <app-tags
@@ -46,7 +46,7 @@
 
   <app-filter-label
     label="filters.framework"
-    [filters]="filtersService.frameworkFilter()"
+    [displayClearIcon]="!!filtersService.frameworkFilter().length"
     (clear)="filtersService.frameworkFilter.set([])"
   />
   <app-tags
@@ -58,7 +58,7 @@
 
   <app-filter-label
     label="filters.api"
-    [filters]="filtersService.apiFilter()"
+    [displayClearIcon]="!!filtersService.apiFilter().length"
     (clear)="filtersService.apiFilter.set([])"
   />
   <app-tags
@@ -70,7 +70,7 @@
 
   <app-filter-label
     label="filters.library"
-    [filters]="filtersService.libraryFilter()"
+    [displayClearIcon]="!!filtersService.libraryFilter().length"
     (clear)="filtersService.libraryFilter.set([])"
   />
   <app-tags
@@ -82,7 +82,7 @@
 
   <app-filter-label
     label="filters.utility"
-    [filters]="filtersService.utilityFilter()"
+    [displayClearIcon]="!!filtersService.utilityFilter().length"
     (clear)="filtersService.utilityFilter.set([])"
   />
   <app-tags

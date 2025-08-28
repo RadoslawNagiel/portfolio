@@ -4,9 +4,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { TAGS, TagType } from '../../data/tags';
 import { MatButtonModule } from '@angular/material/button';
 import { FiltersService } from '../../services/filters.service';
-import { FilterLabelComponent } from '../filter-label/filter-label.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import TagsComponent from '../tags/tags.component';
+import { FilterLabelComponent } from '../../dumb-components/filter-label/filter-label.component';
 
 @Component({
   selector: 'app-filters-modal',
