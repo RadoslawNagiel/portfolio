@@ -32,6 +32,7 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`html`],
       TAGS[`css`],
       TAGS[`angular18`],
+      TAGS[`angular20`],
       TAGS[`ionic`],
       TAGS[`tailwindcss`],
       TAGS[`ngxs`],
@@ -939,6 +940,10 @@ export const PROJECTS: ProjectInfo[] = [
       {
         url: `./images/printer/9.jpg`,
         thumb: `./images/printer/thumbnails/9.jpg`,
+      },
+      {
+        url: `./images/printer/10.jpg`,
+        thumb: `./images/printer/thumbnails/10.jpg`,
       },
     ],
     color: `#a3a3a3`,

@@ -181,6 +181,13 @@ export const TAGS: Tags = {
     color: `white`,
     tooltip: `filters.framework`,
   },
+  angular20: {
+    type: TagType.framework,
+    name: `Angular 20`,
+    background: `#dd0031`,
+    color: `white`,
+    tooltip: `filters.framework`,
+  },
 
   primeNG: {
     type: TagType.framework,
