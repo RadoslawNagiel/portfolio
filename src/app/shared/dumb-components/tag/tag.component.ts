@@ -13,7 +13,7 @@ import { Tag } from '../../data/tags';
 export default class TagComponent {
   tag = input.required<Tag>();
   selectable = input(false);
-  isSelected = input(false);
+  isNotSelected = input(false);
 
   clicked = output();
 }

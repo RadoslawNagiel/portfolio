@@ -3,7 +3,7 @@
   [ngClass]="{
     'tag-text-shadow': tag().background,
     'cursor-pointer': selectable(),
-    'not-selected': !isSelected()
+    'not-selected': isNotSelected()
   }"
   [ngStyle]="{
     background: tag().background ?? 'transparent',

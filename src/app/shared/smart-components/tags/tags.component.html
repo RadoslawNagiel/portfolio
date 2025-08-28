@@ -3,7 +3,7 @@
   <app-tag
     [tag]="tag"
     [selectable]="selectable()"
-    [isSelected]="!selectedTags().length || isSelected(tag.name)"
+    [isNotSelected]="!!selectedTags().length && !isSelected(tag.name)"
     (clicked)="tagClicked(tag)"
   />
   } @if(extraTagsAmount()){
