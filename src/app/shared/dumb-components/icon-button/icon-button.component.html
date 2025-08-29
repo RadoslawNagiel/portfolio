@@ -1,0 +1,10 @@
+<button
+  role="button"
+  [aria-label]="ariaLabel() | translate"
+  [matTooltip]="tooltipText()"
+  (click)="clicked.emit()"
+>
+  <span class="material-symbols-outlined" aria-hidden="true">
+    {{ icon() }}
+  </span>
+</button>
