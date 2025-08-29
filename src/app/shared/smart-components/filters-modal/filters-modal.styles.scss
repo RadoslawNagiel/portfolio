@@ -1,19 +1,13 @@
-.filters {
-  &-header {
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2rem 2rem 0rem 2rem;
+
+  div {
     display: flex;
-    justify-content: space-between;
-
-    margin: 2rem 2rem 0rem 2rem;
-
-    div {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-  }
-  &-title {
-    font-size: var(--font-size-3);
-    line-height: var(--line-height-3);
+    align-items: center;
+    gap: 1rem;
   }
 }
 

@@ -1,15 +1,13 @@
-<div class="filter-container">
-  <span class="filter-label">
+<div class="filter-container font-size-2" [ngClass]="labelClass()">
+  <span>
     {{ label() | translate }}
   </span>
   @if(displayClearIcon()){
-  <span
-    id="clear-icon"
-    class="material-symbols-outlined button"
-    [matTooltip]="'filters.clearTooltip' | translate"
-    (click)="clear.emit()"
-  >
-    filter_alt_off
-  </span>
+  <app-icon-button
+    icon="filter_alt_off"
+    [ariaLabel]="buttonTooltip()"
+    [tooltip]="buttonTooltip()"
+    (clicked)="clear.emit()"
+  />
   }
 </div>
