@@ -15,10 +15,10 @@
   @for (project of filtersService.filteredProjects(); track $index) {
   <div #projectElement class="project" (click)="openProject(project.id)">
     <div class="project-header">
-      <div class="project-title">
+      <div class="project-title font-size-3">
         {{ "projects." + project.id + ".name" | translate }}
       </div>
-      <div class="project-date">
+      <div class="project-date font-size-2">
         {{ project.dateFrom | date : "MM/yyyy" }}
         @if(project.dateTo){ - {{ project.dateTo | date : "MM/yyyy" }} }
         @if(project.inProgress){ - {{ "projects.now" | translate }}
@@ -32,7 +32,7 @@
     <app-tags [tags]="project.tags" [tagsTypes]="[TagType.projectType]" />
 
     <div
-      class="project-description"
+      class="project-description font-size-2"
       [innerHTML]="'projects.' + project.id + '.description' | translate"
     ></div>
 
@@ -43,7 +43,7 @@
     />
   </div>
   } @empty {
-  <div class="bottom-info">
+  <div class="bottom-info font-size-2">
     {{ "noProjectsInfo" | translate }}
   </div>
   }

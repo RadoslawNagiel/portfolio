@@ -3,7 +3,7 @@
     <div class="project-title">
       {{ "projects." + project.id + ".name" | translate }}
     </div>
-    <div class="project-date">
+    <div class="project-date font-size-2">
       {{ project.dateFrom | date : "MM/yyyy" }}
       @if(project.dateTo){ - {{ project.dateTo | date : "MM/yyyy" }} }
       @if(project.inProgress){ - {{ "projects.now" | translate }}
@@ -42,11 +42,11 @@
   <app-tags [tags]="project.tags" [tagsTypes]="[TagType.projectType]" />
 
   <div
-    class="project-description"
+    class="project-description font-size-2"
     [innerHTML]="'projects.' + project.id + '.description' | translate"
   ></div>
 
-  <div class="technologies">
+  <div class="technologies font-size-2">
     {{ "projects.technologies" | translate }}
   </div>
 
