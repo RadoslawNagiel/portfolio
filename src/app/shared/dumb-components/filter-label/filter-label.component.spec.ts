@@ -1,58 +1,60 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { TranslateModule } from '@ngx-translate/core';
+import { render, screen } from '@testing-library/angular';
+import { ByRoleMatcher, ByRoleOptions } from '@testing-library/dom';
+import userEvent from '@testing-library/user-event';
 import { FilterLabelComponent } from './filter-label.component';
 
 describe(`FilterLabelComponent`, () => {
-  let fixture: ComponentFixture<FilterLabelComponent>;
-  let component: FilterLabelComponent;
+  const inputs = {
+    label: `Test label`,
+    buttonTooltip: `Clear tooltip`,
+  };
 
-  const labelText = `Test label`;
+  const buttonRole: [ByRoleMatcher, ByRoleOptions | undefined] = [
+    `button`,
+    { name: inputs.buttonTooltip },
+  ];
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [FilterLabelComponent, TranslateModule.forRoot()],
+  it(`should displayed label`, async () => {
+    await render(FilterLabelComponent, {
+      imports: [TranslateModule.forRoot()],
+      inputs,
     });
-
-    fixture = TestBed.createComponent(FilterLabelComponent);
-    fixture.componentRef.setInput(`label`, labelText);
-    component = fixture.componentInstance;
-
-    fixture.detectChanges();
+    expect(screen.getByText(inputs.label)).toBeDefined();
   });
 
-  it(`should be created`, () => {
-    expect(component).toBeDefined();
+  it(`should not display the clear icon if the #displayClearIcon parameter is false`, async () => {
+    await render(FilterLabelComponent, {
+      imports: [TranslateModule.forRoot()],
+      inputs: {
+        ...inputs,
+        displayClearIcon: false,
+      },
+    });
+    expect(screen.queryByRole(...buttonRole)).toBeNull();
   });
 
-  it(`should displayed label`, () => {
-    const labelElement: HTMLElement = fixture.debugElement.query(
-      By.css(`.filter-label`)
-    ).nativeElement;
-    expect(labelElement.textContent.trim()).toBe(labelText);
+  it(`should display the clear icon if the #displayClearIcon parameter is true`, async () => {
+    await render(FilterLabelComponent, {
+      imports: [TranslateModule.forRoot()],
+      inputs: {
+        ...inputs,
+        displayClearIcon: true,
+      },
+    });
+    expect(screen.getByRole(...buttonRole)).toBeDefined();
   });
 
-  it(`should toggle the clear icon if the #displayClearIcon parameter is set`, () => {
-    let clearIcon = fixture.debugElement.query(By.css(`#clear-icon`));
-    expect(clearIcon?.nativeElement).not.toBeDefined();
-
-    fixture.componentRef.setInput(`displayClearIcon`, true);
-    fixture.detectChanges();
-    clearIcon = fixture.debugElement.query(By.css(`#clear-icon`));
-    expect(clearIcon.nativeElement).toBeDefined();
-  });
-
-  it(`should emit an event if the clear icon is clicked`, () => {
-    spyOn(component.clear, `emit`);
-
-    fixture.componentRef.setInput(`displayClearIcon`, true);
-    fixture.detectChanges();
-
-    const clearIcon = fixture.debugElement.query(
-      By.css(`#clear-icon`)
-    ).nativeElement;
-    clearIcon.click();
-
-    expect(component.clear.emit).toHaveBeenCalled();
+  it(`should emit an event if the clear icon is clicked`, async () => {
+    const { fixture } = await render(FilterLabelComponent, {
+      imports: [TranslateModule.forRoot()],
+      inputs: {
+        ...inputs,
+        displayClearIcon: true,
+      },
+    });
+    spyOn(fixture.componentInstance.clear, `emit`);
+    await userEvent.click(screen.getByRole(...buttonRole));
+    expect(fixture.componentInstance.clear.emit).toHaveBeenCalled();
   });
 });
