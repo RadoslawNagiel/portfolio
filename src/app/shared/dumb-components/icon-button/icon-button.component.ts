@@ -1,6 +1,6 @@
-import { Component, computed, inject, input, output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-icon-button',
@@ -8,19 +8,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './icon-button.component.html',
 })
 export class IconButtonComponent {
-  readonly translateService = inject(TranslateService);
-
   icon = input.required<string>();
   ariaLabel = input.required<string>();
 
   tooltip = input<string>();
   clicked = output();
-
-  tooltipText = computed(() => {
-    const tooltip = this.tooltip();
-    if (tooltip) {
-      return this.translateService.instant(tooltip);
-    }
-    return null;
-  });
 }

@@ -1,0 +1,14 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.sidenav-overrides(
+    (
+      container-background-color: var(--color-2),
+      container-elevation-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5),
+    )
+  );
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

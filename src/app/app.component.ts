@@ -1,43 +1,20 @@
-import { Component, inject } from '@angular/core';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { Component } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { environment } from './environments/environment';
-import { FiltersService } from './shared/services/filters.service';
-import { LanguageService } from './shared/services/language.service';
-import { ThemeService } from './shared/services/theme.service';
-import { FiltersModalComponent } from './shared/smart-components/filters-modal/filters-modal.component';
+import { IconButtonComponent } from './shared/dumb-components/icon-button/icon-button.component';
+import { MenuItemsComponent } from './shared/smart-components/menu-items/menu-items.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
     TranslateModule,
-    MatButtonToggleModule,
-    MatTooltipModule,
-    MatBadgeModule,
-    MatDialogModule,
+    MatSidenavModule,
+    IconButtonComponent,
+    MenuItemsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  readonly languageService = inject(LanguageService);
-  readonly themeService = inject(ThemeService);
-  readonly filtersService = inject(FiltersService);
-
-  readonly languages = environment.availableLanguages;
-
-  readonly dialog = inject(MatDialog);
-
-  toggleTheme() {
-    this.themeService.setMode(!this.themeService.isDarkThemeSelected());
-  }
-
-  openFilters() {
-    this.dialog.open(FiltersModalComponent);
-  }
-}
+export class AppComponent {}

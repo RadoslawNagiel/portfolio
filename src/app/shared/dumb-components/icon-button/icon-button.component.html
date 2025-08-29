@@ -1,7 +1,8 @@
 <button
   role="button"
   [aria-label]="ariaLabel() | translate"
-  [matTooltip]="tooltipText()"
+  style="display: flex"
+  [matTooltip]="tooltip() ? (tooltip()! | translate) : null"
   (click)="clicked.emit()"
 >
   <span class="material-symbols-outlined" aria-hidden="true">

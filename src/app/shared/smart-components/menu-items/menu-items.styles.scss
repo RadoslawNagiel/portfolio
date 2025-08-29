@@ -1,0 +1,16 @@
+.items-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.labels-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}

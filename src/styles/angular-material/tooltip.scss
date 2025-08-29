@@ -1,0 +1,10 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.tooltip-overrides(
+    (
+      container-color: #c7c7c7,
+      supporting-text-color: #1a1a1a,
+    )
+  );
+}

@@ -1,0 +1,43 @@
+<div class="items-container" [ngStyle]="{ 'flex-direction': direction() }">
+  <div class="labels-container">
+    @if(showLabels()){
+    <div>
+      {{ "header.tooltips.filter" | translate }}
+    </div>
+    }
+    <app-icon-button
+      icon="filter_alt"
+      [tooltip]="showLabels() ? undefined : 'header.tooltips.filter'"
+      ariaLabel="header.tooltips.filter"
+      [matBadgeHidden]="filtersService.selectedFiltersAmount() === 0"
+      [matBadge]="filtersService.selectedFiltersAmount()"
+      (clicked)="openFilters()"
+    />
+  </div>
+
+  <div class="labels-container">
+    @if(showLabels()){
+    <div>
+      {{ "header.tooltips.theme" | translate }}
+    </div>
+    }
+    <app-icon-button
+      [icon]="themeService.isDarkThemeSelected() ? 'dark_mode' : 'light_mode'"
+      [tooltip]="showLabels() ? undefined : 'header.tooltips.theme'"
+      ariaLabel="header.tooltips.theme"
+      (clicked)="toggleTheme()"
+    />
+  </div>
+
+  <div class="labels-container">
+    @if(showLabels()){
+    <div>
+      {{ "header.tooltips.language" | translate }}
+    </div>
+    }
+    <app-toggle-language
+      style="min-width: 80px"
+      [showTooltip]="!showLabels()"
+    />
+  </div>
+</div>

@@ -1,41 +1,36 @@
 <div>
-  <header role="banner">
+  <header role="banner" #headerContainer>
     <div class="header-title">{{ "header.title" | translate }}</div>
 
-    <span
-      class="material-symbols-outlined button"
-      [matBadgeHidden]="filtersService.selectedFiltersAmount() === 0"
-      [matBadge]="filtersService.selectedFiltersAmount()"
-      [matTooltip]="'header.tooltips.filter' | translate"
-      (click)="openFilters()"
-    >
-      filter_alt
-    </span>
-
-    <span
-      class="material-symbols-outlined button"
-      [matTooltip]="'header.tooltips.theme' | translate"
-      (click)="toggleTheme()"
-    >
-      {{ themeService.isDarkThemeSelected() ? "dark_mode" : "light_mode" }}
-    </span>
-
-    <div style="min-width: 80px">
-      <mat-button-toggle-group
-        [hideSingleSelectionIndicator]="true"
-        [value]="languageService.selectedLanguage()"
-        [matTooltip]="'header.tooltips.language' | translate"
-        (valueChange)="languageService.setLanguage($event)"
-      >
-        @for (language of languages; track language.langKey) {
-        <mat-button-toggle [value]="language.langKey">{{
-          language.value
-        }}</mat-button-toggle>
-        }
-      </mat-button-toggle-group>
+    <div class="header-items">
+      <app-menu-items direction="row" />
     </div>
+
+    <app-icon-button
+      class="header-menu-button"
+      icon="menu"
+      ariaLabel="menu"
+      (clicked)="sidenav.toggle()"
+    />
   </header>
-  <main>
-    <router-outlet />
-  </main>
+
+  <mat-sidenav-container>
+    <mat-sidenav
+      #sidenav
+      mode="over"
+      [fixedInViewport]="true"
+      position="end"
+      [fixedTopGap]="headerContainer.scrollHeight"
+    >
+      <div class="sidenav-items">
+        <app-menu-items direction="column-reverse" [showLabels]="true" />
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <main id="main">
+        <router-outlet />
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

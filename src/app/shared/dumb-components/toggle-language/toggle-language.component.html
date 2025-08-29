@@ -1,0 +1,16 @@
+<div>
+  <mat-button-toggle-group
+    [hideSingleSelectionIndicator]="true"
+    [value]="languageService.selectedLanguage()"
+    [matTooltip]="
+      showTooltip() ? ('header.tooltips.language' | translate) : null
+    "
+    (valueChange)="languageService.setLanguage($event)"
+  >
+    @for (language of languages; track language.langKey) {
+    <mat-button-toggle [value]="language.langKey">{{
+      language.value
+    }}</mat-button-toggle>
+    }
+  </mat-button-toggle-group>
+</div>

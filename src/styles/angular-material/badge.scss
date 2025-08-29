@@ -1,0 +1,10 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.badge-overrides(
+    (
+      background-color: var(--primary-theme),
+      text-color: #1a1a1a,
+    )
+  );
+}

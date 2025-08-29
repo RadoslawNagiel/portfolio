@@ -1,5 +1,11 @@
 @use "./fonts.scss";
 @use "./variables.scss";
-@use "./angular-material.scss";
 @use "./gallery.scss";
 @use "./text.scss";
+
+@use "./angular-material/badge.scss";
+@use "./angular-material/button.scss";
+@use "./angular-material/dialog.scss";
+@use "./angular-material/sidenav.scss";
+@use "./angular-material/theme.scss";
+@use "./angular-material/tooltip.scss";

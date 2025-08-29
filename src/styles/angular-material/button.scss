@@ -1,0 +1,19 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.button-overrides(
+    (
+      filled-container-color: var(--primary-theme),
+      filled-label-text-color: #1a1a1a,
+    )
+  );
+
+  @include mat.button-toggle-overrides(
+    (
+      background-color: #4d4d4d,
+      selected-state-background-color: var(--primary-theme),
+      selected-state-text-color: #1a1a1a,
+      text-color: #e6e6e6,
+    )
+  );
+}

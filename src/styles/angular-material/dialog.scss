@@ -1,0 +1,39 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.dialog-overrides(
+    (
+      container-color: var(--color-2),
+      supporting-text-color: var(--text-color),
+      container-min-width: "60vw",
+    )
+  );
+
+  @media (max-width: 1920px) {
+    @include mat.dialog-overrides(
+      (
+        container-min-width: "80vw",
+      )
+    );
+  }
+
+  @media (max-width: 1440px) {
+    @include mat.dialog-overrides(
+      (
+        container-min-width: "90vw",
+      )
+    );
+  }
+}
+
+.mat-mdc-dialog-container {
+  max-height: 95vh !important;
+}
+
+.mat-mdc-dialog-content {
+  max-height: 100% !important;
+}
+
+mat-dialog-content {
+  padding: 1rem 2rem 2rem 2rem;
+}

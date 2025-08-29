@@ -5,22 +5,22 @@ import {
   ElementRef,
   HostListener,
   inject,
+  OnDestroy,
+  OnInit,
   signal,
   viewChildren,
-  OnInit,
-  OnDestroy,
 } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { DateTime } from 'luxon';
+import { firstValueFrom, Subscription } from 'rxjs';
 import { ProjectInfo, PROJECTS } from '../../shared/data/projects';
 import { TagType } from '../../shared/data/tags';
 import { FiltersService } from '../../shared/services/filters.service';
+import TagsComponent from '../../shared/smart-components/tags/tags.component';
 import { TimelineComponent } from '../../shared/smart-components/timeline/timeline.component';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
-import { DateTime } from 'luxon';
-import { ActivatedRoute, Router } from '@angular/router';
-import { firstValueFrom, Subscription } from 'rxjs';
-import TagsComponent from '../../shared/smart-components/tags/tags.component';
 
 @Component({
   selector: 'app-home',
@@ -46,6 +46,8 @@ export default class HomeComponent implements OnInit, OnDestroy {
 
   readonly projectElements =
     viewChildren<ElementRef<HTMLDivElement>>(`projectElement`);
+
+  readonly mainTop = signal(document.getElementById(`main`)?.offsetTop);
 
   selectedYear = signal(new Date().getFullYear());
 
@@ -74,6 +76,11 @@ export default class HomeComponent implements OnInit, OnDestroy {
         project.dateTo?.getFullYear() ?? project.dateFrom.getFullYear()
       );
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.mainTop.set(document.getElementById(`main`)?.offsetTop);
   }
 
   maxDate = computed(() => {
@@ -124,6 +131,9 @@ export default class HomeComponent implements OnInit, OnDestroy {
         }
       })
     );
+    setTimeout(() => {
+      this.onResize();
+    }, 0);
   }
 
   ngOnDestroy() {
