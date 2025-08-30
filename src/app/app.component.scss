@@ -3,6 +3,7 @@
     font-size: var(--font-size-4);
     font-family: "Impact";
     margin-right: auto;
+    padding: 1rem;
   }
 
   &-items {
@@ -12,6 +13,8 @@
   }
 
   &-menu-button {
+    padding: 1rem;
+
     @media (min-width: 800px) {
       display: none !important;
     }
@@ -21,12 +24,10 @@
 header {
   background-color: var(--color-2);
 
-  padding: 1rem;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1.5rem;
+  gap: 1rem;
 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 

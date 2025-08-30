@@ -3,6 +3,8 @@
 }
 
 lightbox {
+  height: auto !important;
+  width: auto !important;
   box-shadow: unset !important;
 
   gallery {
@@ -12,4 +14,8 @@ lightbox {
 
 gallery-thumb {
   margin: 0.25rem;
+}
+
+.g-btn-close {
+  padding: 0.5rem;
 }
