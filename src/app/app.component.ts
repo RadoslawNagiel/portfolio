@@ -24,6 +24,10 @@ export class AppComponent {
 
   toggleMenu() {
     this.menuOpened.set(!this.menuOpened());
+    this.setScroll();
+  }
+
+  setScroll() {
     const body = document.getElementById(`body-element`);
     if (body) {
       body.style.overflow = this.menuOpened() ? `hidden` : `auto`;

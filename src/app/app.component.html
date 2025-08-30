@@ -22,6 +22,7 @@
         position="end"
         [fixedTopGap]="headerContainer.scrollHeight"
         [(opened)]="menuOpened"
+        (openedChange)="setScroll()"
       >
         <div class="sidenav-items">
           <app-menu-items direction="column-reverse" [showLabels]="true" />

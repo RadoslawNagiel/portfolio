@@ -78,5 +78,6 @@ mat-dialog-content {
     right: 0;
     height: 2rem;
     background: linear-gradient(180deg, #ffffff00 0%, var(--color-2) 100%);
+    z-index: 1;
   }
 }
