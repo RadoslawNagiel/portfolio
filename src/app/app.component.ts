@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { IconButtonComponent } from './shared/dumb-components/icon-button/icon-button.component';
 import { MenuItemsComponent } from './shared/smart-components/menu-items/menu-items.component';
+import { TopIconButtonComponent } from './shared/dumb-components/top-button/top-button.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { MenuItemsComponent } from './shared/smart-components/menu-items/menu-it
     MatSidenavModule,
     IconButtonComponent,
     MenuItemsComponent,
+    TopIconButtonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

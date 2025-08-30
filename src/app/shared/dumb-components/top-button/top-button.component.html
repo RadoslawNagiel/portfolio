@@ -1,0 +1,11 @@
+<button
+  class="top-button"
+  [aria-label]="'scrollTop' | translate"
+  [matTooltip]="'scrollTop' | translate"
+  [disabled]="offsetTop() < 500"
+  (click)="scrollTop()"
+>
+  <span class="material-symbols-outlined" aria-hidden="true">
+    keyboard_arrow_up
+  </span>
+</button>
