@@ -68,4 +68,15 @@ mat-dialog-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  &::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    background: linear-gradient(180deg, #ffffff00 0%, var(--color-2) 100%);
+  }
 }

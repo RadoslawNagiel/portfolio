@@ -1,8 +1,9 @@
 <button
   class="top-button"
   [aria-label]="'scrollTop' | translate"
-  [matTooltip]="'scrollTop' | translate"
-  [disabled]="offsetTop() < 500"
+  [matTooltip]="isTouchScreen ? null : ('scrollTop' | translate)"
+  [disabled]="!isButtonVisible()"
+  [ngStyle]="{ opacity: isButtonVisible() ? '100' : '0' }"
   (click)="scrollTop()"
 >
   <span class="material-symbols-outlined" aria-hidden="true">

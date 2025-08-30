@@ -27,7 +27,8 @@
 }
 
 .mat-mdc-dialog-container {
-  max-height: 95vh !important;
+  height: auto !important;
+  max-height: 100% !important;
 }
 
 .mat-mdc-dialog-content {
@@ -35,5 +36,9 @@
 }
 
 mat-dialog-content {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 1rem 2rem 1rem !important;
+}
+
+.mat-mdc-dialog-panel {
+  max-height: 95% !important;
 }
