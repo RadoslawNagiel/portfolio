@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin: 2rem 2rem 0rem 2rem;
+  margin: 2rem 1rem 0rem 1rem;
 
   div {
     display: flex;
@@ -14,4 +14,11 @@
 app-tags {
   display: block;
   padding-bottom: 1rem;
+}
+
+mat-dialog-content {
+  app-filter-label {
+    padding-bottom: 1rem;
+    display: block;
+  }
 }

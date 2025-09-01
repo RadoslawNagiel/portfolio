@@ -2,6 +2,7 @@ import { NgStyle } from '@angular/common';
 import { Component, computed, HostListener, signal } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
+import { isTouchScreen } from '../../functions/is-touch-screen';
 
 @Component({
   selector: 'app-top-button',
@@ -10,7 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './top-button.styles.scss',
 })
 export class TopIconButtonComponent {
-  readonly isTouchScreen = matchMedia('(hover: none)').matches;
+  readonly isTouchScreen = isTouchScreen();
 
   offsetTop = signal(0);
 

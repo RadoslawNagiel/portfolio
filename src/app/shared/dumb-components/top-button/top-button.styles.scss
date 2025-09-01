@@ -11,13 +11,29 @@
   width: 3rem;
   height: 3rem;
   background-color: var(--primary-theme);
-  color: var(--color-1);
+  color: #1a1a1a;
 
   z-index: 10;
   opacity: 0;
   transition: all 500ms ease-in-out;
 
+  overflow: hidden;
   &:disabled {
     pointer-events: none;
+  }
+}
+
+@media (any-pointer: fine) {
+  button:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    opacity: 1;
   }
 }
