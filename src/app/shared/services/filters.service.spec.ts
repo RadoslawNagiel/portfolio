@@ -1,9 +1,12 @@
 import { TestBed } from '@angular/core/testing';
+import { TranslateService } from '@ngx-translate/core';
 import { PROJECTS } from '../data/projects';
 import { Tag, TAGS } from '../data/tags';
 import { FiltersService } from './filters.service';
 
 describe(`FiltersService`, () => {
+  const spy = jasmine.createSpyObj(`TranslateService`, [`instant`]);
+
   let service: FiltersService;
 
   const testProjectTypeTag: Tag = structuredClone(TAGS[`private`]);
@@ -11,7 +14,7 @@ describe(`FiltersService`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [FiltersService],
+      providers: [FiltersService, { provide: TranslateService, useValue: spy }],
     });
 
     service = TestBed.inject(FiltersService);
