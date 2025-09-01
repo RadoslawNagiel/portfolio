@@ -2,6 +2,20 @@
   <header role="banner" #headerContainer>
     <div class="header-title">{{ "header.title" | translate }}</div>
 
+    <div class="search-container">
+      <div
+        class="search-element"
+        [ngClass]="{ 'search-element-hidden': !showSearch() }"
+      >
+        <app-search
+          class="search"
+          [interactive]="windowWidth() > 800"
+          [disabled]="windowWidth() <= 800 && !showSearch()"
+          (closed)="showSearch.set(false)"
+        />
+      </div>
+    </div>
+
     <div class="header-items">
       <app-menu-items direction="row" />
     </div>
@@ -25,7 +39,12 @@
         (openedChange)="setScroll()"
       >
         <div class="sidenav-items">
-          <app-menu-items direction="column-reverse" [showLabels]="true" />
+          <app-menu-items
+            direction="column-reverse"
+            [showLabels]="true"
+            [showSearch]="true"
+            (searchOpened)="openMobileSearch()"
+          />
         </div>
       </mat-sidenav>
 

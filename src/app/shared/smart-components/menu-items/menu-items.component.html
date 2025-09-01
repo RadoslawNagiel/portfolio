@@ -1,4 +1,20 @@
 <div class="items-container" [ngStyle]="{ 'flex-direction': direction() }">
+  @if(showSearch()){
+  <div class="labels-container">
+    @if(showLabels()){
+    <div>
+      {{ "header.search.filter" | translate }}
+    </div>
+    }
+    <app-icon-button
+      icon="search"
+      [tooltip]="showLabels() ? undefined : 'header.search.filter'"
+      ariaLabel="header.search.filter"
+      (clicked)="openSearch()"
+    />
+  </div>
+  }
+
   <div class="labels-container">
     @if(showLabels()){
     <div>

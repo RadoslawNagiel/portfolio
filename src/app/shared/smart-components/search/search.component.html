@@ -1,0 +1,29 @@
+<form class="search-container" [formGroup]="form">
+  <app-icon-button
+    class="search-icon"
+    icon="search"
+    [ngClass]="{ hidden: opened() }"
+    [disabled]="opened() || disabled()"
+    [ariaLabel]="opened() ? null : ('header.search.filter' | translate)"
+    [tooltip]="opened() ? null : ('header.search.filter' | translate)"
+    (click)="openSearch()"
+  />
+
+  <input
+    #inputEl
+    formControlName="searchValue"
+    type="text"
+    name="search"
+    [placeholder]="'header.search.filter' | translate"
+    [ngClass]="{ visible: opened() }"
+  />
+
+  <app-icon-button
+    [ngClass]="{ visible: opened() }"
+    class="search-close-icon"
+    icon="close"
+    [disabled]="!opened() || disabled()"
+    [ariaLabel]="'header.search.close' | translate"
+    (click)="closeSearch()"
+  />
+</form>

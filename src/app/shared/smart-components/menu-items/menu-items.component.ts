@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component, inject, input } from '@angular/core';
+import { Component, inject, input, output } from '@angular/core';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
@@ -30,6 +30,9 @@ export class MenuItemsComponent {
     `column` | `column-reverse` | `row` | `row-reverse`
   >();
   showLabels = input(false);
+  showSearch = input(false);
+
+  searchOpened = output();
 
   toggleTheme() {
     this.themeService.setMode(!this.themeService.isDarkThemeSelected());
@@ -37,5 +40,9 @@ export class MenuItemsComponent {
 
   openFilters() {
     this.dialog.open(FiltersModalComponent);
+  }
+
+  openSearch() {
+    this.searchOpened.emit();
   }
 }

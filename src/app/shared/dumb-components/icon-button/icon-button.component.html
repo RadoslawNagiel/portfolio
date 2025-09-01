@@ -2,7 +2,8 @@
   role="button"
   [aria-label]="ariaLabel() | translate"
   style="display: flex"
-  [matTooltip]="tooltip() ? (tooltip()! | translate) : null"
+  [matTooltip]="!isTouchScreen && tooltip() ? (tooltip()! | translate) : null"
+  [disabled]="disabled()"
   (click)="clicked.emit()"
 >
   <span class="material-symbols-outlined" aria-hidden="true">

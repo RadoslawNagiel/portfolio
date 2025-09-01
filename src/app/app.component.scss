@@ -14,9 +14,10 @@
 
   &-menu-button {
     padding: 1rem;
+    display: none;
 
-    @media (min-width: 800px) {
-      display: none !important;
+    @media (max-width: 800px) {
+      display: block;
     }
   }
 }
@@ -47,4 +48,62 @@ header {
 mat-sidenav {
   z-index: 11;
   width: 16rem;
+}
+
+@media (min-width: 800px) {
+  .search-container {
+    position: relative;
+    width: 1.5rem;
+    height: 3rem;
+  }
+  .search-element {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 1.5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2rem;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 3rem;
+
+      background: linear-gradient(90deg, #ffffff00 0%, var(--color-2) 66%);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .search {
+    width: 100%;
+  }
+
+  .search-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    background-color: var(--color-2);
+
+    z-index: 1;
+    transition: all 200ms ease-in-out;
+    opacity: 100;
+    &-hidden {
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
 }

@@ -6,6 +6,10 @@
       "filter": "Filtruj projekty",
       "theme": "Zmień motyw",
       "language": "Zmień język"
+    },
+    "search": {
+      "filter": "Wyszukaj projekt",
+      "close": "Anuluj wyszukanie"
     }
   },
   "scrollTop": "Przewiń do góry",

@@ -12,7 +12,9 @@ input[type="reset"] {
 }
 
 @media (any-pointer: fine) {
-  button:hover {
-    opacity: 0.7;
+  button {
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
