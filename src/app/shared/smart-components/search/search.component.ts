@@ -37,15 +37,13 @@ import { SearchService } from '../../services/search.service';
   styleUrl: './search.styles.scss',
 })
 export class SearchComponent implements OnChanges, OnInit, OnDestroy {
-  readonly searchService = inject(SearchService);
-  readonly inputEl = viewChild<ElementRef<HTMLInputElement>>(`inputEl`);
-
   interactive = input(true);
   disabled = input(false);
-
-  opened = signal(false);
-
   closed = output();
+
+  readonly searchService = inject(SearchService);
+  readonly inputEl = viewChild<ElementRef<HTMLInputElement>>(`inputEl`);
+  opened = signal(false);
 
   readonly form = new FormGroup({
     searchValue: new FormControl<string | undefined>(undefined, [
@@ -57,12 +55,7 @@ export class SearchComponent implements OnChanges, OnInit, OnDestroy {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes[`interactive`]) {
-      if (!this.interactive()) {
-        this.opened.set(true);
-      }
-      if (this.interactive()) {
-        this.opened.set(false);
-      }
+      this.opened.set(!this.interactive());
     }
     if (changes[`disabled`]) {
       if (this.disabled()) {

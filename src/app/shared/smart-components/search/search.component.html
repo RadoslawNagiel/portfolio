@@ -4,7 +4,7 @@
     icon="search"
     [ngClass]="{ hidden: opened() }"
     [disabled]="opened() || disabled()"
-    [ariaLabel]="opened() ? null : ('header.search.filter' | translate)"
+    [ariaLabel]="'header.search.filter' | translate"
     [tooltip]="opened() ? null : ('header.search.filter' | translate)"
     (click)="openSearch()"
   />
@@ -13,9 +13,10 @@
     #inputEl
     formControlName="searchValue"
     type="text"
-    name="search"
+    [aria-label]="'header.search.filter' | translate"
     [placeholder]="'header.search.filter' | translate"
     [ngClass]="{ visible: opened() }"
+    [maxlength]="255"
   />
 
   <app-icon-button

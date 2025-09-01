@@ -22,6 +22,7 @@ export const filterProjectsByText = (
       if (
         translateService
           .instant('projects.' + el.id + '.description')
+          .replace(/<br>/g, ' ')
           .replace(/<[^>]*>/g, '')
           .toLowerCase()
           .includes(text.toLowerCase())
