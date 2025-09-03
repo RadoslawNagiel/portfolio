@@ -1,16 +1,14 @@
 import { Component, input, output } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
-import { isTouchScreen } from '../../functions/is-touch-screen';
+import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
 @Component({
   selector: 'app-icon-button',
-  imports: [TranslateModule, MatTooltipModule],
+  imports: [TranslateModule, MatTooltipModule, TooltipValuePipe],
   templateUrl: './icon-button.component.html',
 })
 export class IconButtonComponent {
-  readonly isTouchScreen = isTouchScreen();
-
   icon = input.required<string>();
   ariaLabel = input.required<string>();
 

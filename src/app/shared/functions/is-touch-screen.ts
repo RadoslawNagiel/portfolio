@@ -1,1 +1,1 @@
-export const isTouchScreen = () => matchMedia('(hover: none)').matches;
+export const isTouchScreen = () => window.matchMedia('(hover: none)').matches;

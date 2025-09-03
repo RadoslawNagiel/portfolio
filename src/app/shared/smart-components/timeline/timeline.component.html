@@ -14,7 +14,7 @@
         @if(project && project.months; as months){
         <div
           class="timeline-grid-project"
-          [matTooltip]="'projects.' + project.id + '.name' | translate"
+          [matTooltip]="'projects.' + project.id + '.name' | tooltipValue"
           [matTooltipPosition]="'right'"
           [ngStyle]="{
             'background-color': project.color,

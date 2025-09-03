@@ -1,7 +1,7 @@
 <button
   class="top-button"
   [aria-label]="'scrollTop' | translate"
-  [matTooltip]="isTouchScreen ? null : ('scrollTop' | translate)"
+  [matTooltip]="'scrollTop' | tooltipValue"
   [disabled]="!isButtonVisible()"
   [ngStyle]="{ opacity: isButtonVisible() ? '100' : '0' }"
   (click)="scrollTop()"

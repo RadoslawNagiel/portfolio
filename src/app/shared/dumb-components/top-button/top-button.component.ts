@@ -2,17 +2,15 @@ import { NgStyle } from '@angular/common';
 import { Component, computed, HostListener, signal } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
-import { isTouchScreen } from '../../functions/is-touch-screen';
+import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
 @Component({
   selector: 'app-top-button',
-  imports: [TranslateModule, MatTooltipModule, NgStyle],
+  imports: [TranslateModule, MatTooltipModule, NgStyle, TooltipValuePipe],
   templateUrl: './top-button.component.html',
   styleUrl: './top-button.styles.scss',
 })
 export class TopIconButtonComponent {
-  readonly isTouchScreen = isTouchScreen();
-
   offsetTop = signal(0);
 
   @HostListener('window:scroll', ['$event'])

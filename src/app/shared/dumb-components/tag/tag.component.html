@@ -10,7 +10,7 @@
     color: tag().color,
     borderColor: tag().border ?? 'transparent'
   }"
-  [matTooltip]="isTouchScreen ? null : (tag().tooltip | translate)"
+  [matTooltip]="tag().tooltip | tooltipValue"
   (click)="clicked.emit()"
 >
   {{ tag().name | translate }}

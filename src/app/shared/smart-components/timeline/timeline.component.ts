@@ -7,6 +7,7 @@ import {
   MatTooltipModule,
 } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
+import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
 export interface MontBlock {
   date: Date;
@@ -22,7 +23,14 @@ export interface MontBlock {
 
 @Component({
   selector: 'app-timeline',
-  imports: [DatePipe, NgClass, NgStyle, MatTooltipModule, TranslateModule],
+  imports: [
+    DatePipe,
+    NgClass,
+    NgStyle,
+    MatTooltipModule,
+    TranslateModule,
+    TooltipValuePipe,
+  ],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.styles.scss',
   providers: [

@@ -2,7 +2,7 @@
   role="button"
   [aria-label]="ariaLabel() | translate"
   style="display: flex"
-  [matTooltip]="!isTouchScreen && tooltip() ? (tooltip()! | translate) : null"
+  [matTooltip]="tooltip() | tooltipValue"
   [disabled]="disabled()"
   (click)="clicked.emit()"
 >

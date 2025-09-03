@@ -1,7 +1,7 @@
 <mat-button-toggle-group
   [hideSingleSelectionIndicator]="true"
   [value]="languageService.selectedLanguage()"
-  [matTooltip]="isTouchScreen ? null : ('header.tooltips.language' | translate)"
+  [matTooltip]="'header.tooltips.language' | tooltipValue"
   (valueChange)="languageService.setLanguage($event)"
 >
   @for (language of languages; track language.langKey) {
