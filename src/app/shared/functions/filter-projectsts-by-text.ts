@@ -21,9 +21,7 @@ export const filterProjectsByText = (
       }
       if (
         translateService
-          .instant('projects.' + el.id + '.description')
-          .replace(/<br>/g, ' ')
-          .replace(/<[^>]*>/g, '')
+          .instant('projects.' + el.id + '.name')
           .toLowerCase()
           .includes(text.toLowerCase())
       ) {
@@ -31,7 +29,9 @@ export const filterProjectsByText = (
       }
       if (
         translateService
-          .instant('projects.' + el.id + '.name')
+          .instant('projects.' + el.id + '.description')
+          .replace(/<br>/g, ' ')
+          .replace(/<[^>]*>/g, '')
           .toLowerCase()
           .includes(text.toLowerCase())
       ) {

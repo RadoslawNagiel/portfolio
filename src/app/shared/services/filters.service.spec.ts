@@ -1,12 +1,11 @@
-import { TestBed } from '@angular/core/testing';
-import { TranslateService } from '@ngx-translate/core';
+import { fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { TranslateModule } from '@ngx-translate/core';
 import { PROJECTS } from '../data/projects';
 import { Tag, TAGS } from '../data/tags';
 import { FiltersService } from './filters.service';
+import { SearchService } from './search.service';
 
 describe(`FiltersService`, () => {
-  const spy = jasmine.createSpyObj(`TranslateService`, [`instant`]);
-
   let service: FiltersService;
 
   const testProjectTypeTag: Tag = structuredClone(TAGS[`private`]);
@@ -14,7 +13,8 @@ describe(`FiltersService`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [FiltersService, { provide: TranslateService, useValue: spy }],
+      imports: [TranslateModule.forRoot()],
+      providers: [FiltersService, SearchService],
     });
 
     service = TestBed.inject(FiltersService);
@@ -56,6 +56,20 @@ describe(`FiltersService`, () => {
     result = service.filteredProjects();
     expect(result.length).toBe(projects.length);
   });
+
+  it(`#filteredProjects should only return projects containing filtered text in their name, description or tags`, fakeAsync(() => {
+    service.searchService.searchValue.set(`Winery`);
+    tick(300);
+    expect(service.filteredProjects().length).toBe(2);
+
+    service.searchService.searchValue.set(`projects.sftk.description`);
+    tick(300);
+    expect(service.filteredProjects().length).toBe(1);
+
+    service.searchService.searchValue.set(`c++ builder`);
+    tick(300);
+    expect(service.filteredProjects().length).toBe(2);
+  }));
 
   it(`#selectedFiltersAmount should be return the number of filters if the filters have changed`, () => {
     service.projectTypeFilter.set([testProjectTypeTag]);
