@@ -119,4 +119,9 @@ describe(`SearchComponent`, () => {
     await setup({ disabled: true });
     expect(getSearchInput().disabled).toBeTrue();
   });
+
+  it(`should enable the input when the #disabled parameter is false`, async () => {
+    await setup({ disabled: false });
+    expect(getSearchInput().disabled).toBeFalse();
+  });
 });
