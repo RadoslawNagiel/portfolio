@@ -3,9 +3,11 @@ import {
   PipeTransform,
   ChangeDetectorRef,
   OnDestroy,
+  inject,
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { isTouchScreen } from '../functions/is-touch-screen';
 
 @Pipe({
   name: 'tooltipValue',
@@ -16,13 +18,11 @@ export class TooltipValuePipe implements PipeTransform, OnDestroy {
   private translated: string | null = null;
   private subscription?: Subscription;
 
-  constructor(
-    private translate: TranslateService,
-    private cdr: ChangeDetectorRef
-  ) {}
+  readonly translate = inject(TranslateService);
+  readonly cdr = inject(ChangeDetectorRef);
 
   transform(value?: string): string | null {
-    if (!value) {
+    if (!value || isTouchScreen()) {
       return null;
     }
 

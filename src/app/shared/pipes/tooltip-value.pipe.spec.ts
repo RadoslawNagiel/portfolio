@@ -3,10 +3,14 @@ import {
   TranslateFakeLoader,
   TranslateLoader,
   TranslateModule,
+  TranslateService,
 } from '@ngx-translate/core';
 import { TooltipValuePipe } from './tooltip-value.pipe';
+import { ChangeDetectorRef } from '@angular/core';
 
 describe('TooltipValuePipe', () => {
+  const spy = jasmine.createSpyObj(`ChangeDetectorRefMock`, [`markForCheck`]);
+
   let isTouchScreen: boolean;
 
   beforeEach(() => {
@@ -29,6 +33,10 @@ describe('TooltipValuePipe', () => {
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader },
         }),
+      ],
+      providers: [
+        TranslateService,
+        { provide: ChangeDetectorRef, useValue: spy },
       ],
     });
   });
