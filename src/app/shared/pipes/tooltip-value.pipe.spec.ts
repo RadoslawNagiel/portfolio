@@ -7,25 +7,13 @@ import {
 import { TooltipValuePipe } from './tooltip-value.pipe';
 
 describe('TooltipValuePipe', () => {
-  let pipe: TooltipValuePipe;
+  let isTouchScreen: boolean;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        TranslateModule.forRoot({
-          loader: { provide: TranslateLoader, useClass: TranslateFakeLoader },
-        }),
-      ],
-    });
-    TestBed.runInInjectionContext(() => {
-      pipe = new TooltipValuePipe();
-    });
-  });
-
-  it('should return null if the touch screen', () => {
+    isTouchScreen = false;
     spyOn(window, 'matchMedia').and.callFake((query: string) => {
       return {
-        matches: true,
+        matches: isTouchScreen,
         media: query,
         onchange: null,
         addEventListener: () => {},
@@ -35,14 +23,37 @@ describe('TooltipValuePipe', () => {
         removeListener: () => {},
       } as MediaQueryList;
     });
-    expect(pipe.transform(`Test`)).toBeNull();
+
+    TestBed.configureTestingModule({
+      imports: [
+        TranslateModule.forRoot({
+          loader: { provide: TranslateLoader, useClass: TranslateFakeLoader },
+        }),
+      ],
+    });
+  });
+
+  it('should return null if the touch screen', () => {
+    TestBed.runInInjectionContext(() => {
+      isTouchScreen = true;
+      const pipe = new TooltipValuePipe();
+      expect(pipe.transform(`Test`)).toBeNull();
+    });
   });
 
   it(`should return null if the value is undefined`, () => {
-    expect(pipe.transform(undefined)).toBeNull();
+    TestBed.runInInjectionContext(() => {
+      isTouchScreen = false;
+      const pipe = new TooltipValuePipe();
+      expect(pipe.transform(undefined)).toBeNull();
+    });
   });
 
   it(`should return the translated text when the value is defined`, () => {
-    expect(pipe.transform(`Test`)).toBe(`Test`);
+    TestBed.runInInjectionContext(() => {
+      isTouchScreen = false;
+      const pipe = new TooltipValuePipe();
+      expect(pipe.transform(`Test`)).toBe(`Test`);
+    });
   });
 });
