@@ -15,75 +15,17 @@
 </div>
 
 <mat-dialog-content>
+  @for (filter of filtersService.getFilters(); track $index) {
   <app-filter-label
-    label="filters.projectType"
-    [displayClearIcon]="!!filtersService.projectTypeFilter().length"
-    (clear)="filtersService.projectTypeFilter.set([])"
+    [label]="filter.label"
+    [displayClearIcon]="!!filter.selected().length"
+    (clear)="filter.selected.set([])"
   />
   <app-tags
     [tags]="allTags"
-    [tagsTypes]="[TagType.projectType]"
+    [tagsTypes]="[filter.type]"
     [selectable]="true"
-    [(selectedTags)]="filtersService.projectTypeFilter"
+    [(selectedTags)]="filter.selected"
   />
-
-  <app-filter-label
-    label="filters.language"
-    [displayClearIcon]="!!filtersService.languageFilter().length"
-    (clear)="filtersService.languageFilter.set([])"
-  />
-  <app-tags
-    [tags]="allTags"
-    [tagsTypes]="[TagType.language]"
-    [selectable]="true"
-    [(selectedTags)]="filtersService.languageFilter"
-  />
-
-  <app-filter-label
-    label="filters.framework"
-    [displayClearIcon]="!!filtersService.frameworkFilter().length"
-    (clear)="filtersService.frameworkFilter.set([])"
-  />
-  <app-tags
-    [tags]="allTags"
-    [tagsTypes]="[TagType.framework]"
-    [selectable]="true"
-    [(selectedTags)]="filtersService.frameworkFilter"
-  />
-
-  <app-filter-label
-    label="filters.api"
-    [displayClearIcon]="!!filtersService.apiFilter().length"
-    (clear)="filtersService.apiFilter.set([])"
-  />
-  <app-tags
-    [tags]="allTags"
-    [tagsTypes]="[TagType.api]"
-    [selectable]="true"
-    [(selectedTags)]="filtersService.apiFilter"
-  />
-
-  <app-filter-label
-    label="filters.library"
-    [displayClearIcon]="!!filtersService.libraryFilter().length"
-    (clear)="filtersService.libraryFilter.set([])"
-  />
-  <app-tags
-    [tags]="allTags"
-    [tagsTypes]="[TagType.library]"
-    [selectable]="true"
-    [(selectedTags)]="filtersService.libraryFilter"
-  />
-
-  <app-filter-label
-    label="filters.utility"
-    [displayClearIcon]="!!filtersService.utilityFilter().length"
-    (clear)="filtersService.utilityFilter.set([])"
-  />
-  <app-tags
-    [tags]="allTags"
-    [tagsTypes]="[TagType.utility]"
-    [selectable]="true"
-    [(selectedTags)]="filtersService.utilityFilter"
-  />
+  }
 </mat-dialog-content>

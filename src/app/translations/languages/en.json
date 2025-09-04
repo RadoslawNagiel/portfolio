@@ -30,6 +30,7 @@
     "api": "API",
     "library": "Library",
     "utility": "Utility",
+    "tests": "Tests",
     "clearAllTooltip": "Clear all filters",
     "clearTooltip": "Clear filter"
   },

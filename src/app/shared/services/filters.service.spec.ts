@@ -25,12 +25,9 @@ describe(`FiltersService`, () => {
   });
 
   it(`all filters should be empty at startup`, () => {
-    expect(service.projectTypeFilter().length).toBe(0);
-    expect(service.languageFilter().length).toBe(0);
-    expect(service.frameworkFilter().length).toBe(0);
-    expect(service.apiFilter().length).toBe(0);
-    expect(service.libraryFilter().length).toBe(0);
-    expect(service.utilityFilter().length).toBe(0);
+    Object.entries(service.filters).forEach(([, filter]) => {
+      expect(filter.selected().length).toBe(0);
+    });
   });
 
   it(`#filteredProjects should return all projects at startup`, () => {
@@ -42,14 +39,14 @@ describe(`FiltersService`, () => {
   });
 
   it(`#filteredProjects should only return projects containing filtered tags`, () => {
-    service.frameworkFilter.set([testProjectTypeTag]);
+    service.filters.frameworkFilter.selected.set([testProjectTypeTag]);
     let projects = structuredClone(PROJECTS).filter((project) =>
       project.tags.find((tag) => tag.name === testProjectTypeTag.name)
     );
     let result = service.filteredProjects();
     expect(result.length).toBe(projects.length);
 
-    service.languageFilter.set([testLanguageTag]);
+    service.filters.languageFilter.selected.set([testLanguageTag]);
     projects = projects.filter((project) =>
       project.tags.find((tag) => tag.name === testLanguageTag.name)
     );
@@ -72,39 +69,19 @@ describe(`FiltersService`, () => {
   }));
 
   it(`#selectedFiltersAmount should be return the number of filters if the filters have changed`, () => {
-    service.projectTypeFilter.set([testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(1);
-
-    service.languageFilter.set([testProjectTypeTag, testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(2);
-
-    service.frameworkFilter.set([testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(3);
-
-    service.apiFilter.set([
-      testProjectTypeTag,
-      testProjectTypeTag,
-      testProjectTypeTag,
-      testProjectTypeTag,
-      testProjectTypeTag,
-    ]);
-    expect(service.selectedFiltersAmount()).toBe(4);
-
-    service.libraryFilter.set([testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(5);
-
-    service.utilityFilter.set([testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(6);
+    Object.entries(service.filters).forEach(([, filter], index) => {
+      filter.selected.set([testProjectTypeTag, testLanguageTag]);
+      expect(service.selectedFiltersAmount()).toBe(index + 1);
+    });
   });
 
   it(`#clearAllFilters should set all filters empty`, () => {
-    service.projectTypeFilter.set([testProjectTypeTag]);
-    service.languageFilter.set([testProjectTypeTag]);
-    service.frameworkFilter.set([testProjectTypeTag]);
-    service.apiFilter.set([testProjectTypeTag]);
-    service.libraryFilter.set([testProjectTypeTag]);
-    service.utilityFilter.set([testProjectTypeTag]);
-    expect(service.selectedFiltersAmount()).toBe(6);
+    Object.entries(service.filters).forEach(([, filter]) => {
+      filter.selected.set([testProjectTypeTag]);
+    });
+    expect(service.selectedFiltersAmount()).toBe(
+      Object.keys(service.filters).length
+    );
     service.clearAllFilters();
     expect(service.selectedFiltersAmount()).toBe(0);
   });

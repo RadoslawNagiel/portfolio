@@ -5,6 +5,7 @@ export enum TagType {
   api = `api`,
   library = `library`,
   utility = `utility`,
+  tests = `tests`,
 }
 export interface Tag {
   type: TagType;
@@ -394,5 +395,26 @@ export const TAGS: Tags = {
     background: `#E97601`,
     color: `white`,
     tooltip: `filters.utility`,
+  },
+  jasmine: {
+    type: TagType.tests,
+    name: `Jasmine`,
+    background: `#8A4182`,
+    color: `white`,
+    tooltip: `filters.tests`,
+  },
+  karma: {
+    type: TagType.tests,
+    name: `Karma`,
+    background: `#42BEAE`,
+    color: `white`,
+    tooltip: `filters.tests`,
+  },
+  playwright: {
+    type: TagType.tests,
+    name: `Playwright`,
+    background: `#1E8B22`,
+    color: `white`,
+    tooltip: `filters.tests`,
   },
 };

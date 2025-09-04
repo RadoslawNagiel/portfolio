@@ -75,7 +75,7 @@ export const PROJECTS: ProjectInfo[] = [
   {
     id: `portfolio`,
     dateFrom: new Date(2025, 5, 24),
-    dateTo: new Date(2025, 7, 28),
+    dateTo: new Date(2025, 8, 4),
     tags: [
       TAGS[`private`],
       TAGS[`individual`],
@@ -90,6 +90,9 @@ export const PROJECTS: ProjectInfo[] = [
       TAGS[`ngxTranslate`],
       TAGS[`scss`],
       TAGS[`eslint`],
+      TAGS[`jasmine`],
+      TAGS[`karma`],
+      TAGS[`playwright`],
     ],
     mainImage: `./images/portfolio/main.jpg`,
     images: [

@@ -1,7 +1,7 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { PROJECTS } from '../data/projects';
-import { Tag } from '../data/tags';
+import { Tag, TagType } from '../data/tags';
 import { filterProjectsByTag } from '../functions/filter-projectsts-by-tag';
 import { filterProjectsByText } from '../functions/filter-projectsts-by-text';
 import { returnOneIfNotEmpty } from '../functions/return-one-if-not-empty';
@@ -14,12 +14,43 @@ export class FiltersService {
   readonly searchService = inject(SearchService);
   readonly translateService = inject(TranslateService);
 
-  projectTypeFilter = signal<Tag[]>([]);
-  languageFilter = signal<Tag[]>([]);
-  frameworkFilter = signal<Tag[]>([]);
-  apiFilter = signal<Tag[]>([]);
-  libraryFilter = signal<Tag[]>([]);
-  utilityFilter = signal<Tag[]>([]);
+  filters = {
+    projectTypeFilter: {
+      label: `filters.projectType`,
+      type: TagType.projectType,
+      selected: signal<Tag[]>([]),
+    },
+    languageFilter: {
+      label: `filters.language`,
+      type: TagType.language,
+      selected: signal<Tag[]>([]),
+    },
+    frameworkFilter: {
+      label: `filters.framework`,
+      type: TagType.framework,
+      selected: signal<Tag[]>([]),
+    },
+    apiFilter: {
+      label: `filters.api`,
+      type: TagType.api,
+      selected: signal<Tag[]>([]),
+    },
+    libraryFilter: {
+      label: `filters.library`,
+      type: TagType.library,
+      selected: signal<Tag[]>([]),
+    },
+    utilityFilter: {
+      label: `filters.utility`,
+      type: TagType.utility,
+      selected: signal<Tag[]>([]),
+    },
+    testsFilter: {
+      label: `filters.tests`,
+      type: TagType.tests,
+      selected: signal<Tag[]>([]),
+    },
+  };
 
   filteredProjects = computed(() => {
     let projects = structuredClone(PROJECTS);
@@ -28,32 +59,27 @@ export class FiltersService {
       projects,
       this.translateService
     );
-    projects = filterProjectsByTag(this.projectTypeFilter(), projects);
-    projects = filterProjectsByTag(this.languageFilter(), projects);
-    projects = filterProjectsByTag(this.frameworkFilter(), projects);
-    projects = filterProjectsByTag(this.apiFilter(), projects);
-    projects = filterProjectsByTag(this.libraryFilter(), projects);
-    projects = filterProjectsByTag(this.utilityFilter(), projects);
+    this.getFilters().forEach((value) => {
+      projects = filterProjectsByTag(value.selected(), projects);
+    });
     return projects;
   });
 
   selectedFiltersAmount = computed(() => {
-    return (
-      returnOneIfNotEmpty(this.projectTypeFilter()) +
-      returnOneIfNotEmpty(this.languageFilter()) +
-      returnOneIfNotEmpty(this.frameworkFilter()) +
-      returnOneIfNotEmpty(this.apiFilter()) +
-      returnOneIfNotEmpty(this.libraryFilter()) +
-      returnOneIfNotEmpty(this.utilityFilter())
-    );
+    let amount = 0;
+    this.getFilters().forEach((value) => {
+      amount += returnOneIfNotEmpty(value.selected());
+    });
+    return amount;
   });
 
   clearAllFilters() {
-    this.projectTypeFilter.set([]);
-    this.languageFilter.set([]);
-    this.frameworkFilter.set([]);
-    this.apiFilter.set([]);
-    this.libraryFilter.set([]);
-    this.utilityFilter.set([]);
+    this.getFilters().forEach((value) => {
+      value.selected.set([]);
+    });
+  }
+
+  getFilters() {
+    return Object.entries(this.filters).map(([, value]) => value);
   }
 }
