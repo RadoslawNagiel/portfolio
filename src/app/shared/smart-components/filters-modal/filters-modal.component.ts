@@ -10,14 +10,7 @@ import { FilterLabelComponent } from '../../dumb-components/filter-label/filter-
 
 @Component({
   selector: 'app-filters-modal',
-  imports: [
-    MatDialogModule,
-    TranslateModule,
-    TagsComponent,
-    MatButtonModule,
-    FilterLabelComponent,
-    MatTooltipModule,
-  ],
+  imports: [MatDialogModule, TranslateModule, TagsComponent, MatButtonModule, FilterLabelComponent, MatTooltipModule],
   templateUrl: './filters-modal.component.html',
   styleUrl: `./filters-modal.styles.scss`,
 })

@@ -1,15 +1,5 @@
 import { DatePipe, NgStyle } from '@angular/common';
-import {
-  Component,
-  computed,
-  ElementRef,
-  HostListener,
-  inject,
-  OnDestroy,
-  OnInit,
-  signal,
-  viewChildren,
-} from '@angular/core';
+import { Component, computed, ElementRef, HostListener, inject, OnDestroy, OnInit, signal, viewChildren } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -24,14 +14,7 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    TranslateModule,
-    DatePipe,
-    MatDialogModule,
-    TagsComponent,
-    TimelineComponent,
-    NgStyle,
-  ],
+  imports: [TranslateModule, DatePipe, MatDialogModule, TagsComponent, TimelineComponent, NgStyle],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -44,8 +27,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
   readonly filtersService = inject(FiltersService);
   readonly activatedRoute = inject(ActivatedRoute);
 
-  readonly projectElements =
-    viewChildren<ElementRef<HTMLDivElement>>(`projectElement`);
+  readonly projectElements = viewChildren<ElementRef<HTMLDivElement>>(`projectElement`);
 
   readonly mainTop = signal(document.getElementById(`main`)?.offsetTop);
 
@@ -58,10 +40,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
     if (this.dialog.openDialogs.length) {
       return;
     }
-    let index = this.projectElements().findIndex(
-      (el) =>
-        el.nativeElement.offsetTop >= document.documentElement.scrollTop + 200
-    );
+    let index = this.projectElements().findIndex((el) => el.nativeElement.offsetTop >= document.documentElement.scrollTop + 200);
     if (index === -1) {
       index = this.projectElements().length;
     }
@@ -72,9 +51,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
     if (project.inProgress) {
       this.selectedYear.set(new Date().getFullYear());
     } else {
-      this.selectedYear.set(
-        project.dateTo?.getFullYear() ?? project.dateFrom.getFullYear()
-      );
+      this.selectedYear.set(project.dateTo?.getFullYear() ?? project.dateFrom.getFullYear());
     }
   }
 
@@ -84,25 +61,17 @@ export default class HomeComponent implements OnInit, OnDestroy {
   }
 
   maxDate = computed(() => {
-    const projects = structuredClone(
-      this.filtersService.filteredProjects()
-    ).sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime());
+    const projects = structuredClone(this.filtersService.filteredProjects()).sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime());
     if (projects.length === 0) {
       return new Date();
     }
-    return DateTime.fromJSDate(
-      projects[0].inProgress
-        ? new Date()
-        : projects[0].dateTo ?? projects[0].dateFrom
-    )
+    return DateTime.fromJSDate(projects[0].inProgress ? new Date() : (projects[0].dateTo ?? projects[0].dateFrom))
       .endOf(`month`)
       .toJSDate();
   });
 
   minDate = computed(() => {
-    const projects = structuredClone(
-      this.filtersService.filteredProjects()
-    ).sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime());
+    const projects = structuredClone(this.filtersService.filteredProjects()).sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime());
     if (projects.length === 0) {
       return new Date();
     }
@@ -117,9 +86,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
       this.activatedRoute.queryParams.subscribe((res) => {
         const id = res[`project`];
         if (id) {
-          const selectedProject = this.projects.find(
-            (project) => project.id === id
-          );
+          const selectedProject = this.projects.find((project) => project.id === id);
           if (selectedProject) {
             this.dialog.open(ProjectModalComponent, {
               data: structuredClone(selectedProject),
@@ -129,7 +96,7 @@ export default class HomeComponent implements OnInit, OnDestroy {
             });
           }
         }
-      })
+      }),
     );
     setTimeout(() => {
       this.onResize();
@@ -169,11 +136,6 @@ export default class HomeComponent implements OnInit, OnDestroy {
   }
 
   getProjectExtraTags(project: ProjectInfo) {
-    return structuredClone(project).tags.filter(
-      (el) =>
-        el.type === TagType.api ||
-        el.type === TagType.library ||
-        el.type === TagType.utility
-    );
+    return structuredClone(project).tags.filter((el) => el.type === TagType.api || el.type === TagType.library || el.type === TagType.utility);
   }
 }

@@ -7,13 +7,7 @@ import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
 @Component({
   selector: 'app-tag',
-  imports: [
-    TranslateModule,
-    NgStyle,
-    NgClass,
-    MatTooltipModule,
-    TooltipValuePipe,
-  ],
+  imports: [TranslateModule, NgStyle, NgClass, MatTooltipModule, TooltipValuePipe],
   templateUrl: './tag.component.html',
   styleUrl: './tag.styles.scss',
 })

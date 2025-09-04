@@ -11,13 +11,7 @@ import { FiltersModalComponent } from '../filters-modal/filters-modal.component'
 
 @Component({
   selector: 'app-menu-items',
-  imports: [
-    TranslateModule,
-    IconButtonComponent,
-    ToggleLanguageComponent,
-    MatBadgeModule,
-    NgStyle,
-  ],
+  imports: [TranslateModule, IconButtonComponent, ToggleLanguageComponent, MatBadgeModule, NgStyle],
   templateUrl: './menu-items.component.html',
   styleUrl: `./menu-items.styles.scss`,
 })
@@ -26,9 +20,7 @@ export class MenuItemsComponent {
   readonly filtersService = inject(FiltersService);
   readonly dialog = inject(MatDialog);
 
-  direction = input.required<
-    `column` | `column-reverse` | `row` | `row-reverse`
-  >();
+  direction = input.required<`column` | `column-reverse` | `row` | `row-reverse`>();
   showLabels = input(false);
   showSearch = input(false);
 

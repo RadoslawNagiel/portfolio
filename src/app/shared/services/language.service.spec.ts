@@ -11,16 +11,11 @@ describe(`LanguageService`, () => {
     const spy = jasmine.createSpyObj(`TranslateService`, [`setDefaultLang`]);
 
     TestBed.configureTestingModule({
-      providers: [
-        LanguageService,
-        { provide: TranslateService, useValue: spy },
-      ],
+      providers: [LanguageService, { provide: TranslateService, useValue: spy }],
     });
 
     service = TestBed.inject(LanguageService);
-    translateServiceSpy = TestBed.inject(
-      TranslateService
-    ) as jasmine.SpyObj<TranslateService>;
+    translateServiceSpy = TestBed.inject(TranslateService) as jasmine.SpyObj<TranslateService>;
   });
 
   it(`should be created`, () => {

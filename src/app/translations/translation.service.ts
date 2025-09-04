@@ -7,13 +7,11 @@ import { from, Observable } from 'rxjs';
 })
 export class TranslationService implements TranslateLoader {
   getTranslation(lang: string): Observable<TranslationObject> {
-    const translationsPromise: Promise<TranslationObject> = Promise.all([
-      import(`./languages/${lang}.json`),
-    ]).then(
+    const translationsPromise: Promise<TranslationObject> = Promise.all([import(`./languages/${lang}.json`)]).then(
       async (data) =>
         new Promise((resolve) => {
           resolve(Object.assign({}, ...data));
-        })
+        }),
     );
     return from(translationsPromise);
   }

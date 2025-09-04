@@ -2,10 +2,7 @@ import { Component, computed, input, output } from '@angular/core';
 import { ProjectInfo } from '../../data/projects';
 import { DateTime } from 'luxon';
 import { DatePipe, NgClass, NgStyle } from '@angular/common';
-import {
-  MAT_TOOLTIP_DEFAULT_OPTIONS,
-  MatTooltipModule,
-} from '@angular/material/tooltip';
+import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
 import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
@@ -23,14 +20,7 @@ export interface MontBlock {
 
 @Component({
   selector: 'app-timeline',
-  imports: [
-    DatePipe,
-    NgClass,
-    NgStyle,
-    MatTooltipModule,
-    TranslateModule,
-    TooltipValuePipe,
-  ],
+  imports: [DatePipe, NgClass, NgStyle, MatTooltipModule, TranslateModule, TooltipValuePipe],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.styles.scss',
   providers: [
@@ -54,22 +44,14 @@ export class TimelineComponent {
   yearSelected = output<number>();
 
   monthsArray = computed(() => {
-    const elements: MontBlock[] = this.getNArray(
-      Math.round(
-        DateTime.fromJSDate(this.max()).diff(
-          DateTime.fromJSDate(this.min()),
-          `months`
-        ).months
-      )
-    ).map((el, index) => {
-      return {
-        date: DateTime.fromJSDate(this.max())
-          .startOf(`month`)
-          .minus({ month: index })
-          .toJSDate(),
-        projects: [],
-      };
-    });
+    const elements: MontBlock[] = this.getNArray(Math.round(DateTime.fromJSDate(this.max()).diff(DateTime.fromJSDate(this.min()), `months`).months)).map(
+      (el, index) => {
+        return {
+          date: DateTime.fromJSDate(this.max()).startOf(`month`).minus({ month: index }).toJSDate(),
+          projects: [],
+        };
+      },
+    );
 
     const projects = structuredClone(this.projects());
     projects.sort((a, b) => a.dateFrom.getTime() - b.dateFrom.getTime());
@@ -85,19 +67,10 @@ export class TimelineComponent {
       }
       end = DateTime.fromJSDate(end).endOf(`month`).toJSDate();
 
-      const months =
-        Math.round(
-          DateTime.fromJSDate(end).diff(DateTime.fromJSDate(start), `months`)
-            .months
-        ) + 1;
+      const months = Math.round(DateTime.fromJSDate(end).diff(DateTime.fromJSDate(start), `months`).months) + 1;
 
-      const elementsFirstIndex = elements.findIndex(
-        (el) => el.date.getTime() < end.getTime()
-      );
-      const elementsPart = structuredClone(elements).splice(
-        elementsFirstIndex,
-        months
-      );
+      const elementsFirstIndex = elements.findIndex((el) => el.date.getTime() < end.getTime());
+      const elementsPart = structuredClone(elements).splice(elementsFirstIndex, months);
       let index = -1;
       let found = false;
       do {

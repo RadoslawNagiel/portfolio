@@ -743,13 +743,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `akameis`,
     dateFrom: new Date(2021, 9, 3),
     // dateTo: new Date(2021, 10, 5),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/akameis/main.jpg`,
     images: [
       {
@@ -801,13 +795,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `organizer`,
     dateFrom: new Date(2021, 2, 21),
     dateTo: new Date(2021, 5, 21),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`webApp`],
-      TAGS[`cSharp`],
-      TAGS[`dotNet`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`webApp`], TAGS[`cSharp`], TAGS[`dotNet`]],
     mainImage: `./images/organizer/main.jpg`,
     images: [
       {
@@ -849,14 +837,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `simulation`,
     dateFrom: new Date(2021, 2, 25),
     // dateTo: new Date(2021, 2, 26),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`], TAGS[`blender`]],
     mainImage: `./images/simulation/main.jpg`,
     images: [
       {
@@ -901,12 +882,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `printer`,
     dateFrom: new Date(2020, 1, 27),
     dateTo: new Date(2020, 9, 26),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`arduino`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`], TAGS[`blender`]],
     mainImage: `./images/printer/main.jpg`,
     images: [
       {
@@ -956,13 +932,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `spaceTaxi`,
     dateFrom: new Date(2020, 9, 4),
     // dateTo: new Date(2020, 9, 5),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/spaceTaxi/main.jpg`,
     images: [
       {
@@ -1018,16 +988,7 @@ export const PROJECTS: ProjectInfo[] = [
   {
     id: `guessPhrase`,
     dateFrom: new Date(2020, 5, 27),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`php`],
-      TAGS[`sql`],
-      TAGS[`html`],
-      TAGS[`css`],
-      TAGS[`mySQL`],
-      TAGS[`xampp`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`php`], TAGS[`sql`], TAGS[`html`], TAGS[`css`], TAGS[`mySQL`], TAGS[`xampp`]],
     mainImage: `./images/guessPhrase/main.jpg`,
     images: [
       {
@@ -1057,14 +1018,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `inventory`,
     dateFrom: new Date(2020, 2, 23),
     dateTo: new Date(2020, 5, 15),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`mobileApp`],
-      TAGS[`cSharp`],
-      TAGS[`dotNet`],
-      TAGS[`xamarin`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`mobileApp`], TAGS[`cSharp`], TAGS[`dotNet`], TAGS[`xamarin`]],
     mainImage: `./images/inventory/main.jpg`,
     images: [
       {
@@ -1112,13 +1066,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `lamp`,
     dateFrom: new Date(2019, 11, 1),
     dateTo: new Date(2020, 3, 1),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`arduino`],
-      TAGS[`cPlus`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`arduino`], TAGS[`cPlus`], TAGS[`blender`]],
     mainImage: `./images/lamp/main.jpg`,
     images: [
       {
@@ -1173,15 +1121,7 @@ export const PROJECTS: ProjectInfo[] = [
     dateFrom: new Date(2020, 1, 1),
     // dateFrom: new Date(2020, 0, 31),
     // dateTo: new Date(2020, 1, 2),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`arduino`],
-      TAGS[`cPlus`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`game`], TAGS[`cSharp`], TAGS[`arduino`], TAGS[`cPlus`], TAGS[`unity`]],
     mainImage: `./images/craneSimulator/main.jpg`,
     images: [
       {
@@ -1225,14 +1165,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `thiefMobile`,
     dateFrom: new Date(2019, 7, 27),
     dateTo: new Date(2019, 8, 11),
-    tags: [
-      TAGS[`private`],
-      TAGS[`mobileApp`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`mobileApp`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`], TAGS[`blender`]],
     mainImage: `./images/thiefMobile/main.jpg`,
     images: [
       {
@@ -1267,13 +1200,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `dothing`,
     dateFrom: new Date(2019, 9, 5),
     // dateTo: new Date(2019, 9, 7),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/dothing/main.jpg`,
     images: [
       {
@@ -1309,13 +1236,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `thief`,
     dateFrom: new Date(2018, 2, 29),
     dateTo: new Date(2019, 7, 19),
-    tags: [
-      TAGS[`private`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`], TAGS[`blender`]],
     mainImage: `./images/thief/main.jpg`,
     images: [
       {
@@ -1393,13 +1314,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `demonSnail`,
     dateFrom: new Date(2019, 0, 25),
     // dateTo: new Date(2019, 0, 27),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/demonSnail/main.jpg`,
     images: [
       {
@@ -1455,13 +1370,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `sftk`,
     dateFrom: new Date(2018, 11, 2),
     // dateTo: new Date(2018, 11, 3),
-    tags: [
-      TAGS[`private`],
-      TAGS[`mobileApp`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`mobileApp`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/sftk/main.jpg`,
     images: [
       {
@@ -1509,13 +1418,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `wsfGameJam4`,
     dateFrom: new Date(2018, 10, 9),
     // dateTo: new Date(2018, 10, 11),
-    tags: [
-      TAGS[`private`],
-      TAGS[`group`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`group`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/wsfGameJam4/main.jpg`,
     images: [
       {
@@ -1628,13 +1531,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `ball`,
     dateFrom: new Date(2017, 5, 27),
     dateTo: new Date(2017, 6, 24),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`]],
     mainImage: `./images/ball/main.jpg`,
     images: [
       {
@@ -1665,15 +1562,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `simpleGame`,
     dateFrom: new Date(2017, 3, 22),
     // dateTo: new Date(2017, 4, 1),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`mobileApp`],
-      TAGS[`game`],
-      TAGS[`cSharp`],
-      TAGS[`unity`],
-      TAGS[`blender`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`mobileApp`], TAGS[`game`], TAGS[`cSharp`], TAGS[`unity`], TAGS[`blender`]],
     mainImage: `./images/simpleGame/main.jpg`,
     images: [
       {
@@ -1699,13 +1588,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `blockGame`,
     dateFrom: new Date(2016, 4, 4),
     dateTo: new Date(2016, 4, 23),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`cPlus`],
-      TAGS[`cPlusBuilder`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cPlus`], TAGS[`cPlusBuilder`]],
     mainImage: `./images/blockGame/main.jpg`,
     images: [
       {
@@ -1731,13 +1614,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `arkanoid`,
     dateFrom: new Date(2015, 8, 25),
     dateTo: new Date(2016, 3, 2),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`cPlus`],
-      TAGS[`cPlusBuilder`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`cPlus`], TAGS[`cPlusBuilder`]],
     mainImage: `./images/arkanoid/main.jpg`,
     images: [
       {
@@ -1817,13 +1694,7 @@ export const PROJECTS: ProjectInfo[] = [
     id: `farmaSama`,
     dateFrom: new Date(2014, 4, 8),
     // dateTo: new Date(2014, 4, 28),
-    tags: [
-      TAGS[`private`],
-      TAGS[`individual`],
-      TAGS[`game`],
-      TAGS[`html`],
-      TAGS[`css`],
-    ],
+    tags: [TAGS[`private`], TAGS[`individual`], TAGS[`game`], TAGS[`html`], TAGS[`css`]],
     mainImage: `./images/farmaSama/main.jpg`,
     images: [
       {

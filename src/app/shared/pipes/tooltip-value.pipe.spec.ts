@@ -1,10 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import {
-  TranslateFakeLoader,
-  TranslateLoader,
-  TranslateModule,
-  TranslateService,
-} from '@ngx-translate/core';
+import { TranslateFakeLoader, TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TooltipValuePipe } from './tooltip-value.pipe';
 import { ChangeDetectorRef } from '@angular/core';
 
@@ -34,10 +29,7 @@ describe('TooltipValuePipe', () => {
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader },
         }),
       ],
-      providers: [
-        TranslateService,
-        { provide: ChangeDetectorRef, useValue: spy },
-      ],
+      providers: [TranslateService, { provide: ChangeDetectorRef, useValue: spy }],
     });
   });
 

@@ -8,12 +8,7 @@ import { TooltipValuePipe } from '../../pipes/tooltip-value.pipe';
 
 @Component({
   selector: 'app-toggle-language',
-  imports: [
-    TranslateModule,
-    MatButtonToggleModule,
-    MatTooltipModule,
-    TooltipValuePipe,
-  ],
+  imports: [TranslateModule, MatButtonToggleModule, MatTooltipModule, TooltipValuePipe],
   templateUrl: './toggle-language.component.html',
 })
 export class ToggleLanguageComponent {

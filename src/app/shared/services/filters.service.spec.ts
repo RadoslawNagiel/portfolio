@@ -41,16 +41,12 @@ describe(`FiltersService`, () => {
 
   it(`#filteredProjects should only return projects containing filtered tags`, () => {
     service.filters.frameworkFilter.selected.set([testProjectTypeTag]);
-    let projects = structuredClone(PROJECTS).filter((project) =>
-      project.tags.find((tag) => tag.name === testProjectTypeTag.name)
-    );
+    let projects = structuredClone(PROJECTS).filter((project) => project.tags.find((tag) => tag.name === testProjectTypeTag.name));
     let result = service.filteredProjects();
     expect(result.length).toBe(projects.length);
 
     service.filters.languageFilter.selected.set([testLanguageTag]);
-    projects = projects.filter((project) =>
-      project.tags.find((tag) => tag.name === testLanguageTag.name)
-    );
+    projects = projects.filter((project) => project.tags.find((tag) => tag.name === testLanguageTag.name));
     result = service.filteredProjects();
     expect(result.length).toBe(projects.length);
   });
@@ -80,9 +76,7 @@ describe(`FiltersService`, () => {
     Object.entries(service.filters).forEach(([, filter]) => {
       filter.selected.set([testProjectTypeTag]);
     });
-    expect(service.selectedFiltersAmount()).toBe(
-      Object.keys(service.filters).length
-    );
+    expect(service.selectedFiltersAmount()).toBe(Object.keys(service.filters).length);
     service.clearAllFilters();
     expect(service.selectedFiltersAmount()).toBe(0);
   });

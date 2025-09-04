@@ -12,27 +12,16 @@ import { ToggleLanguageComponent } from './toggle-language.component';
 describe(`ToggleLanguageComponent`, () => {
   let spyLanguageService: jasmine.SpyObj<LanguageService>;
 
-  const defaultLanguageValue = environment.availableLanguages.find(
-    (el) => el.langKey === environment.defaultLanguage
-  )!.value;
+  const defaultLanguageValue = environment.availableLanguages.find((el) => el.langKey === environment.defaultLanguage)!.value;
   const secondLanguage = environment.availableLanguages[1];
   const availableLanguages = environment.availableLanguages;
 
   const setup = async () => {
-    spyLanguageService = jasmine.createSpyObj('LanguageService', [
-      'selectedLanguage',
-      'setLanguage',
-    ]);
-    spyLanguageService.selectedLanguage.and.returnValue(
-      environment.defaultLanguage
-    );
+    spyLanguageService = jasmine.createSpyObj('LanguageService', ['selectedLanguage', 'setLanguage']);
+    spyLanguageService.selectedLanguage.and.returnValue(environment.defaultLanguage);
 
     return render(ToggleLanguageComponent, {
-      imports: [
-        TranslateModule.forRoot(),
-        MatButtonToggleModule,
-        MatTooltipModule,
-      ],
+      imports: [TranslateModule.forRoot(), MatButtonToggleModule, MatTooltipModule],
       providers: [{ provide: LanguageService, useValue: spyLanguageService }],
     });
   };
@@ -67,8 +56,6 @@ describe(`ToggleLanguageComponent`, () => {
 
     userEvent.click(button);
     tick(0);
-    expect(languageService.setLanguage).toHaveBeenCalledWith(
-      secondLanguage.langKey
-    );
+    expect(languageService.setLanguage).toHaveBeenCalledWith(secondLanguage.langKey);
   }));
 });

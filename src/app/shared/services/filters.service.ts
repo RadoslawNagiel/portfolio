@@ -54,11 +54,7 @@ export class FiltersService {
 
   filteredProjects = computed(() => {
     let projects = structuredClone(PROJECTS);
-    projects = filterProjectsByText(
-      this.searchService.searchValue(),
-      projects,
-      this.translateService
-    );
+    projects = filterProjectsByText(this.searchService.searchValue(), projects, this.translateService);
     this.getFilters().forEach((value) => {
       projects = filterProjectsByTag(value.selected(), projects);
     });

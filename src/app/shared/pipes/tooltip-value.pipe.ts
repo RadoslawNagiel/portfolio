@@ -1,10 +1,4 @@
-import {
-  Pipe,
-  PipeTransform,
-  ChangeDetectorRef,
-  OnDestroy,
-  inject,
-} from '@angular/core';
+import { Pipe, PipeTransform, ChangeDetectorRef, OnDestroy, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { isTouchScreen } from '../functions/is-touch-screen';

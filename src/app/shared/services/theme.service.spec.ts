@@ -8,9 +8,7 @@ describe(`ThemeService`, () => {
   beforeEach(() => {
     // mock localStorage
     store = {};
-    spyOn(localStorage, 'getItem').and.callFake(
-      (k: string) => store[k] ?? null
-    );
+    spyOn(localStorage, 'getItem').and.callFake((k: string) => store[k] ?? null);
     spyOn(localStorage, 'setItem').and.callFake((k: string, v: string) => {
       store[k] = v;
     });
@@ -39,8 +37,7 @@ describe(`ThemeService`, () => {
 
   const create = () => TestBed.inject(ThemeService);
 
-  const documentContainDarkPaletteClass = () =>
-    document.documentElement.classList.contains('ion-palette-dark');
+  const documentContainDarkPaletteClass = () => document.documentElement.classList.contains('ion-palette-dark');
 
   it(`should be created`, () => {
     const service = create();

@@ -10,16 +10,7 @@ import { SearchComponent } from './shared/smart-components/search/search.compone
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    TranslateModule,
-    MatSidenavModule,
-    IconButtonComponent,
-    MenuItemsComponent,
-    TopIconButtonComponent,
-    SearchComponent,
-    NgClass,
-  ],
+  imports: [RouterOutlet, TranslateModule, MatSidenavModule, IconButtonComponent, MenuItemsComponent, TopIconButtonComponent, SearchComponent, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

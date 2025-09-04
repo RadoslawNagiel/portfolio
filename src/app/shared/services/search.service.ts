@@ -14,12 +14,10 @@ export class SearchService implements OnDestroy {
 
   private constructor() {
     this.formSubscription.add(
-      this.searchSubject
-        .pipe(debounceTime(environment.searchDebounceMs))
-        .subscribe((results) => {
-          this.searchInProgress.set(false);
-          this.searchValue.set(results);
-        })
+      this.searchSubject.pipe(debounceTime(environment.searchDebounceMs)).subscribe((results) => {
+        this.searchInProgress.set(false);
+        this.searchValue.set(results);
+      }),
     );
   }
 

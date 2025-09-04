@@ -13,22 +13,16 @@ describe(`SearchComponent`, () => {
     valueChanged = jasmine.createSpy('valueChanged');
   }
 
-  const setup = async (inputs?: {
-    interactive?: boolean;
-    disabled?: boolean;
-  }) =>
+  const setup = async (inputs?: { interactive?: boolean; disabled?: boolean }) =>
     render(SearchComponent, {
       imports: [TranslateModule.forRoot()],
       providers: [{ provide: SearchService, useClass: MockSearchService }],
       inputs,
     });
 
-  const getSearchButton = () =>
-    screen.getByRole(`button`, { name: `header.search.filter` });
-  const getClearButton = () =>
-    screen.getByRole(`button`, { name: `header.search.close` });
-  const getSearchInput = (): HTMLInputElement =>
-    screen.getByRole(`textbox`, { name: `header.search.filter` });
+  const getSearchButton = () => screen.getByRole(`button`, { name: `header.search.filter` });
+  const getClearButton = () => screen.getByRole(`button`, { name: `header.search.close` });
+  const getSearchInput = (): HTMLInputElement => screen.getByRole(`textbox`, { name: `header.search.filter` });
 
   it(`should display a search icon`, async () => {
     await setup();

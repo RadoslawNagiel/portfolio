@@ -10,8 +10,7 @@ describe(`IconButtonComponent`, () => {
     ariaLabel: `Test aria`,
   };
 
-  const getButton = () =>
-    screen.getByRole(`button`, { name: inputs.ariaLabel });
+  const getButton = () => screen.getByRole(`button`, { name: inputs.ariaLabel });
 
   it(`should displayed button`, async () => {
     await render(IconButtonComponent, {

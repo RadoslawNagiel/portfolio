@@ -10,10 +10,7 @@ describe(`FilterLabelComponent`, () => {
     buttonTooltip: `Clear tooltip`,
   };
 
-  const buttonRole: [ByRoleMatcher, ByRoleOptions | undefined] = [
-    `button`,
-    { name: inputs.buttonTooltip },
-  ];
+  const buttonRole: [ByRoleMatcher, ByRoleOptions | undefined] = [`button`, { name: inputs.buttonTooltip }];
 
   it(`should displayed label`, async () => {
     await render(FilterLabelComponent, {

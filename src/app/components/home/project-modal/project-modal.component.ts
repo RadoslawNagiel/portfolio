@@ -11,14 +11,7 @@ import TagsComponent from '../../../shared/smart-components/tags/tags.component'
 
 @Component({
   selector: 'app-project-modal',
-  imports: [
-    MatDialogModule,
-    MatButtonModule,
-    TranslateModule,
-    DatePipe,
-    TagsComponent,
-    LightboxModule,
-  ],
+  imports: [MatDialogModule, MatButtonModule, TranslateModule, DatePipe, TagsComponent, LightboxModule],
   templateUrl: './project-modal.component.html',
   styleUrl: `project-modal.styles.scss`,
 })
@@ -42,7 +35,7 @@ export class ProjectModalComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA) public project: ProjectInfo,
     private gallery: Gallery,
-    private lightbox: Lightbox
+    private lightbox: Lightbox,
   ) {}
 
   ngOnInit() {

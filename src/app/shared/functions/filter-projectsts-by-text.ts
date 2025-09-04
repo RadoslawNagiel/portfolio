@@ -1,21 +1,10 @@
 import { TranslateService } from '@ngx-translate/core';
 import { ProjectInfo } from '../data/projects';
 
-export const filterProjectsByText = (
-  text: string,
-  projects: ProjectInfo[],
-  translateService: TranslateService
-) => {
+export const filterProjectsByText = (text: string, projects: ProjectInfo[], translateService: TranslateService) => {
   if (text.length) {
     return projects.filter((el) => {
-      const tagsName = el.tags
-        .filter((tag) =>
-          translateService
-            .instant(tag.name)
-            .toLowerCase()
-            .includes(text.toLowerCase())
-        )
-        .map((tag) => tag.name);
+      const tagsName = el.tags.filter((tag) => translateService.instant(tag.name).toLowerCase().includes(text.toLowerCase())).map((tag) => tag.name);
       if (tagsName.length) {
         return true;
       }
