@@ -10,4 +10,5 @@ export const environment = {
       value: `EN`,
     },
   ],
+  searchDebounceMs: 300,
 };

@@ -4,6 +4,7 @@ import { PROJECTS } from '../data/projects';
 import { Tag, TAGS } from '../data/tags';
 import { FiltersService } from './filters.service';
 import { SearchService } from './search.service';
+import { environment } from '../../environments/environment';
 
 describe(`FiltersService`, () => {
   let service: FiltersService;
@@ -56,15 +57,15 @@ describe(`FiltersService`, () => {
 
   it(`#filteredProjects should only return projects containing filtered text in their name, description or tags`, fakeAsync(() => {
     service.searchService.searchValue.set(`Winery`);
-    tick(300);
+    tick(environment.searchDebounceMs);
     expect(service.filteredProjects().length).toBe(2);
 
     service.searchService.searchValue.set(`projects.sftk.description`);
-    tick(300);
+    tick(environment.searchDebounceMs);
     expect(service.filteredProjects().length).toBe(1);
 
     service.searchService.searchValue.set(`c++ builder`);
-    tick(300);
+    tick(environment.searchDebounceMs);
     expect(service.filteredProjects().length).toBe(2);
   }));
 
